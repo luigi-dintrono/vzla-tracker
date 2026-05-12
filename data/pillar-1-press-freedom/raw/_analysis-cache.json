@@ -13334,5 +13334,982 @@
     },
     "ran_at": "2026-05-12T02:26:10.835Z",
     "word_count": 5143
+  },
+  "PLyhdNAFV1DMJATESD8ItT1bgy8QlIXDQA|20260406_news-prime-time-edition-april-6-2026.txt": {
+    "model": "claude-haiku-4-5-20251001",
+    "verdict": {
+      "segments": [
+        {
+          "seq": 1,
+          "topic": "Trump-Venezuela energy alliance",
+          "summary": "El Presidente Donald Trump proyecta una alianza a largo plazo con Venezuela basada en el sector energético.",
+          "classification": "international",
+          "word_share_pct": 8.5,
+          "regime_sentiment": 0.4,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": [
+            {
+              "name": "Donald Trump",
+              "sentiment": 0.3,
+              "mentions": 1
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "topic": "Guanipa on US support for elections",
+          "summary": "Juan Pablo Guanipa afirma que el apoyo a Estados Unidos es clave para cualquier proceso electoral.",
+          "classification": "opposition",
+          "word_share_pct": 7,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0.4,
+          "critical_of_regime": false,
+          "figures_mentioned": [
+            {
+              "name": "Juan Pablo Guanipa",
+              "sentiment": 0.4,
+              "mentions": 1
+            }
+          ]
+        },
+        {
+          "seq": 3,
+          "topic": "Easter tourism terminal usage",
+          "summary": "Más de 120 mil temporadistas utilizaron el terminal de la bandera durante Semana Santa.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 6,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 4,
+          "topic": "UCB analysis of mining law",
+          "summary": "La UCB analiza la ley de minas y presenta observaciones sobre el impacto ambiental.",
+          "classification": "economy",
+          "word_share_pct": 6.5,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 5,
+          "topic": "Amnesty law prisoner release demand",
+          "summary": "En el Palacio de Justicia exigen liberación masiva bajo ley de amnistía a nivel nacional.",
+          "classification": "regime",
+          "word_share_pct": 6,
+          "regime_sentiment": -0.2,
+          "opposition_sentiment": 0.3,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 6,
+          "topic": "Collective brawl in Falcón state",
+          "summary": "Un hombre fue gravemente herido durante una riña colectiva registrada en el estado Falcón.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 62,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        }
+      ],
+      "press_incidents": [],
+      "notes": "The transcript is predominantly music cues (\"Música\") with minimal actual spoken content. Only six substantive news headlines appear at the beginning, followed by a single crime report segment. The overwhelming majority of the file consists of music notation, making word-share calculations approximate. No press-freedom incidents are reported. The content appears to be a formatted broadcast outline rather than a complete transcript with full dialogue."
+    },
+    "ran_at": "2026-05-12T03:37:04.383Z",
+    "word_count": 899
+  },
+  "PLyhdNAFV1DMJATESD8ItT1bgy8QlIXDQA|20260407_news-prime-time-edition-april-7-2026.txt": {
+    "model": "claude-haiku-4-5-20251001",
+    "verdict": {
+      "segments": [
+        {
+          "seq": 1,
+          "topic": "Weather emergency, landslides, floods",
+          "summary": "Lluvias intensas en Táchira, Portuguesa, Mérida y Zulia generaron deslizamientos de tierra, inundaciones y vientos huracanados que afectaron a cientos de familias en diferentes estados del país.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 22.3,
+          "regime_sentiment": 0.2,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 2,
+          "topic": "Amnesty law application criticized",
+          "summary": "El Foro Penal advierte que la ley de amnistía se aplica de forma selectiva y ralentizada, con solo 180 de 790 liberaciones correspondiendo a esta medida legal desde enero.",
+          "classification": "press_freedom",
+          "word_share_pct": 8.5,
+          "regime_sentiment": -0.4,
+          "opposition_sentiment": 0.6,
+          "critical_of_regime": true,
+          "figures_mentioned": [
+            {
+              "name": "Delcy Rodríguez",
+              "sentiment": -0.3,
+              "mentions": 1
+            }
+          ]
+        },
+        {
+          "seq": 3,
+          "topic": "US official discusses stabilization strategy",
+          "summary": "Joseph Humir, subsecretario de Estados Unidos, señala que la estabilización económica es prioritaria antes de una transición en Venezuela y que el gobierno estadounidense trabaja en atraer inversiones extranjeras.",
+          "classification": "international",
+          "word_share_pct": 5.2,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": [
+            {
+              "name": "Donald Trump",
+              "sentiment": 0,
+              "mentions": 1
+            },
+            {
+              "name": "Marco Rubio",
+              "sentiment": 0,
+              "mentions": 1
+            }
+          ]
+        },
+        {
+          "seq": 4,
+          "topic": "Economic growth projection for 2026",
+          "summary": "Concecomercio proyecta un crecimiento del 12% en el sector comercial para el segundo semestre de 2026 impulsado por inversiones petroleras tras acuerdo energético con Estados Unidos.",
+          "classification": "economy",
+          "word_share_pct": 4.1,
+          "regime_sentiment": 0.5,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 5,
+          "topic": "Tourism and electronic visas initiative",
+          "summary": "La Cancillería habilitó visas electrónicas para turistas estadounidenses y se busca establecer vuelos directos desde Estados Unidos hacia aeropuertos venezolanos.",
+          "classification": "economy",
+          "word_share_pct": 3.8,
+          "regime_sentiment": 0.4,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 6,
+          "topic": "Salary adjustment proposal under evaluation",
+          "summary": "Analista político Tomás Ocias López afirma que el Ejecutivo evalúa un ajuste salarial que ubicaría ingresos entre 150 y 160 dólares mensuales en respuesta a las necesidades de la población.",
+          "classification": "economy",
+          "word_share_pct": 4.6,
+          "regime_sentiment": 0.3,
+          "opposition_sentiment": 0.1,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 7,
+          "topic": "Worker mobilization for better salaries",
+          "summary": "Trabajadores de la Universidad Central de Venezuela convocan marcha para el jueves 9 de abril reclamando mejoras salariales, defensa de prestaciones y libertad de trabajadores presos.",
+          "classification": "opposition",
+          "word_share_pct": 3.2,
+          "regime_sentiment": -0.2,
+          "opposition_sentiment": 0.5,
+          "critical_of_regime": true,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 8,
+          "topic": "Health workers demand salary dignity",
+          "summary": "FETRA Salud advierte que la recuperación de hospitales es insuficiente sin un ajuste salarial que dignifique la labor del sector y detenga la fuga de personal especializado.",
+          "classification": "economy",
+          "word_share_pct": 3.1,
+          "regime_sentiment": -0.2,
+          "opposition_sentiment": 0.4,
+          "critical_of_regime": true,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 9,
+          "topic": "Motorcycle theft ring dismantled",
+          "summary": "Funcionarios aprehendieron a dos personas en Varinas por hurto y desmantelamiento de motocicletas, incautando múltiples partes y piezas solicitadas en distintos casos delictivos.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 2.1,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 10,
+          "topic": "Bread subsidies proposed for sector",
+          "summary": "Fetrarina propone implementación de subsidios financiados con recursos petroleros para reactivar ventas en el sector panadero y hacer asequible el pan.",
+          "classification": "economy",
+          "word_share_pct": 2.2,
+          "regime_sentiment": 0.2,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 11,
+          "topic": "Easter mobilization by social organization",
+          "summary": "La organización El Evangelio Cambia culminó con éxito su despliegue de Semana Santa utilizando artes escénicas en espacios públicos del país.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 1.5,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 12,
+          "topic": "US extreme cold health crisis",
+          "summary": "Informe revela que el frío extremo causa más de 72 mil fallecimientos anuales en Estados Unidos, afectando principalmente a condados pobres sin infraestructura de calefacción.",
+          "classification": "international",
+          "word_share_pct": 2.3,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 13,
+          "topic": "Cuba power crisis and blackouts",
+          "summary": "Cuba enfrenta un déficit crítico de generación eléctrica que desconectará simultáneamente el 61% del territorio durante horas de mayor demanda energética.",
+          "classification": "international",
+          "word_share_pct": 3.4,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 14,
+          "topic": "Spain reforms constitution for abortion rights",
+          "summary": "Gobierno español aprobó blindar el derecho al aborto en la sanidad pública mediante reforma constitucional, siguiendo ejemplo de Francia.",
+          "classification": "international",
+          "word_share_pct": 1.8,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 15,
+          "topic": "Miss Venezuela 2026 candidate recruitment",
+          "summary": "Miss Venezuela abrió plataforma digital para postulaciones de candidatas a la corona 2026, destacando autenticidad, liderazgo y empoderamiento.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 1.6,
+          "regime_sentiment": 0.3,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 16,
+          "topic": "International entertainment and celebrity news",
+          "summary": "Noticias sobre El Diablo Viste a la Moda 2, Lady Gaga, Gigi y Bella Hadid, Kanye West prohibido en Reino Unido, y Oscar de León en Miami.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 3.8,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 17,
+          "topic": "Innovative fetal surgery in Colombia",
+          "summary": "Equipo de especialistas en Barranquilla logró operar exitosamente a un bebé con hidrocefalia severa in utero usando fetoscopio, reduciendo acumulación de líquido en 24 horas.",
+          "classification": "international",
+          "word_share_pct": 1.9,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        }
+      ],
+      "press_incidents": [
+        {
+          "type": "other",
+          "target": "Jonathan Carrillo (estudiante de comunicación social)",
+          "location": "Venezuela",
+          "description": "Solicitud de sobreseguimiento negada por jueza; estudiante estuvo privado de libertad desde julio 2022 hasta febrero 2026, siendo determinado que no aplica para beneficios de ley de amnistía."
+        }
+      ],
+      "notes": "Broadcast is state-media (Venevisión) with heavy coverage of regime activities, weather emergencies, and economy. Amnesty law segment includes critical voices from Foro Penal but presented within official framework. Limited direct press-freedom incidents; one case of denied amnesty benefit mentioned regarding journalism student. Sentiments calibrated to reflect official tone while noting critical commentary on economic hardship and selective amnesty application."
+    },
+    "ran_at": "2026-05-12T03:37:29.772Z",
+    "word_count": 5714
+  },
+  "PLyhdNAFV1DMJATESD8ItT1bgy8QlIXDQA|20260408_venevision-news-at-this-hour-april-8-2026.txt": {
+    "model": "claude-haiku-4-5-20251001",
+    "verdict": {
+      "segments": [
+        {
+          "seq": 1,
+          "topic": "Iran-US ceasefire and oil markets",
+          "summary": "Estados Unidos e Irán anunciaron un alto al fuego de dos semanas mediado por Pakistán tras tensiones que duraron 40 días, lo que provocó una caída histórica del 16-18% en los precios del petróleo mundial.",
+          "classification": "international",
+          "word_share_pct": 22.5,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": [
+            {
+              "name": "Donald Trump",
+              "sentiment": 0.2,
+              "mentions": 3
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "topic": "Venezuela economic impact from oil prices",
+          "summary": "Economistas venezolanos advierten que la caída de precios del petróleo afectará negativamente los ingresos nacionales, aunque la tregua brinda una oportunidad para resolver problemas estructurales de la economía.",
+          "classification": "economy",
+          "word_share_pct": 8.5,
+          "regime_sentiment": -0.2,
+          "opposition_sentiment": 0,
+          "critical_of_regime": true,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 3,
+          "topic": "Delcy Rodríguez announces policy roadmap",
+          "summary": "La presidenta encargada Delcy Rodríguez anuncia que presentará una hoja de ruta con cambios que considera necesarios para Venezuela, dirigiéndose al país con un mensaje sobre transformaciones requeridas.",
+          "classification": "regime",
+          "word_share_pct": 5,
+          "regime_sentiment": 0.3,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": [
+            {
+              "name": "Delcy Rodríguez",
+              "sentiment": 0.2,
+              "mentions": 2
+            }
+          ]
+        },
+        {
+          "seq": 4,
+          "topic": "Business sector demands economic measures",
+          "summary": "El Consejo de Comercio urge al gobierno a tomar medidas para dinamizar la economía y elevar las remuneraciones de los venezolanos, señalando la necesidad de resolver problemas estructurales.",
+          "classification": "economy",
+          "word_share_pct": 7,
+          "regime_sentiment": -0.3,
+          "opposition_sentiment": 0,
+          "critical_of_regime": true,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 5,
+          "topic": "Mining law delayed third time in parliament",
+          "summary": "La Asamblea Nacional aplaza por tercera vez la aprobación de la ley de minas, que busca atraer inversión extranjera al sector minero venezolano.",
+          "classification": "regime",
+          "word_share_pct": 6.5,
+          "regime_sentiment": -0.2,
+          "opposition_sentiment": 0,
+          "critical_of_regime": true,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 6,
+          "topic": "Amnesty law implementation progress",
+          "summary": "Tres meses después del anuncio de liberación masiva, 8.146 personas han recibido el beneficio de la ley de amnistía, aunque defensores de derechos humanos critican que la mayoría ya estaba bajo medidas cautelares.",
+          "classification": "press_freedom",
+          "word_share_pct": 8,
+          "regime_sentiment": -0.4,
+          "opposition_sentiment": 0.3,
+          "critical_of_regime": true,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 7,
+          "topic": "Opposition demands effective amnesty law",
+          "summary": "Coordinador de Voluntad Popular denuncia que la ley de amnistía se aplica selectivamente, negando beneficios a defensores de derechos humanos y periodistas.",
+          "classification": "opposition",
+          "word_share_pct": 5.5,
+          "regime_sentiment": -0.5,
+          "opposition_sentiment": 0.6,
+          "critical_of_regime": true,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 8,
+          "topic": "ILO concern over Venezuela wage policies",
+          "summary": "La Organización Internacional del Trabajo expresó preocupación por la falta de avances en aumentos salariales en Venezuela, señalando que sus recomendaciones no han sido implementadas.",
+          "classification": "economy",
+          "word_share_pct": 4,
+          "regime_sentiment": -0.4,
+          "opposition_sentiment": 0,
+          "critical_of_regime": true,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 9,
+          "topic": "Electoral reform demands from civil society",
+          "summary": "Representantes del centro de estudios democráticos exigen al poder electoral convocar elecciones generales en 2026 y cambiar la directiva del CNE.",
+          "classification": "opposition",
+          "word_share_pct": 4.5,
+          "regime_sentiment": -0.6,
+          "opposition_sentiment": 0.7,
+          "critical_of_regime": true,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 10,
+          "topic": "Caracas rainfall prevention plan",
+          "summary": "Alcaldesa Carmen Meléndez despliega plan de atención por lluvias con 1.200 funcionarios en Caracas, incluyendo limpieza de quebradas y medidas de prevención.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 6,
+          "regime_sentiment": 0.2,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 11,
+          "topic": "Dominican Republic weather emergency",
+          "summary": "Una intensa vaguada azota República Dominicana afectando 16 provincias, suspendiendo escuelas y provocando alertas por inundaciones y deslizamientos.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 3.5,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 12,
+          "topic": "Jet Set nightclub tragedy commemoration",
+          "summary": "Un año después del colapso del techo de la discoteca Jet Set en Santo Domingo que causó 236 muertes, se conmemoraron las víctimas con vigilia y se continúan investigaciones.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 3,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 13,
+          "topic": "Peru election migration concerns",
+          "summary": "Faltan días para elecciones presidenciales en Perú donde candidato Rafael López Aliaga promete expulsiones masivas de migrantes, generando preocupación entre comunidad venezolana.",
+          "classification": "international",
+          "word_share_pct": 6,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 14,
+          "topic": "Sports: Baseball and soccer highlights",
+          "summary": "Moisés Ballesteros pegó su primer jonrón de la temporada en victoria de Cachorros de Chicago; Deportivo La Guaira empató sin goles contra Fluminense en Copa Libertadores.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 5.5,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 15,
+          "topic": "Entertainment news and awards",
+          "summary": "Daddy Yankee será persona del año en Latin Grammys; Meryl Streep y Anna Wintour aparecen en portada de Vogue; Karol G confirma estar soltera; Anita anuncia colaboración con Shakira.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 4,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        }
+      ],
+      "press_incidents": [
+        {
+          "type": "censorship",
+          "target": "Centro de Estudios Estratégicos, Democracia e Inclusión",
+          "location": "Caracas",
+          "description": "El CNE rechazó recibir carta de ciudadanos exigiendo elecciones generales, negando que fuera competencia institucional."
+        }
+      ],
+      "notes": "Transmisión de Venevisión con cobertura internacional extensiva sobre crisis Irán-EE.UU. y temas económicos nacionales. La emisión dedica aproximadamente 22.5% del contenido a noticias internacionales. El tono general hacia el gobierno es neutro a ligeramente crítico respecto de políticas económicas, mientras que cuestiones de presión internacional (sanciones, conflictos migratorios) se mantienen en nivel informativo. Segment 6 sobre amnistía incluye críticas implícitas a la selectividad de la aplicación de la ley."
+    },
+    "ran_at": "2026-05-12T03:37:50.146Z",
+    "word_count": 8259
+  },
+  "PLyhdNAFV1DMJATESD8ItT1bgy8QlIXDQA|20260409_news-prime-time-edition-april-9-2026.txt": {
+    "model": "claude-haiku-4-5-20251001",
+    "verdict": {
+      "segments": [
+        {
+          "seq": 1,
+          "topic": "Fiscal General y Defensora del Pueblo",
+          "summary": "La Asamblea Nacional designó a Larry Deboe como nuevo fiscal general de la República y a Egle González Lobato como defensora del pueblo.",
+          "classification": "regime",
+          "word_share_pct": 8.5,
+          "regime_sentiment": 0.3,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 2,
+          "topic": "Visita diplomática Delcy Rodríguez a Granada",
+          "summary": "La presidenta encargada Delcy Rodríguez realizó su primer viaje al exterior desde asumir el cargo, visitando Granada para afianzar cooperación bilateral en educación, energía e hidrocarburos.",
+          "classification": "regime",
+          "word_share_pct": 7.2,
+          "regime_sentiment": 0.4,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": [
+            {
+              "name": "Delcy Rodríguez",
+              "sentiment": 0.4,
+              "mentions": 3
+            }
+          ]
+        },
+        {
+          "seq": 3,
+          "topic": "Marcha bloqueada de trabajadores hacia Miraflores",
+          "summary": "Piquetes de la Policía Nacional Bolivariana bloquearon una marcha de trabajadores y jubilados que intentaba llegar a Miraflores para reclamar mejoras salariales y pensiones.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 8.9,
+          "regime_sentiment": -0.3,
+          "opposition_sentiment": 0.2,
+          "critical_of_regime": true,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 4,
+          "topic": "American Airlines reanuda vuelos Miami-Caracas",
+          "summary": "American Airlines anunció planes para reanudar vuelos diarios sin escalas entre Miami y Caracas a partir del 30 de abril.",
+          "classification": "international",
+          "word_share_pct": 4.8,
+          "regime_sentiment": 0.2,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 5,
+          "topic": "Expectativas salariales y ajuste económico",
+          "summary": "Federación Nacional de Empleados Públicos espera que el próximo ajuste económico no dispare la inflación, esperando anuncio de incrementos el 1 de mayo.",
+          "classification": "economy",
+          "word_share_pct": 9.3,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 6,
+          "topic": "Recuperación petrolera y salarios según economista",
+          "summary": "El economista Miguel Natera afirma que los aumentos salariales dependerán de la dinamización de la industria de hidrocarburos y la productividad económica nacional.",
+          "classification": "economy",
+          "word_share_pct": 8.7,
+          "regime_sentiment": 0.1,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 7,
+          "topic": "Comisión de Diálogo Laboral y propuestas salariales",
+          "summary": "Diputado Ramón Lobo aseguró que la nueva Comisión de Diálogo Laboral generará propuestas para impulsar el ingreso de trabajadores venezolanos.",
+          "classification": "regime",
+          "word_share_pct": 5.2,
+          "regime_sentiment": 0.2,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 8,
+          "topic": "Acción Democrática pide cambios estructurales",
+          "summary": "Acción Democrática califica como positivos los anuncios salariales pero enfatiza que se requieren cambios estructurales profundos para recuperación económica sostenible.",
+          "classification": "opposition",
+          "word_share_pct": 4.1,
+          "regime_sentiment": -0.2,
+          "opposition_sentiment": 0.1,
+          "critical_of_regime": true,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 9,
+          "topic": "Expectativas comerciales y brecha cambiaria",
+          "summary": "Presidente del gremio comercial enfatiza necesidad de corregir distorsiones de brecha cambiaria para evitar que inflación se traslade a precios.",
+          "classification": "economy",
+          "word_share_pct": 6.4,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 10,
+          "topic": "Ecopetrol espera respuesta OFAC para operar en Venezuela",
+          "summary": "Presidente de Ecopetrol Juan Carlos Hurtado destaca que sigue en espera de respuesta de OFAC para poder operar en Venezuela.",
+          "classification": "economy",
+          "word_share_pct": 3.5,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 11,
+          "topic": "Expo Fede Cámaras Carabobo 2026",
+          "summary": "Empresariado carabobeño se prepara para reactivar aparato productivo con la decimosegunda edición de Expo Fede Cámaras del 29 al 31 de mayo.",
+          "classification": "economy",
+          "word_share_pct": 5.8,
+          "regime_sentiment": 0.1,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 12,
+          "topic": "Plataforma Unitaria presenta hoja de ruta de transición",
+          "summary": "La Plataforma Unitaria Democrática anunció que el próximo 12 de abril presentará una hoja de ruta para la transición política.",
+          "classification": "opposition",
+          "word_share_pct": 5.5,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0.3,
+          "critical_of_regime": false,
+          "figures_mentioned": [
+            {
+              "name": "Juan Pablo Guanipa",
+              "sentiment": 0.3,
+              "mentions": 3
+            }
+          ]
+        },
+        {
+          "seq": 13,
+          "topic": "Guanipa cuestiona plan económico de Delcy Rodríguez",
+          "summary": "Juan Pablo Guanipa cuestionó las medidas económicas de la presidenta encargada Delcy Rodríguez y critica su rol durante 27 años de gobiernos chavistas.",
+          "classification": "opposition",
+          "word_share_pct": 6.9,
+          "regime_sentiment": -0.5,
+          "opposition_sentiment": 0.4,
+          "critical_of_regime": true,
+          "figures_mentioned": [
+            {
+              "name": "Juan Pablo Guanipa",
+              "sentiment": 0.4,
+              "mentions": 2
+            },
+            {
+              "name": "Delcy Rodríguez",
+              "sentiment": -0.5,
+              "mentions": 2
+            }
+          ]
+        },
+        {
+          "seq": 14,
+          "topic": "Sistema eléctrico del Metro de Caracas",
+          "summary": "Gobierno instaló mesa de trabajo permanente para fortalecer sistema eléctrico que garantiza funcionamiento del Metro de Caracas.",
+          "classification": "regime",
+          "word_share_pct": 3.2,
+          "regime_sentiment": 0.2,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 15,
+          "topic": "Conflicto Israel-Líbano y negociaciones",
+          "summary": "Primer ministro israelí Benjamin Netanyahu afirmó que ha iniciado negociaciones con Líbano para desarmar a Hezbollah, aunque continúan bombardeos que dejan más de 250 muertos.",
+          "classification": "international",
+          "word_share_pct": 6.8,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 16,
+          "topic": "Emergencia fronteriza Perú-Chile",
+          "summary": "Perú declaró estado de emergencia en la frontera con Chile por 60 días para frenar criminalidad y controlar pasos fronterizos no habilitados.",
+          "classification": "international",
+          "word_share_pct": 4.2,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 17,
+          "topic": "Incendio en velódromo de Río de Janeiro",
+          "summary": "Incendio afectó al velódromo del parque olímpico de Río de Janeiro sin dejar víctimas.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 1.9,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        }
+      ],
+      "press_incidents": [],
+      "notes": "El transcript contiene principalmente cobertura de eventos políticos y económicos de Venezuela con línea favorable al gobierno. No se identifican incidentes de libertad de prensa. La transmisión es de Venevisión, medio estatal, y refleja su sesgo pro-gobierno. Segmentos 12-13 incluyen cobertura de oposición pero con tono crítico. El final del transcript aparece corrupto con caracteres de relleno."
+    },
+    "ran_at": "2026-05-12T03:38:11.652Z",
+    "word_count": 5149
+  },
+  "PLyhdNAFV1DMJATESD8ItT1bgy8QlIXDQA|20260410_news-prime-time-edition-april-10-2026.txt": {
+    "model": "claude-haiku-4-5-20251001",
+    "verdict": {
+      "segments": [
+        {
+          "seq": 1,
+          "topic": "US airline service resumes to Venezuela",
+          "summary": "American Airlines reanudará vuelos diarios Caracas-Miami a partir del 30 de abril con capacidad de 88 pasajeros, según declaraciones de la presidenta de Conce Turismo.",
+          "classification": "economy",
+          "word_share_pct": 6.2,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 2,
+          "topic": "Health system integration plan announced",
+          "summary": "La presidenta encargada Delcy Rodríguez subrayó que todo el sistema de salud debe integrase al Plan de Salud y Vida 2026 durante la entrega del CDI Alberto Rudas Mesones.",
+          "classification": "regime",
+          "word_share_pct": 5.1,
+          "regime_sentiment": 0.5,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": [
+            {
+              "name": "Delcy Rodríguez",
+              "sentiment": 0.4,
+              "mentions": 1
+            }
+          ]
+        },
+        {
+          "seq": 3,
+          "topic": "Trinidad and Tobago sends diplomatic mission",
+          "summary": "Trinidad y Tobago enviará delegación diplomática a Venezuela para negociar sobre recursos compartidos de hidrocarburos, según confirmó el ministro de Relaciones Exteriores Sean Sobers.",
+          "classification": "international",
+          "word_share_pct": 3.8,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 4,
+          "topic": "Opposition presents transition roadmap",
+          "summary": "La Plataforma Unitaria Democrática presentará el 12 de abril una hoja de ruta que exige un nuevo proceso electoral y participación de todos los sectores políticos y sociales.",
+          "classification": "opposition",
+          "word_share_pct": 4.7,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0.6,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 5,
+          "topic": "Questions surround judicial appointments",
+          "summary": "Abogados defensores de derechos humanos cuestionan el proceso de selección del fiscal general y la defensora del pueblo, denunciando falta de transparencia y pidiendo investigaciones sobre violaciones de derechos humanos.",
+          "classification": "press_freedom",
+          "word_share_pct": 9.4,
+          "regime_sentiment": -0.6,
+          "opposition_sentiment": 0,
+          "critical_of_regime": true,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 6,
+          "topic": "Journalist Carmela Longo granted full freedom",
+          "summary": "El Sindicato Nacional de Trabajadores de la Prensa informó que la periodista Carmela Longo obtuvo libertad plena tras acusaciones de terrorismo e incitación al odio.",
+          "classification": "press_freedom",
+          "word_share_pct": 4.2,
+          "regime_sentiment": 0.3,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 7,
+          "topic": "Families demand Red Cross intervention at Rodeo 1",
+          "summary": "Familiares de recluidos en el Rodeo 1 piden intervención de la Cruz Roja Internacional para verificar condiciones tras denuncias de irregularidades y presuntas torturas.",
+          "classification": "press_freedom",
+          "word_share_pct": 7.8,
+          "regime_sentiment": -0.5,
+          "opposition_sentiment": 0,
+          "critical_of_regime": true,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 8,
+          "topic": "Health Ministry releases epidemiological bulletin",
+          "summary": "El Ministerio de Salud publicó boletín epidemiológico tras una década sin divulgar datos, reportando 38 casos de fiebre amarilla con 21 fallecidos y 25.259 casos de malaria.",
+          "classification": "economy",
+          "word_share_pct": 6.3,
+          "regime_sentiment": 0.2,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 9,
+          "topic": "Immunization plans deployed in Zulia",
+          "summary": "El gobernador de Zulia Luis Caldera anunció planes de inmunización activos en comunidades y entrega de equipamiento médico a clínicas y consultorios populares.",
+          "classification": "regime",
+          "word_share_pct": 5.9,
+          "regime_sentiment": 0.5,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 10,
+          "topic": "Power outages reduce Aragua production",
+          "summary": "Fede Cámara Zarago advierte que cortes eléctricos de hasta seis horas diarias causan disminución de 10-15% en la producción empresarial en Aragua.",
+          "classification": "economy",
+          "word_share_pct": 5.1,
+          "regime_sentiment": -0.3,
+          "opposition_sentiment": 0,
+          "critical_of_regime": true,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 11,
+          "topic": "Poultry sector increases protein production",
+          "summary": "La industria avícola en Zulia planea incrementar la capacidad productiva más de 50% para garantizar abastecimiento de proteínas en hogares venezolanos.",
+          "classification": "economy",
+          "word_share_pct": 4.8,
+          "regime_sentiment": 0.3,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 12,
+          "topic": "Heavy rains isolate families in Táchira",
+          "summary": "Más de 150 familias en Mata de Guinea, Táchira, están incomunicadas por aguaceros y movimiento de tierra en masa, con gobernación desplegando plan de atención integral.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 4.6,
+          "regime_sentiment": 0.2,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 13,
+          "topic": "Storm damage assistance in Monagas",
+          "summary": "El gobierno regional de Monagas entregó materiales de construcción y enseres a 74 ciudadanos afectados por tormenta que dañó 13 hogares en Brisas del Morichal.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 4.2,
+          "regime_sentiment": 0.4,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 14,
+          "topic": "Murder of pregnant woman in Lara",
+          "summary": "Un joven de 24 años fue detenido en Lara por asfixiar a su esposa embarazada de 7 meses tras una discusión sobre infidelidad.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 3.9,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 15,
+          "topic": "US-Iran negotiations on hostages and strait",
+          "summary": "Delegación estadounidense liderada por J.D. Pounce viaja a Pakistán para negociar la liberación de seis ciudadanos estadounidenses detenidos en Teherán y reapertura del Estrecho de Ormuz.",
+          "classification": "international",
+          "word_share_pct": 5.4,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 16,
+          "topic": "Bus crash in Canary Islands kills tourist",
+          "summary": "Un turista británico de 77 años murió y 27 pasajeros resultaron heridos cuando autobús cayó por terraplén de 10 metros en La Gomera tras fallo de frenos.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 4.1,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 17,
+          "topic": "Russia limits Ukraine ceasefire to 32 hours",
+          "summary": "Rusia confirmó que el cese al fuego anunciado por Vladimir Putin es exclusivamente humanitario y durará solo 32 horas, rechazando extensión de hostilidades.",
+          "classification": "international",
+          "word_share_pct": 4.3,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 18,
+          "topic": "Extratropical cyclone hits Uruguay",
+          "summary": "Un ciclón extratropical dejó una persona fallecida, 4 heridas, 17 afectadas y 12 desalojadas por inundaciones en Uruguay.",
+          "classification": "crime_sports_other",
+          "word_share_pct": 2.8,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 19,
+          "topic": "Chile approves police entry for migrant expulsion",
+          "summary": "El Senado chileno aprobó proyecto de ley que autoriza a la policía ingresar a domicilios para ejecutar expulsiones de migrantes irregulares, 60% de ellas venezolanas.",
+          "classification": "international",
+          "word_share_pct": 6.8,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        },
+        {
+          "seq": 20,
+          "topic": "Peru declares emergency on Chilean border",
+          "summary": "Perú selló frontera con Chile y declaró estado de emergencia por 60 días en Tacna, desplegando militares para frenar ingreso irregular de migrantes.",
+          "classification": "international",
+          "word_share_pct": 5.2,
+          "regime_sentiment": 0,
+          "opposition_sentiment": 0,
+          "critical_of_regime": false,
+          "figures_mentioned": []
+        }
+      ],
+      "press_incidents": [
+        {
+          "type": "arrest",
+          "target": "Carmela Longo (periodista)",
+          "location": "Venezuela",
+          "description": "La periodista Carmela Longo fue acusada de delitos de terrorismo y promoción e incitación al odio, obteniendo libertad plena tras decisión del Tribunal Tercero de Primera Instancia."
+        },
+        {
+          "type": "journalist_attack",
+          "target": "Periodistas en manifestación Rodeo 1",
+          "location": "Caracas, Venezuela",
+          "description": "Periodistas fueron agredidos durante manifestación en el Rodeo 1 donde se denuncian presuntas torturas a reclusos."
+        }
+      ],
+      "notes": "El transcript contiene principalmente música (¡Música!) sin contenido substantivo en la primera mitad. La segunda mitad presenta una emisión normal de noticias. Se identificaron 20 segmentos coherentes cubriendo temas domésticos venezolanos (salud, economía, clima) e internacionales. Dos incidentes de prensa fueron identificados: la acusación y liberación de la periodista Carmela Longo y agresiones contra periodistas en Rodeo 1. La emisión es de Venevisión, medio estatal, con cobertura relativamente equilibrada aunque con cierta inclinación favorable a narrativas gubernamentales en segmentos sobre Plan de Salud y acciones regionales."
+    },
+    "ran_at": "2026-05-12T03:38:37.663Z",
+    "word_count": 4671
   }
 }

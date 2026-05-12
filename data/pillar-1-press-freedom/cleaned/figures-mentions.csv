@@ -108,4 +108,14 @@ date,outlet,figure,side,mentions,sentiment_avg
 2026-04-03,Venevisión,Marco Rubio,international-us,2,0.15
 2026-04-03,Venevisión,Delcy Rodríguez,regime,1,0.3
 2026-04-03,Venevisión,Donald Trump,international-us,1,0.6
+2026-04-06,Venevisión,Donald Trump,international-us,1,0.3
+2026-04-06,Venevisión,Juan Pablo Guanipa,opposition,1,0.4
+2026-04-07,Venevisión,Delcy Rodríguez,regime,1,-0.3
+2026-04-07,Venevisión,Donald Trump,international-us,1,0
+2026-04-07,Venevisión,Marco Rubio,international-us,1,0
+2026-04-08,Venevisión,Donald Trump,international-us,3,0.2
+2026-04-08,Venevisión,Delcy Rodríguez,regime,2,0.2
+2026-04-09,Venevisión,Delcy Rodríguez,regime,5,0.04
+2026-04-09,Venevisión,Juan Pablo Guanipa,opposition,5,0.34
+2026-04-10,Venevisión,Delcy Rodríguez,regime,1,0.4
 2026-05-09,Venevisión,Donald Trump,international-us,2,0.7
