@@ -16,7 +16,7 @@ import {
   type WageRow,
 } from "@/components/pillars/pillar-3-charts"
 
-const pillar = getPillar("pillar-3")
+const pillar = getPillar("economic-activity-and-inflation")
 
 export const metadata: Metadata = {
   title: `${pillar.title} — Venezuelan Transition Tracker`,

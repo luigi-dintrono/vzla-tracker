@@ -1,16 +1,17 @@
-// FX history client. Three sources, layered:
+// FX history client. Sources, in priority order:
 //
-//   1. pydolarve.org (community aggregator) — has /api/v1/dollar/history with
-//      arbitrary date ranges, exact endpoint we want. Provides both BCV and
-//      Paralelo. Requires DNS resolution to pydolarve.org.
-//   2. BCV quarterly XLS — authoritative for the *BCV side only*; we fall
-//      back to this whenever pydolarve doesn't return data. BCV publishes a
-//      reliable daily rate even though it doesn't publish inflation.
-//   3. ve.dolarapi.com — only returns today's rate, so we use it to backfill
-//      the most recent point regardless.
+//   1. esjs-dolar-api ve.sqlite (GitHub) — the canonical aggregator's own
+//      committed SQLite snapshot. Daily BCV back to 2023-01-03, daily
+//      Paralelo from ~2026-02-14. No DNS issues with pydolarve.org needed.
+//   2. pydolarve.org /api/v1/dollar/history — original community endpoint.
+//      Still wired as a fallback for the few networks where it does resolve.
+//   3. BCV quarterly XLS — authoritative for the BCV side only; covers any
+//      gap pre-2023 if needed.
+//   4. ve.dolarapi.com — only returns today's rate; fills the trailing edge.
 
 import { setTimeout as sleep } from "node:timers/promises"
 import { fetchBcvDailyFx } from "./sources/bcv-fx"
+import { fetchVeSqliteFx } from "./sources/ve-sqlite-fx"
 
 const UA = "Mozilla/5.0 (compatible; vzla-transition-tracker/0.1)"
 
@@ -33,6 +34,19 @@ type PyDolarHistoryResponse = {
 export async function fetchFxHistory(from: string, to: string): Promise<FxRate[]> {
   const byDate = new Map<string, FxRate>()
 
+  // 1. Primary: esjs-dolar-api ve.sqlite (covers both BCV and Paralelo)
+  try {
+    const sqliteRows = await fetchVeSqliteFx({ from, to })
+    for (const row of sqliteRows) {
+      byDate.set(row.date, { date: row.date, bcv: row.bcv, paralelo: row.paralelo })
+    }
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err)
+    console.warn(`[fx] ve.sqlite primary failed: ${msg}`)
+  }
+
+  // 2. Pydolarve as a paralelo-history extender for the network paths where
+  //    it resolves. Skipped silently if it's unreachable.
   for (const [monitor, key] of [
     ["usd", "bcv"],
     ["enparalelovzla", "paralelo"],
@@ -42,14 +56,17 @@ export async function fetchFxHistory(from: string, to: string): Promise<FxRate[]
       for (const row of rows) {
         const date = row.last_update.slice(0, 10)
         const existing = byDate.get(date) ?? { date, bcv: null, paralelo: null }
-        existing[key] = row.price
+        // Only fill empty slots; the sqlite data is canonical when both
+        // exist.
+        if (key === "bcv" && existing.bcv == null) existing.bcv = row.price
+        if (key === "paralelo" && existing.paralelo == null) existing.paralelo = row.price
         byDate.set(date, existing)
       }
     } catch (err) {
-      // Single-line warn — full stack isn't actionable for this kind of
-      // DNS/network error and just buries the rest of the run output.
       const msg = err instanceof Error ? err.message : String(err)
-      console.warn(`[fx] pydolarve history failed for ${monitor}: ${msg}`)
+      // Pydolarve is now optional — drop to a one-liner so the run output
+      // stays readable.
+      console.warn(`[fx] pydolarve fallback skipped (${monitor}): ${msg}`)
     }
     await sleep(500)
   }

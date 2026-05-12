@@ -9,7 +9,7 @@ interface MetricCardProps {
 
 export function MetricCard({ label, value, hint, sub }: MetricCardProps) {
   return (
-    <Card className="gap-3 py-5 rounded-2xl">
+    <Card className="gap-3 py-5 rounded-2xl transition-colors duration-200 hover:border-foreground/30 hover:bg-muted/20">
       <CardHeader className="px-5">
         <CardDescription className="text-[10px] font-display tracking-[0.2em] uppercase">{label}</CardDescription>
         <CardTitle className="text-3xl font-light tabular-nums">

@@ -45,17 +45,23 @@ export type InflationRow = {
   article_date: string | null
 }
 
-/** URL slug substrings that mark a post as a monthly inflation report. */
-const INFLATION_SLUG_RX = [
-  /inflaci[oó]n-(de|del)-(?:mes-de-)?[a-z]+/i,
-  /(?:^|-)inflacion-(?:mensual|acumulada|anualizada|interanual)/i,
-  /inflacion-(?:de|del)-[a-z]+-(?:de-)?20\d{2}/i,
-  /la-inflacion-en-[a-z]+/i,
-  /inflacion-de-[a-z]+/i,
-  /la-inflacion-de-[a-z]+/i,
-  /inflacion-anualizada-(?:alcanza|se-ubico|alcanzo)/i,
-  /(?:^|-)cifras-(?:de-)?inflacion/i,
+/** Spanish month names used to detect "a monthly inflation post". */
+const MONTH_NAMES_SLUG = [
+  "enero", "febrero", "marzo", "abril", "mayo", "junio",
+  "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre",
 ]
+const MONTH_NAMES_RE = new RegExp(`(${MONTH_NAMES_SLUG.join("|")})`, "i")
+
+/** Heuristic: a post is a monthly inflation report if its URL contains both
+ *  "inflacion" (in any form) AND a month name, OR contains "cifras de
+ *  inflacion" / "se acelera la inflacion" type phrases. We then rely on the
+ *  body parser to drop posts that don't actually yield numbers. */
+function looksLikeInflationPost(slug: string): boolean {
+  const lower = slug.toLowerCase()
+  if (!/inflaci[oó]n|aumento-anual-de-precios|hiperinflaci/.test(lower)) return false
+  // require a temporal anchor: month name OR 20YY
+  return MONTH_NAMES_RE.test(lower) || /20\d{2}/.test(lower)
+}
 
 export async function fetchOvfInflation(): Promise<InflationRow[]> {
   console.log("[ovf] fetching sitemap")
@@ -63,7 +69,7 @@ export async function fetchOvfInflation(): Promise<InflationRow[]> {
   const urls = extractSitemap(smXml)
   console.log(`[ovf] sitemap entries: ${urls.length}`)
 
-  const candidates = urls.filter(u => INFLATION_SLUG_RX.some(rx => rx.test(u.loc)))
+  const candidates = urls.filter(u => looksLikeInflationPost(u.loc))
   console.log(`[ovf] inflation-report candidates: ${candidates.length}`)
 
   const rows: InflationRow[] = []

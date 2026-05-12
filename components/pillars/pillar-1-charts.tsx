@@ -1,7 +1,11 @@
+"use client"
+
+import * as React from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { SvgTooltip, useSvgHover } from "@/components/pillars/chart-hover"
 
 // =============================================================================
-// Pillar 1 charts — server-rendered SVG, no client deps.
+// Pillar 1 charts — SVG-based, with client-side hover crosshairs/tooltips.
 // All data is pre-aggregated by `scripts/pillar1-analyze-transcripts.ts`.
 // =============================================================================
 
@@ -18,7 +22,7 @@ export function MetricCard({
 }) {
   const empty = value === null || value === undefined || value === ""
   return (
-    <Card className="gap-3 py-5 rounded-2xl">
+    <Card className="gap-3 py-5 rounded-2xl transition-colors duration-200 hover:border-foreground/30 hover:bg-muted/20">
       <CardHeader className="px-5">
         <CardDescription className="text-[10px] font-display tracking-[0.2em] uppercase">
           {label}
@@ -101,6 +105,10 @@ export function RegimeVsOppositionChart({ data }: { data: AirtimeDayPoint[] }) {
   const xTicks = pickTickIndices(data.length, 7)
   const yTicks = 4
 
+  const { hover, onMove, onLeave } = useSvgHover(data.length)
+  const active = hover.idx !== null ? data[hover.idx] : null
+  const activeX = hover.idx !== null ? xScale(hover.idx) : null
+
   return (
     <Card className="py-0 overflow-hidden rounded-2xl">
       <div className="px-5 pt-5 pb-2 flex flex-wrap items-baseline gap-x-6 gap-y-1">
@@ -150,18 +158,83 @@ export function RegimeVsOppositionChart({ data }: { data: AirtimeDayPoint[] }) {
           {/* Regime line + dots */}
           <path d={regimePath} fill="none" stroke="rgb(239 68 68 / 0.85)" strokeWidth={2} />
           {data.map((d, i) => (
-            <circle key={`r-${i}`} cx={xScale(i)} cy={yScale(d.regimeMinutes)} r={2.5} fill="rgb(239 68 68 / 0.95)" />
+            <circle
+              key={`r-${i}`}
+              cx={xScale(i)}
+              cy={yScale(d.regimeMinutes)}
+              r={hover.idx === i ? 4.5 : 2.5}
+              fill="rgb(239 68 68 / 0.95)"
+              className="transition-[r] duration-150"
+            />
           ))}
 
           {/* Opposition line + dots */}
           <path d={oppositionPath} fill="none" stroke="rgb(16 185 129 / 0.85)" strokeWidth={2} />
           {data.map((d, i) => (
-            <circle key={`o-${i}`} cx={xScale(i)} cy={yScale(d.oppositionMinutes)} r={2.5} fill="rgb(16 185 129 / 0.95)" />
+            <circle
+              key={`o-${i}`}
+              cx={xScale(i)}
+              cy={yScale(d.oppositionMinutes)}
+              r={hover.idx === i ? 4.5 : 2.5}
+              fill="rgb(16 185 129 / 0.95)"
+              className="transition-[r] duration-150"
+            />
           ))}
+
+          {/* Hover crosshair + tooltip */}
+          {active && activeX != null && (
+            <g pointerEvents="none">
+              <line
+                x1={activeX}
+                x2={activeX}
+                y1={padding.top}
+                y2={padding.top + innerH}
+                stroke="currentColor"
+                strokeOpacity={0.25}
+                strokeDasharray="3 3"
+              />
+              <SvgTooltip
+                x={activeX}
+                y={Math.min(yScale(active.regimeMinutes), yScale(active.oppositionMinutes))}
+                chartWidth={width}
+                width={210}
+                height={78}
+              >
+                <div className="font-display tracking-[0.18em] uppercase text-[9px] text-muted-foreground mb-1">
+                  {formatShortDate(active.date)}
+                </div>
+                <div className="flex items-center justify-between gap-3">
+                  <span className="flex items-center gap-1.5">
+                    <span className="inline-block w-2 h-2 rounded-full bg-red-500/90" />
+                    Regime
+                  </span>
+                  <span className="tabular-nums">{active.regimeMinutes.toFixed(1)} min</span>
+                </div>
+                <div className="flex items-center justify-between gap-3 mt-0.5">
+                  <span className="flex items-center gap-1.5">
+                    <span className="inline-block w-2 h-2 rounded-full bg-emerald-500/90" />
+                    Opposition
+                  </span>
+                  <span className="tabular-nums">{active.oppositionMinutes.toFixed(1)} min</span>
+                </div>
+              </SvgTooltip>
+            </g>
+          )}
+
+          {/* Mouse capture overlay */}
+          <rect
+            x={padding.left}
+            y={padding.top}
+            width={innerW}
+            height={innerH}
+            fill="transparent"
+            onMouseMove={(e) => onMove(e, padding, innerW)}
+            onMouseLeave={onLeave}
+          />
         </svg>
       </div>
       <CardContent className="py-4 text-xs text-muted-foreground/70">
-        Daily regime vs opposition minutes summed across all analyzed broadcasts. Estimated from transcript word counts at 150 words/min.
+        Daily regime vs opposition minutes summed across all analyzed broadcasts. Estimated from transcript word counts at 150 words/min. Hover the chart for per-day values.
       </CardContent>
     </Card>
   )
@@ -186,6 +259,15 @@ export interface FigureBar {
   sentiment: number
 }
 
+const FIGURE_SIDE_LABEL: Record<string, string> = {
+  regime: "Regime",
+  opposition: "Opposition",
+  "international-us": "International (US)",
+  "international-other": "International",
+  historical: "Historical",
+  other: "Other",
+}
+
 export function TopFiguresChart({ figures }: { figures: FigureBar[] }) {
   if (figures.length === 0) {
     return <EmptyChart note="figures-mentions.csv is empty — analyze some transcripts first." />
@@ -199,28 +281,42 @@ export function TopFiguresChart({ figures }: { figures: FigureBar[] }) {
     historical: "bg-amber-500/70",
     other: "bg-muted-foreground/30",
   }
+  const [hoverIdx, setHoverIdx] = React.useState<number | null>(null)
   return (
     <Card className="py-0 overflow-hidden rounded-2xl">
-      <div className="p-5 space-y-2.5">
-        {figures.map((f) => (
-          <div key={f.name} className="grid grid-cols-[180px_1fr_56px] items-center gap-3">
-            <div className="text-sm text-foreground/90 truncate" title={f.name}>{f.name}</div>
-            <div className="relative h-5 rounded-sm bg-muted/40 overflow-hidden">
-              <div
-                className={`absolute inset-y-0 left-0 ${sideColor[f.side] ?? sideColor.other}`}
-                style={{ width: `${(f.mentions / max) * 100}%` }}
-              />
+      <div className="p-5 space-y-2.5" onMouseLeave={() => setHoverIdx(null)}>
+        {figures.map((f, i) => {
+          const isHover = hoverIdx === i
+          const dim = hoverIdx !== null && !isHover
+          return (
+            <div
+              key={f.name}
+              className={`grid grid-cols-[180px_1fr_56px] items-center gap-3 rounded-sm px-1 -mx-1 py-1 -my-1 cursor-default transition-colors duration-150 ${
+                isHover ? "bg-muted/40" : ""
+              } ${dim ? "opacity-50" : ""}`}
+              onMouseEnter={() => setHoverIdx(i)}
+              title={`${FIGURE_SIDE_LABEL[f.side] ?? f.side} · ${f.mentions} mentions · sentiment ${fmtSentiment(f.sentiment)}`}
+            >
+              <div className="text-sm text-foreground/90 truncate font-light">{f.name}</div>
+              <div className="relative h-5 rounded-sm bg-muted/40 overflow-hidden">
+                <div
+                  className={`absolute inset-y-0 left-0 ${sideColor[f.side] ?? sideColor.other} transition-[filter,opacity] duration-150 ${
+                    isHover ? "brightness-110" : ""
+                  }`}
+                  style={{ width: `${(f.mentions / max) * 100}%` }}
+                />
+              </div>
+              <div className="text-xs tabular-nums text-muted-foreground text-right">
+                {f.mentions}
+                <span className="text-muted-foreground/50 ml-1">·</span>
+                <span className={sentimentColor(f.sentiment)}>
+                  {" "}
+                  {fmtSentiment(f.sentiment)}
+                </span>
+              </div>
             </div>
-            <div className="text-xs tabular-nums text-muted-foreground text-right">
-              {f.mentions}
-              <span className="text-muted-foreground/50 ml-1">·</span>
-              <span className={sentimentColor(f.sentiment)} title="Mention-weighted sentiment in context">
-                {" "}
-                {fmtSentiment(f.sentiment)}
-              </span>
-            </div>
-          </div>
-        ))}
+          )
+        })}
       </div>
       <CardContent className="border-t border-border py-4 text-xs text-muted-foreground/70 flex flex-wrap gap-x-4 gap-y-1">
         <LegendDot color="bg-red-500/70" label="Regime" />
@@ -228,7 +324,7 @@ export function TopFiguresChart({ figures }: { figures: FigureBar[] }) {
         <LegendDot color="bg-blue-500/70" label="International" />
         <LegendDot color="bg-amber-500/70" label="Historical" />
         <span className="ml-auto text-muted-foreground/60">
-          Number = total mentions · signed value = mention-weighted sentiment ({"−1…+1"}).
+          Number = total mentions · signed value = mention-weighted sentiment ({"−1…+1"}). Hover a row to focus.
         </span>
       </CardContent>
     </Card>
@@ -291,23 +387,36 @@ export function PressIncidentsChart({ incidents }: { incidents: PressIncident[] 
     .sort((a, b) => b.date.localeCompare(a.date))
     .slice(0, 8)
 
+  const [activeType, setActiveType] = React.useState<string | null>(null)
+
   return (
     <Card className="py-0 overflow-hidden rounded-2xl">
       <div className="grid md:grid-cols-[280px_1fr] gap-0 border-b border-border">
         {/* Left: bar breakdown by type */}
-        <div className="p-5 space-y-2.5 md:border-r border-border">
+        <div className="p-5 space-y-2.5 md:border-r border-border" onMouseLeave={() => setActiveType(null)}>
           <p className="text-[10px] font-display tracking-[0.2em] uppercase text-muted-foreground/70 mb-3">
             By type
           </p>
           {orderedTypes.map(([type, count]) => {
             const meta = INCIDENT_TYPE_META[type] ?? INCIDENT_TYPE_META.other
+            const isHover = activeType === type
+            const dim = activeType !== null && !isHover
             return (
-              <div key={type} className="grid grid-cols-[1fr_28px] items-center gap-3">
+              <div
+                key={type}
+                className={`grid grid-cols-[1fr_28px] items-center gap-3 rounded-sm px-1 -mx-1 py-1 -my-1 cursor-default transition-all duration-150 ${
+                  isHover ? "bg-muted/40" : ""
+                } ${dim ? "opacity-40" : ""}`}
+                onMouseEnter={() => setActiveType(type)}
+                title={`${meta.label}: ${count} incident${count === 1 ? "" : "s"} — hover to highlight in list`}
+              >
                 <div>
                   <div className="text-xs text-foreground/90 mb-1">{meta.label}</div>
                   <div className="relative h-2 rounded-sm bg-muted/40 overflow-hidden">
                     <div
-                      className={`absolute inset-y-0 left-0 ${meta.swatch}`}
+                      className={`absolute inset-y-0 left-0 ${meta.swatch} transition-[filter] duration-150 ${
+                        isHover ? "brightness-110" : ""
+                      }`}
                       style={{ width: `${(count / maxCount) * 100}%` }}
                     />
                   </div>
@@ -326,13 +435,22 @@ export function PressIncidentsChart({ incidents }: { incidents: PressIncident[] 
           <ol className="space-y-3">
             {recent.map((inc, i) => {
               const meta = INCIDENT_TYPE_META[inc.type] ?? INCIDENT_TYPE_META.other
+              const isFocused = activeType && (activeType === inc.type || (activeType === "other" && !INCIDENT_TYPE_META[inc.type]))
+              const dim = activeType !== null && !isFocused
               return (
-                <li key={`${inc.date}-${i}`} className="grid grid-cols-[64px_8px_1fr] items-baseline gap-3">
+                <li
+                  key={`${inc.date}-${i}`}
+                  className={`grid grid-cols-[64px_8px_1fr] items-baseline gap-3 rounded-sm px-1 -mx-1 py-1 -my-1 transition-all duration-150 ${
+                    isFocused ? "bg-muted/40" : ""
+                  } ${dim ? "opacity-40" : ""}`}
+                >
                   <div className="text-xs tabular-nums text-muted-foreground/70 whitespace-nowrap">
                     {formatShortDate(inc.date)}
                   </div>
                   <span
-                    className="inline-block w-2 h-2 rounded-full mt-1.5"
+                    className={`inline-block w-2 h-2 rounded-full mt-1.5 transition-transform duration-150 ${
+                      isFocused ? "scale-150" : ""
+                    }`}
                     style={{ backgroundColor: meta.color }}
                     aria-hidden
                     title={meta.label}
@@ -352,7 +470,7 @@ export function PressIncidentsChart({ incidents }: { incidents: PressIncident[] 
         </div>
       </div>
       <CardContent className="py-4 text-xs text-muted-foreground/70">
-        {incidents.length} incidents extracted from analyzed broadcast transcripts. Each row is a discrete event reported on air; duplicates across re-airings are kept to preserve coverage signal.
+        {incidents.length} incidents extracted from analyzed broadcast transcripts. Each row is a discrete event reported on air; duplicates across re-airings are kept to preserve coverage signal. Hover a type to highlight matching events.
       </CardContent>
     </Card>
   )
@@ -424,18 +542,36 @@ export function TopicMixChart({ data }: { data: TopicMixDayPoint[] }) {
     seriesTotals[ser.key] = data.reduce((s, d) => s + (d[ser.key] || 0), 0)
   }
 
+  const { hover, onMove, onLeave } = useSvgHover(data.length)
+  const [hoverKey, setHoverKey] = React.useState<string | null>(null)
+  const active = hover.idx !== null ? data[hover.idx] : null
+  const activeX = hover.idx !== null ? xScale(hover.idx) : null
+  const activeTotal = active ? TOPIC_SERIES.reduce((s, ser) => s + (active[ser.key] || 0), 0) : 0
+
   return (
     <Card className="py-0 overflow-hidden rounded-2xl">
-      <div className="px-5 pt-5 pb-2 flex flex-wrap items-baseline gap-x-5 gap-y-1">
-        {TOPIC_SERIES.map((ser) => (
-          <div key={ser.key} className="flex items-baseline gap-2">
-            <span className={`inline-block w-3 h-3 rounded-sm ${ser.swatch}`} aria-hidden />
-            <span className="text-xs text-muted-foreground">{ser.label}</span>
-            <span className="text-xs tabular-nums text-muted-foreground/70">
-              · {seriesTotals[ser.key].toFixed(0)} min
-            </span>
-          </div>
-        ))}
+      <div
+        className="px-5 pt-5 pb-2 flex flex-wrap items-baseline gap-x-5 gap-y-1"
+        onMouseLeave={() => setHoverKey(null)}
+      >
+        {TOPIC_SERIES.map((ser) => {
+          const dim = hoverKey !== null && hoverKey !== ser.key
+          return (
+            <div
+              key={ser.key}
+              className={`flex items-baseline gap-2 cursor-default transition-opacity duration-150 ${
+                dim ? "opacity-40" : ""
+              }`}
+              onMouseEnter={() => setHoverKey(ser.key)}
+            >
+              <span className={`inline-block w-3 h-3 rounded-sm ${ser.swatch}`} aria-hidden />
+              <span className="text-xs text-muted-foreground">{ser.label}</span>
+              <span className="text-xs tabular-nums text-muted-foreground/70">
+                · {seriesTotals[ser.key].toFixed(0)} min
+              </span>
+            </div>
+          )
+        })}
       </div>
       <div className="px-2 pb-4">
         <svg
@@ -479,13 +615,72 @@ export function TopicMixChart({ data }: { data: TopicMixDayPoint[] }) {
             minutes / day
           </text>
 
-          {bands.map(({ ser, path }) => (
-            <path key={ser.key} d={path} fill={ser.color} stroke="none" />
-          ))}
+          {bands.map(({ ser, path }) => {
+            const dim = hoverKey !== null && hoverKey !== ser.key
+            return (
+              <path
+                key={ser.key}
+                d={path}
+                fill={ser.color}
+                stroke="none"
+                opacity={dim ? 0.25 : 1}
+                className="transition-opacity duration-150"
+              />
+            )
+          })}
+
+          {active && activeX != null && (
+            <g pointerEvents="none">
+              <line
+                x1={activeX}
+                x2={activeX}
+                y1={padding.top}
+                y2={padding.top + innerH}
+                stroke="currentColor"
+                strokeOpacity={0.3}
+                strokeDasharray="3 3"
+              />
+              <circle cx={activeX} cy={yScale(activeTotal)} r={3.5} fill="currentColor" className="opacity-50" />
+              <SvgTooltip x={activeX} y={padding.top + innerH * 0.4} chartWidth={width} width={228} height={150}>
+                <div className="font-display tracking-[0.18em] uppercase text-[9px] text-muted-foreground mb-1.5">
+                  {formatShortDate(active.date)} · {activeTotal.toFixed(0)} min total
+                </div>
+                <div className="space-y-0.5">
+                  {TOPIC_SERIES.map((ser) => {
+                    const v = active[ser.key] || 0
+                    if (v === 0) return null
+                    const pct = activeTotal > 0 ? (v / activeTotal) * 100 : 0
+                    return (
+                      <div key={ser.key} className="flex items-center justify-between gap-3">
+                        <span className="flex items-center gap-1.5">
+                          <span className={`inline-block w-2 h-2 rounded-sm ${ser.swatch}`} />
+                          {ser.label}
+                        </span>
+                        <span className="tabular-nums text-muted-foreground">
+                          {v.toFixed(1)}m
+                          <span className="text-muted-foreground/60 ml-1">{pct.toFixed(0)}%</span>
+                        </span>
+                      </div>
+                    )
+                  })}
+                </div>
+              </SvgTooltip>
+            </g>
+          )}
+
+          <rect
+            x={padding.left}
+            y={padding.top}
+            width={innerW}
+            height={innerH}
+            fill="transparent"
+            onMouseMove={(e) => onMove(e, padding, innerW)}
+            onMouseLeave={onLeave}
+          />
         </svg>
       </div>
       <CardContent className="py-4 text-xs text-muted-foreground/70">
-        How total daily airtime breaks down by topic. The press-freedom band shows how often broadcasts cover press-freedom issues directly — a self-referential signal worth watching.
+        How total daily airtime breaks down by topic. Hover the legend to isolate a topic; hover the chart for per-day breakdowns. The press-freedom band is a self-referential signal worth watching.
       </CardContent>
     </Card>
   )
@@ -527,6 +722,10 @@ export function CriticalCoverageTrendChart({ data }: { data: CriticalCoveragePoi
   const totalSegments = data.reduce((s, d) => s + d.segmentsTotal, 0)
   const xTicks = pickTickIndices(data.length, 7)
   const yTicks = 4
+
+  const { hover, onMove, onLeave } = useSvgHover(data.length)
+  const active = hover.idx !== null ? data[hover.idx] : null
+  const activeX = hover.idx !== null ? xScale(hover.idx) : null
 
   return (
     <Card className="py-0 overflow-hidden rounded-2xl">
@@ -593,8 +792,55 @@ export function CriticalCoverageTrendChart({ data }: { data: CriticalCoveragePoi
           <path d={areaPath} fill="rgb(245 158 11 / 0.15)" stroke="none" />
           <path d={linePath} fill="none" stroke="rgb(245 158 11 / 0.9)" strokeWidth={2} />
           {data.map((d, i) => (
-            <circle key={`c-${i}`} cx={xScale(i)} cy={yScale(d.criticalPct)} r={2.5} fill="rgb(245 158 11)" />
+            <circle
+              key={`c-${i}`}
+              cx={xScale(i)}
+              cy={yScale(d.criticalPct)}
+              r={hover.idx === i ? 4.5 : 2.5}
+              fill="rgb(245 158 11)"
+              className="transition-[r] duration-150"
+            />
           ))}
+
+          {active && activeX != null && (
+            <g pointerEvents="none">
+              <line
+                x1={activeX}
+                x2={activeX}
+                y1={padding.top}
+                y2={padding.top + innerH}
+                stroke="currentColor"
+                strokeOpacity={0.25}
+                strokeDasharray="3 3"
+              />
+              <SvgTooltip x={activeX} y={yScale(active.criticalPct)} chartWidth={width} width={200} height={64}>
+                <div className="font-display tracking-[0.18em] uppercase text-[9px] text-muted-foreground mb-1">
+                  {formatShortDate(active.date)}
+                </div>
+                <div className="flex items-center justify-between gap-3">
+                  <span className="flex items-center gap-1.5">
+                    <span className="inline-block w-2 h-2 rounded-full bg-amber-500/90" />
+                    Critical share
+                  </span>
+                  <span className="tabular-nums">{active.criticalPct.toFixed(1)}%</span>
+                </div>
+                <div className="flex items-center justify-between gap-3 text-muted-foreground mt-0.5">
+                  <span>Segments</span>
+                  <span className="tabular-nums">{active.segmentsTotal}</span>
+                </div>
+              </SvgTooltip>
+            </g>
+          )}
+
+          <rect
+            x={padding.left}
+            y={padding.top}
+            width={innerW}
+            height={innerH}
+            fill="transparent"
+            onMouseMove={(e) => onMove(e, padding, innerW)}
+            onMouseLeave={onLeave}
+          />
         </svg>
       </div>
       <CardContent className="py-4 text-xs text-muted-foreground/70">
@@ -690,22 +936,39 @@ export function FigureMentionsOverTimeChart({
     }
   }
 
+  const { hover, onMove, onLeave } = useSvgHover(data.length)
+  const [hoverName, setHoverName] = React.useState<string | null>(null)
+  const activeX = hover.idx !== null ? xScale(hover.idx) : null
+  const activeDate = hover.idx !== null ? data[hover.idx].date : null
+
   return (
     <Card className="py-0 overflow-hidden rounded-2xl">
-      <div className="px-5 pt-5 pb-2 flex flex-wrap items-baseline gap-x-4 gap-y-1">
-        {lines.map((l) => (
-          <div key={l.name} className="flex items-baseline gap-2">
-            <span
-              className="inline-block w-3 h-3 rounded-full"
-              style={{ backgroundColor: l.color }}
-              aria-hidden
-            />
-            <span className="text-xs text-muted-foreground">{l.name}</span>
-            <span className="text-xs tabular-nums text-muted-foreground/70">
-              · {l.total}
-            </span>
-          </div>
-        ))}
+      <div
+        className="px-5 pt-5 pb-2 flex flex-wrap items-baseline gap-x-4 gap-y-1"
+        onMouseLeave={() => setHoverName(null)}
+      >
+        {lines.map((l) => {
+          const dim = hoverName !== null && hoverName !== l.name
+          return (
+            <div
+              key={l.name}
+              className={`flex items-baseline gap-2 cursor-default transition-opacity duration-150 ${
+                dim ? "opacity-30" : ""
+              }`}
+              onMouseEnter={() => setHoverName(l.name)}
+            >
+              <span
+                className="inline-block w-3 h-3 rounded-full"
+                style={{ backgroundColor: l.color }}
+                aria-hidden
+              />
+              <span className="text-xs text-muted-foreground">{l.name}</span>
+              <span className="text-xs tabular-nums text-muted-foreground/70">
+                · {l.total}
+              </span>
+            </div>
+          )
+        })}
       </div>
       <div className="px-2 pb-4">
         <svg
@@ -755,34 +1018,106 @@ export function FigureMentionsOverTimeChart({
           {/* Lines */}
           {lines.map((l) => {
             const points = l.values.map((v, i) => [xScale(i), yScale(v)] as [number, number])
+            const dim = hoverName !== null && hoverName !== l.name
             return (
-              <g key={l.name}>
-                <path d={buildLinePath(points)} fill="none" stroke={l.color} strokeWidth={2} />
+              <g key={l.name} className="transition-opacity duration-150" opacity={dim ? 0.2 : 1}>
+                <path
+                  d={buildLinePath(points)}
+                  fill="none"
+                  stroke={l.color}
+                  strokeWidth={hoverName === l.name ? 3 : 2}
+                />
                 {points.map((p, i) => (
-                  <circle key={`p-${i}`} cx={p[0]} cy={p[1]} r={2} fill={l.color} />
+                  <circle
+                    key={`p-${i}`}
+                    cx={p[0]}
+                    cy={p[1]}
+                    r={hover.idx === i ? 4 : 2}
+                    fill={l.color}
+                    className="transition-[r] duration-150"
+                  />
                 ))}
               </g>
             )
           })}
 
           {/* End-of-line labels */}
-          {endPoints.map((ep) => (
-            <text
-              key={`lbl-${ep.name}`}
-              x={width - padding.right + 8}
-              y={ep.y + 3}
-              fontSize={10}
-              fill={ep.color}
-            >
-              {ep.name}
-            </text>
-          ))}
+          {endPoints.map((ep) => {
+            const dim = hoverName !== null && hoverName !== ep.name
+            return (
+              <text
+                key={`lbl-${ep.name}`}
+                x={width - padding.right + 8}
+                y={ep.y + 3}
+                fontSize={10}
+                fill={ep.color}
+                opacity={dim ? 0.3 : 1}
+                className="transition-opacity duration-150 cursor-default"
+                onMouseEnter={() => setHoverName(ep.name)}
+                onMouseLeave={() => setHoverName(null)}
+              >
+                {ep.name}
+              </text>
+            )
+          })}
+
+          {activeX != null && activeDate && (
+            <g pointerEvents="none">
+              <line
+                x1={activeX}
+                x2={activeX}
+                y1={padding.top}
+                y2={padding.top + innerH}
+                stroke="currentColor"
+                strokeOpacity={0.25}
+                strokeDasharray="3 3"
+              />
+              <SvgTooltip
+                x={activeX}
+                y={padding.top + innerH * 0.35}
+                chartWidth={width - padding.right + 8}
+                width={220}
+                height={Math.min(180, 28 + lines.length * 16)}
+              >
+                <div className="font-display tracking-[0.18em] uppercase text-[9px] text-muted-foreground mb-1.5">
+                  {formatShortDate(activeDate)} · {mode === "cumulative" ? "cumulative" : "daily"}
+                </div>
+                <div className="space-y-0.5">
+                  {[...lines]
+                    .map((l) => ({ ...l, value: l.values[hover.idx!] }))
+                    .sort((a, b) => b.value - a.value)
+                    .map((l) => (
+                      <div key={l.name} className="flex items-center justify-between gap-3">
+                        <span className="flex items-center gap-1.5 truncate">
+                          <span
+                            className="inline-block w-2 h-2 rounded-full"
+                            style={{ backgroundColor: l.color }}
+                          />
+                          <span className="truncate">{l.name}</span>
+                        </span>
+                        <span className="tabular-nums text-muted-foreground">{l.value}</span>
+                      </div>
+                    ))}
+                </div>
+              </SvgTooltip>
+            </g>
+          )}
+
+          <rect
+            x={padding.left}
+            y={padding.top}
+            width={innerW}
+            height={innerH}
+            fill="transparent"
+            onMouseMove={(e) => onMove(e, padding, innerW)}
+            onMouseLeave={onLeave}
+          />
         </svg>
       </div>
       <CardContent className="py-4 text-xs text-muted-foreground/70">
         {mode === "cumulative"
-          ? "Cumulative mentions per figure across all analyzed broadcasts. A steep slope means the figure was named heavily in a short window; a flat line means broadcasts stopped naming them."
-          : "Daily mentions per figure across all analyzed broadcasts."}
+          ? "Cumulative mentions per figure across all analyzed broadcasts. A steep slope means the figure was named heavily in a short window; a flat line means broadcasts stopped naming them. Hover a legend entry to isolate a figure; hover the chart for per-day values."
+          : "Daily mentions per figure across all analyzed broadcasts. Hover for per-day values."}
       </CardContent>
     </Card>
   )

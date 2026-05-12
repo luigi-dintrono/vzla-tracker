@@ -123,35 +123,21 @@ export interface HeadlineMetrics {
   statesWithActivity: number
 }
 
-export interface DailyProtestPoint {
-  date: string
-  protestOccurred: boolean
-  categories: string[]
-  repressionLevel: number
-  scale: string
-  stateCount: number
-}
-
-export interface StateActivity {
-  state: string
-  total: number
-  byMonth: Record<string, number> // "YYYY-MM" → count
-}
-
-export interface PrisonerCategoryRow {
-  category: string
-  detained: number
-  released: number
-  missing: number
-  sentenced: number
-  other: number
-  total: number
-}
-
-export interface PrisonerTimePoint {
-  date: string
-  byCategory: Record<string, number> // category → cumulative count
-}
+// Types + label/order constants live in a fs-free file so client components
+// can import them safely. Re-export here so existing internal imports keep
+// working.
+export type {
+  DailyProtestPoint,
+  StateActivity,
+  PrisonerCategoryRow,
+  PrisonerTimePoint,
+} from "./pillar-2-types"
+import type {
+  DailyProtestPoint,
+  StateActivity,
+  PrisonerCategoryRow,
+  PrisonerTimePoint,
+} from "./pillar-2-types"
 
 export interface Pillar2Data {
   metrics: HeadlineMetrics
@@ -296,25 +282,11 @@ export async function loadPillar2Data(): Promise<Pillar2Data> {
 }
 
 // Used by chart components for consistent ordering + label-friendly names.
-export const PROTEST_CATEGORY_LABEL: Record<string, string> = {
-  labor: "Labor",
-  political: "Political",
-  human_rights: "Human Rights",
-  services: "Services",
-  education: "Education",
-  indigenous: "Indigenous",
-  other: "Other",
-}
-
-export const PRISONER_CATEGORY_LABEL: Record<string, string> = {
-  civilian: "Civilian",
-  journalist: "Journalist",
-  military: "Military",
-  politician: "Politician",
-  minor: "Minor",
-  indigenous: "Indigenous",
-  unknown: "Unknown",
-}
-
-export const PROTEST_CATEGORY_ORDER = ["labor", "political", "human_rights", "services", "education", "indigenous", "other"]
-export const PRISONER_CATEGORY_ORDER = ["civilian", "journalist", "military", "politician", "minor", "indigenous", "unknown"]
+// All four constants live in pillar-2-types.ts; re-exported for back-compat
+// with existing imports inside this module.
+export {
+  PROTEST_CATEGORY_LABEL,
+  PROTEST_CATEGORY_ORDER,
+  PRISONER_CATEGORY_LABEL,
+  PRISONER_CATEGORY_ORDER,
+} from "./pillar-2-types"

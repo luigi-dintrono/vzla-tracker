@@ -7,7 +7,7 @@ import { MobilizationChart } from "@/components/pillars/pillar-2/mobilization-ch
 import { StateBarChart } from "@/components/pillars/pillar-2/state-bar-chart"
 import { PrisonerBreakdown } from "@/components/pillars/pillar-2/prisoner-breakdown"
 
-const pillar = getPillar("pillar-2")
+const pillar = getPillar("protests-and-liberty-to-organize")
 
 export const metadata: Metadata = {
   title: `${pillar.title} — Venezuelan Transition Tracker`,

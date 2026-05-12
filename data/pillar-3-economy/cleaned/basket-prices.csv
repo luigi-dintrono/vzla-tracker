@@ -38,140 +38,140 @@ date,ingredient,store,source,sku,product_name,brand,price_bs,price_ref_usd,bcv_r
 2026-02-18,arroz,gama,wayback,10029913,ARROZ PRIMOR PERLADO 900 GR,Primor,1062.27,2.68,396.37,InStock,20260218142623,https://gamaenlinea.com/es/arroz-primor-perlado-900-gr/p/10029913
 2026-02-18,cafe,gama,wayback,30000178,HELADO DE CAFE EFE 920 CC,EFE,4003.34,10.1,396.37,OutOfStock,20260218145044,https://gamaenlinea.com/es/helado-cafe-efe-920-cc/p/30000178
 2026-02-18,pasta,gama,wayback,10032558,PASTA MEZZI GOMITI RISCOSSA 500 GR,Riscossa,1882.76,4.75,396.37,OutOfStock,20260218141606,https://gamaenlinea.com/es/pasta-mezzi-gomiti-riscossa-500-gr/p/10032558
-2026-05-12,aceite,gama,live,10033765,ACEITE VEGETAL COMESTIBLE COPOSA 850 ML,,1906.75,3.81,500.4593,,20260512015735,https://gamaenlinea.com/es/aceite-vegetal-comestible-coposa-850-ml/p/10033765
-2026-05-12,aceite,gama,live,10001791,ACEITE VEGETAL VATEL 1 LT,,2091.93,4.18,500.4617,,20260512015735,https://gamaenlinea.com/es/aceite-vegetal-vatel-1-lt/p/10001791
-2026-05-12,aceite,gama,live,10033824,SARDINAS ACEITE VEGETAL POSEIDON 170 GR,,695.64,1.39,500.4604,,20260512015735,https://gamaenlinea.com/es/sardinas-aceite-vegetal-poseidon-170-gr/p/10033824
-2026-05-12,aceite,gama,live,10000794,ATUN EN ACEITE VEGETAL EVEBA 140 GR,,1358.45,2.71,501.2731,,20260512015735,https://gamaenlinea.com/es/atun-aceite-vegetal-eveba-140-gr/p/10000794
-2026-05-12,aceite,gama,live,10002695,SARDINAS EN ACEITE VEGETAL EVEBA 270 GR,,1265.56,2.53,500.2213,,20260512015735,https://gamaenlinea.com/es/sardinas-aceite-vegetal-eveba-270-gr/p/10002695
-2026-05-12,aceite,gama,live,10004863,ATÚN EN ACEITE VEGETAL EVEBA 170 GR,,1596.47,3.19,500.4608,,20260512015735,https://gamaenlinea.com/es/atun-aceite-vegetal-eveba-170-gr/p/10004863
-2026-05-12,aceite,gama,live,10005068,SARDINAS EN ACEITE VEGETAL MARGARITA 170 GR,,795.73,1.59,500.4591,,20260512015735,https://gamaenlinea.com/es/sardinas-aceite-vegetal-margarita-170-gr/p/10005068
-2026-05-12,aceite,gama,live,10021175,SARDINAS EN ACEITE VEGETAL ORIENTE 170 GR,,590.54,1.18,500.4576,,20260512015735,https://gamaenlinea.com/es/sardinas-aceite-vegetal-oriente-170-gr/p/10021175
-2026-05-12,arroz,gama,live,10029650,ARROZ DORADO MARY 800 GR,,1101.01,2.2,500.4591,,20260512015735,https://gamaenlinea.com/es/arroz-dorado-mary-800-gr/p/10029650
-2026-05-12,arroz,gama,live,10032298,ARROZ MARY ESMERALDA 900 GR,,1141.05,2.28,500.4605,,20260512015735,https://gamaenlinea.com/es/arroz-mary-esmeralda-900-gr/p/10032298
-2026-05-12,arroz,gama,live,10029913,ARROZ PRIMOR PERLADO 900 GR,,710.65,1.42,500.4577,,20260512015735,https://gamaenlinea.com/es/arroz-primor-perlado-900-gr/p/10029913
-2026-05-12,arroz,gama,live,10007713,ARROZ CANILLA TIPO 1 LA LUCHA 1 KG,,1111.02,2.22,500.4595,,20260512015735,https://gamaenlinea.com/es/arroz-canilla-tipo-1-la-lucha-1-kg/p/10007713
-2026-05-12,arroz,gama,live,10034754,ARROZ SUPERIOR TIPO 1 MARY 900 GR,,710.65,1.42,500.4577,,20260512015735,https://gamaenlinea.com/es/arroz-superior-tipo-1-mary-900-gr/p/10034754
-2026-05-12,arroz,gama,live,10036150,ARROZ BLANCO PREMIUM TIPO 1 MARY 2 KG,,2081.92,4.16,500.4615,,20260512015735,https://gamaenlinea.com/es/arroz-blanco-premium-tipo-1-mary-2-kg/p/10036150
-2026-05-12,arroz,gama,live,10032071,ARROZ PREMIUM 99% GRANOS ENTEROS MARY 900 GR,,980.9,1.96,500.4592,,20260512015735,https://gamaenlinea.com/es/arroz-premium-99-granos-enteros-mary-900-gr/p/10032071
-2026-05-12,arroz,gama,live,10021967,HOJA DE ARROZ PARA LUMPIAS 340 GR,,7314.73,14.62,500.3235,,20260512015735,https://gamaenlinea.com/es/hoja-arroz-lumpias-340-gr/p/10021967
-2026-05-12,atun,gama,live,10035764,ATÚN SÓLIDO EN ACEITE GAMA 160 GR,,1248.15,2.49,501.2651,,20260512015735,https://gamaenlinea.com/es/atun-solido-aceite-gama-160-gr/p/10035764
-2026-05-12,atun,gama,live,10035761,ATÚN SÓLIDO EN AGUA GAMA 160 GR,,1176.08,2.35,500.4596,,20260512015735,https://gamaenlinea.com/es/atun-solido-agua-gama-160-gr/p/10035761
-2026-05-12,atun,gama,live,40000994,REFRESCO 7UP LATA 355 ML,,586.34,1.17,501.1453,,20260512015735,https://gamaenlinea.com/es/refresco-7up-lata-355-ml/p/40000994
-2026-05-12,atun,gama,live,10004313,REFRESCO CHINOTTO LATA 355 ML,,534.09,1.07,499.1495,,20260512015735,https://gamaenlinea.com/es/refresco-chinotto-lata-355-ml/p/10004313
-2026-05-12,atun,gama,live,10027197,REFRESCO FRESCOLITA LATA 355 ML,,534.09,1.07,499.1495,,20260512015735,https://gamaenlinea.com/es/refresco-frescolita-lata-355-ml/p/10027197
-2026-05-12,atun,gama,live,40009584,CERVEZA REGIONAL LATA 355 ML,,766.31,1.53,500.8562,,20260512015735,https://gamaenlinea.com/es/cerveza-regional-lata-355-ml/p/40009584
-2026-05-12,atun,gama,live,10001564,AGUAKINA SCHWEPPES LATA 355 ML,,714.06,1.43,499.3427,,20260512015735,https://gamaenlinea.com/es/aguakina-schweppes-lata-355-ml/p/10001564
-2026-05-12,atun,gama,live,10003114,SODA SCHWEPPES LATA 355 ML,,714.06,1.43,499.3427,,20260512015735,https://gamaenlinea.com/es/soda-schweppes-lata-355-ml/p/10003114
-2026-05-12,azucar,gama,live,10033127,AZUCAR MORENA MONTALBAN 1 KG,,1791.65,3.58,500.4609,,20260512015735,https://gamaenlinea.com/es/azucar-morena-montalban-1-kg/p/10033127
-2026-05-12,azucar,gama,live,10034832,AZÚCAR BLANCA REFINADA AMANECER 1 KG,,1010.93,2.02,500.4604,,20260512015735,https://gamaenlinea.com/es/azucar-blanca-refinada-amanecer-1-kg/p/10034832
-2026-05-12,azucar,gama,live,10031359,AZÚCAR GLASS MONTALBAN 500 GR,,1555.83,3.11,500.2669,,20260512015735,https://gamaenlinea.com/es/azucar-glass-montalban-500-gr/p/10031359
-2026-05-12,azucar,gama,live,10032394,REFRESCO COCA-COLA SIN AZÚCAR 355 ML,,394.76,0.79,499.6962,,20260512015735,https://gamaenlinea.com/es/refresco-coca-cola-sin-azucar-355-ml/p/10032394
-2026-05-12,azucar,gama,live,10014293,AZUCAR REFINADA BOLSA DE PAPEL MONTALBAN 1 KG,,950.88,1.9,500.4632,,20260512015735,https://gamaenlinea.com/es/azucar-refinada-bolsa-papel-montalban-1-kg/p/10014293
-2026-05-12,azucar,gama,live,10018519,AZUCAR REFINADA MONTALBAN BOLSA DE PLASTICO 1 KG,,945.87,1.89,500.4603,,20260512015735,https://gamaenlinea.com/es/azucar-refinada-montalban-bolsa-plastico-1-kg/p/10018519
-2026-05-12,azucar,gama,live,10034923,AZUCAR BLANCA REFINADA PUBLIO 900 GR,,1025.94,2.05,500.4585,,20260512015735,https://gamaenlinea.com/es/azucar-blanca-refinada-publio-900-gr/p/10034923
-2026-05-12,azucar,gama,live,10035831,AZÚCAR BLANCA REFINADA SABANA DULCE 1 KG,,775.71,1.55,500.4581,,20260512015735,https://gamaenlinea.com/es/azucar-blanca-refinada-sabana-dulce-1-kg/p/10035831
-2026-05-12,cafe,gama,live,10034279,CAFÉ GOURMET MOLIDO GAMA 500 GR,,3733.44,7.46,500.4611,,20260512015735,https://gamaenlinea.com/es/cafe-gourmet-molido-gama-500-gr/p/10034279
-2026-05-12,cafe,gama,live,10034278,CAFÉ GOURMET MOLIDO GAMA 250 GR,,1866.72,3.73,500.4611,,20260512015735,https://gamaenlinea.com/es/cafe-gourmet-molido-gama-250-gr/p/10034278
-2026-05-12,cafe,gama,live,10034170,CAFÉ GOURMET TOSTADO Y MOLIDO O'SOLE 200,,1571.45,3.14,500.4618,,20260512015735,https://gamaenlinea.com/es/cafe-gourmet-tostado-molido-osole-200/p/10034170
-2026-05-12,cafe,gama,live,10027990,CAFE GOURMET AMANECER 200 GR,,1476.36,2.95,500.461,,20260512015735,https://gamaenlinea.com/es/cafe-gourmet-amanecer-200-gr/p/10027990
-2026-05-12,cafe,gama,live,10027989,CAFE GOURMET TOSTADO AMANECER 500 GR,,3768.47,7.53,500.4608,,20260512015735,https://gamaenlinea.com/es/cafe-gourmet-tostado-amanecer-500-gr/p/10027989
-2026-05-12,cafe,gama,live,10029060,CAFE GOURMET FLOR DE ARAUCA 500 GR,,3858.55,7.71,500.4604,,20260512015735,https://gamaenlinea.com/es/cafe-gourmet-flor-arauca-500-gr/p/10029060
-2026-05-12,cafe,gama,live,10031792,CAFE GOURMET FLOR DE ARAUCA 200 GR,,1551.43,3.1,500.4613,,20260512015735,https://gamaenlinea.com/es/cafe-gourmet-flor-arauca-200-gr/p/10031792
-2026-05-12,cafe,gama,live,10032010,CAFE GOURMET JP 200 GR,,1441.33,2.88,500.4618,,20260512015735,https://gamaenlinea.com/es/cafe-gourmet-jp-200-gr/p/10032010
-2026-05-12,caraotas,gama,live,10032397,CARAOTAS NEGRAS MARY 400 GR,,595.55,1.19,500.4622,,20260512015735,https://gamaenlinea.com/es/caraotas-negras-mary-400-gr/p/10032397
-2026-05-12,caraotas,gama,live,10019440,CARAOTAS NEGRAS PANTERA  900 GR,,1401.29,2.8,500.4607,,20260512015735,https://gamaenlinea.com/es/caraotas-negras-pantera-900-gr/p/10019440
-2026-05-12,caraotas,gama,live,10035940,CARAOTAS NEGRAS PANTERA 400 GR,,640.59,1.28,500.4609,,20260512015735,https://gamaenlinea.com/es/caraotas-negras-pantera-400-gr/p/10035940
-2026-05-12,caraotas,gama,live,27005125,UVAS PASAS NEGRAS 400 GR,,2912.68,5.82,500.4605,,20260512015735,https://gamaenlinea.com/es/uvas-pasas-negras-400-gr/p/27005125
-2026-05-12,caraotas,gama,live,10026531,CARAOTAS ROJAS MARY 500 GR,,1726.59,3.45,500.4609,,20260512015735,https://gamaenlinea.com/es/caraotas-rojas-mary-500-gr/p/10026531
-2026-05-12,caraotas,gama,live,10026532,CARAOTAS BLANCAS MARY 500 GR,,1611.48,3.22,500.4596,,20260512015735,https://gamaenlinea.com/es/caraotas-blancas-mary-500-gr/p/10026532
-2026-05-12,caraotas,gama,live,10033565,CARAOTAS ROSADAS PANTERA 454 GR,,1426.31,2.85,500.4596,,20260512015735,https://gamaenlinea.com/es/caraotas-rosadas-pantera-454-gr/p/10033565
-2026-05-12,caraotas,gama,live,10033852,CARAOTAS BLANCAS PANTERA 454 GR,,1426.31,2.85,500.4596,,20260512015735,https://gamaenlinea.com/es/caraotas-blancas-pantera-454-gr/p/10033852
-2026-05-12,carne_res,gama,live,26010030,CARNE MOLIDA DE RES 1 KG,,4499.14,8.99,500.4605,,20260512015735,https://gamaenlinea.com/es/carne-molida-res-1-kg/p/26010030
-2026-05-12,carne_res,gama,live,26011148,CARNE MOLIDA MAGRA DE PRIMERA 1 KG,,5750.29,11.49,500.4604,,20260512015735,https://gamaenlinea.com/es/carne-molida-magra-primera-1-kg/p/26011148
-2026-05-12,carne_res,gama,live,10036213,CURCUMA MOLIDA GAMA 60 GR,,1491.97,2.98,500.6611,,20260512015735,https://gamaenlinea.com/es/curcuma-molida-gama-60-gr/p/10036213
-2026-05-12,carne_res,gama,live,10036215,CANELA MOLIDA GAMA 45 GR,,1619.7,3.24,499.9074,,20260512015735,https://gamaenlinea.com/es/canela-molida-gama-45-gr/p/10036215
-2026-05-12,carne_res,gama,live,10036212,ONOTO MOLIDO GAMA 70 GR,,1451.33,2.9,500.4586,,20260512015735,https://gamaenlinea.com/es/onoto-molido-gama-70-gr/p/10036212
-2026-05-12,carne_res,gama,live,10036214,COMINO MOLIDO GAMA 50 GR,,1184.29,2.37,499.7004,,20260512015735,https://gamaenlinea.com/es/comino-molido-gama-50-gr/p/10036214
-2026-05-12,harina_maiz,gama,live,10033792,MEZCLA PARA PAN SIN GLUTEN VEGAN LIFE 400 GR,,5317.7,10.63,500.254,,20260512015735,https://gamaenlinea.com/es/mezcla-pan-sin-gluten-vegan-life-400-gr/p/10033792
-2026-05-12,harina_maiz,gama,live,10029737,HARINA DE PLATANO HARINANA 500 GR,,2121.95,4.24,500.4599,,20260512015735,https://gamaenlinea.com/es/harina-platano-harinana-500-gr/p/10029737
-2026-05-12,harina_maiz,gama,live,10033133,HARINA DE YUCA HARINANA 500 GR,,2317.13,4.63,500.46,,20260512015735,https://gamaenlinea.com/es/harina-yuca-harinana-500-gr/p/10033133
-2026-05-12,harina_maiz,gama,live,10014791,CROISSANT GAMA 600 GR,,2627.42,5.25,500.461,,20260512015735,https://gamaenlinea.com/es/croissant-gama-600-gr/p/10014791
-2026-05-12,harina_maiz,gama,live,10034622,PAN DE SANDWICH BLANCO GAMA 500 GR,,875.81,1.75,500.4629,,20260512015735,https://gamaenlinea.com/es/pan-sandwich-blanco-gama-500-gr/p/10034622
-2026-05-12,harina_maiz,gama,live,10034623,PAN DE HAMBURGUESAS GAMA 600 GR,,1826.68,3.65,500.4603,,20260512015735,https://gamaenlinea.com/es/pan-hamburguesas-gama-600-gr/p/10034623
-2026-05-12,harina_maiz,gama,live,10034621,PAN DE PERRO CALIENTE JUMBO GAMA 500 GR,,1326.22,2.65,500.4604,,20260512015735,https://gamaenlinea.com/es/pan-perro-caliente-jumbo-gama-500-gr/p/10034621
-2026-05-12,harina_maiz,gama,live,29006400,CACHITO DE PAVO GAMA 1 UN,,1323.62,2.64,501.3712,,20260512015735,https://gamaenlinea.com/es/cachito-pavo-gama-1-un/p/29006400
-2026-05-12,huevos,gama,live,10031997,HUEVOS 6 UN,,795.73,1.59,500.4591,,20260512015735,https://gamaenlinea.com/es/huevos-6-un/p/10031997
-2026-05-12,huevos,gama,live,25000453,HUEVOS 30 UN,,3678.39,7.35,500.4612,,20260512015735,https://gamaenlinea.com/es/huevos-30-un/p/25000453
-2026-05-12,huevos,gama,live,10036106,HUEVOS ESTUCHE KIRI 15 UN,,1946.79,3.89,500.4602,,20260512015735,https://gamaenlinea.com/es/huevos-estuche-kiri-15-un/p/10036106
-2026-05-12,huevos,gama,live,10025442,HUEVOS PUROVO ESTUCHE 12 UN,,1496.38,2.99,500.4615,,20260512015735,https://gamaenlinea.com/es/huevos-purovo-estuche-12-un/p/10025442
-2026-05-12,huevos,gama,live,10035434,HUEVOS SANTA MARIA 15 UN,,1946.79,3.89,500.4602,,20260512015735,https://gamaenlinea.com/es/huevos-santa-maria-15-un/p/10035434
-2026-05-12,huevos,gama,live,10036177,HUEVOS ORGANICOS AVILA RANCH 15 UN,,4999.6,9.99,500.4605,,20260512015735,https://gamaenlinea.com/es/huevos-organicos-avila-ranch-15-un/p/10036177
-2026-05-12,huevos,gama,live,10036178,HUEVOS ORGANICOS AVILA RANCH 30 UN,,9003.29,17.99,500.4608,,20260512015735,https://gamaenlinea.com/es/huevos-organicos-avila-ranch-30-un/p/10036178
-2026-05-12,huevos,gama,live,25001375,HUEVOS ORGANICOS ORGANIC FARM 12 UN,,3723.43,7.44,500.461,,20260512015735,https://gamaenlinea.com/es/huevos-organicos-organic-farm-12-un/p/25001375
-2026-05-12,leche,gama,live,10001298,LECHE EN POLVO COMPLETA SAN SIMON 900 GR,,7401.81,14.79,500.4604,,20260512015735,https://gamaenlinea.com/es/leche-polvo-completa-san-simon-900-gr/p/10001298
-2026-05-12,leche,gama,live,10032713,LECHE EN POLVO CON HIERRO LA CAMPESINA 800 GR,,6510.99,13.01,500.4604,,20260512015735,https://gamaenlinea.com/es/leche-polvo-hierro-la-campesina-800-gr/p/10032713
-2026-05-12,leche,gama,live,10032166,LECHE COMPLETA EN POLVO SAN SIMÓN 400 GR,,3948.63,7.89,500.4601,,20260512015735,https://gamaenlinea.com/es/leche-completa-polvo-san-simon-400-gr/p/10032166
-2026-05-12,leche,gama,live,10022001,LECHE COMPLETA POLVO ZULI MILK 500 GR,,4183.85,8.36,500.4605,,20260512015735,https://gamaenlinea.com/es/leche-completa-polvo-zuli-milk-500-gr/p/10022001
-2026-05-12,leche,gama,live,10034975,LECHE COMPLETA POLVO AZUCARADA ZULI MILK 380 GR,,2572.37,5.14,500.4611,,20260512015735,https://gamaenlinea.com/es/leche-completa-polvo-azucarada-zuli-milk-380-gr/p/10034975
-2026-05-12,leche,gama,live,60007284,DETERGENTE EN POLVO GAMA 900 GR,,1346.84,2.69,500.684,,20260512015735,https://gamaenlinea.com/es/detergente-polvo-gama-900-gr/p/60007284
-2026-05-12,leche,gama,live,60007353,DETERGENTE POLVO ARIEL 4 KG,,10826.96,21.63,500.5529,,20260512015735,https://gamaenlinea.com/es/detergente-polvo-ariel-4-kg/p/60007353
-2026-05-12,leche,gama,live,60007335,DETERGENTE POLVO COL ACE 4 KG,,7901.07,15.79,500.3844,,20260512015735,https://gamaenlinea.com/es/detergente-polvo-col-ace-4-kg/p/60007335
-2026-05-12,lentejas,gama,live,10031557,LENTEJAS VICONE 1 KG,,2842.62,5.68,500.4613,,20260512015735,https://gamaenlinea.com/es/lentejas-vicone-1-kg/p/10031557
-2026-05-12,lentejas,gama,live,10032396,LENTEJAS MARY 400 GR,,810.75,1.62,500.463,,20260512015735,https://gamaenlinea.com/es/lentejas-mary-400-gr/p/10032396
-2026-05-12,lentejas,gama,live,10023360,LENTEJAS PANTERA 900 GR,,1771.63,3.54,500.4605,,20260512015735,https://gamaenlinea.com/es/lentejas-pantera-900-gr/p/10023360
-2026-05-12,lentejas,gama,live,10032723,LENTEJAS VICONE 400 GR,,1211.11,2.42,500.4587,,20260512015735,https://gamaenlinea.com/es/lentejas-vicone-400-gr/p/10032723
-2026-05-12,lentejas,gama,live,10025852,LENTEJA ROJA PARTIDA PANTERA 500 GR,,1236.14,2.47,500.4615,,20260512015735,https://gamaenlinea.com/es/lenteja-roja-partida-pantera-500-gr/p/10025852
-2026-05-12,margarina,gama,live,10002874,MARGARINA MAVESA 250 GR,,925.85,1.85,500.4595,,20260512015735,https://gamaenlinea.com/es/margarina-mavesa-250-gr/p/10002874
-2026-05-12,margarina,gama,live,10002878,MARGARINA NORMAL MAVESA 1 KG,,3047.81,6.09,500.4614,,20260512015735,https://gamaenlinea.com/es/margarina-normal-mavesa-1-kg/p/10002878
-2026-05-12,margarina,gama,live,10002881,MARGARINA LIGERA MAVESA 500 GR,,1611.48,3.22,500.4596,,20260512015735,https://gamaenlinea.com/es/margarina-ligera-mavesa-500-gr/p/10002881
-2026-05-12,margarina,gama,live,10002877,MARGARINA NORMAL MAVESA 500 GR,,1586.46,3.17,500.4606,,20260512015735,https://gamaenlinea.com/es/margarina-normal-mavesa-500-gr/p/10002877
-2026-05-12,margarina,gama,live,10002863,MARGARINA CON SAL CHIFFON 454 GR,,1796.65,3.59,500.4596,,20260512015735,https://gamaenlinea.com/es/margarina-sal-chiffon-454-gr/p/10002863
-2026-05-12,margarina,gama,live,10003343,MARGARINA CON SAL NELLY 500 GR,,1496.38,2.99,500.4615,,20260512015735,https://gamaenlinea.com/es/margarina-sal-nelly-500-gr/p/10003343
-2026-05-12,margarina,gama,live,10032159,MARGARINA CON SAL NELLY 250 GR,,800.74,1.6,500.4625,,20260512015735,https://gamaenlinea.com/es/margarina-sal-nelly-250-gr/p/10032159
-2026-05-12,margarina,gama,live,30010236,MANTEQUILLA CON SAL BUFIKRIM 240 GR,,3544.76,7.08,500.6723,,20260512015735,https://gamaenlinea.com/es/mantequilla-sal-bufikrim-240-gr/p/30010236
-2026-05-12,mayonesa,gama,live,10002869,MAYONESA MAVESA 175 GR,,1201.11,2.4,500.4625,,20260512015735,https://gamaenlinea.com/es/mayonesa-mavesa-175-gr/p/10002869
-2026-05-12,mayonesa,gama,live,10002870,MAYONESA MAVESA 445 GR,,2066.9,4.13,500.46,,20260512015735,https://gamaenlinea.com/es/mayonesa-mavesa-445-gr/p/10002870
-2026-05-12,mayonesa,gama,live,10002871,MAYONESA MAVESA 910 GR,,4519.16,9.03,500.4607,,20260512015735,https://gamaenlinea.com/es/mayonesa-mavesa-910-gr/p/10002871
-2026-05-12,mayonesa,gama,live,10000435,MAYONESA PREMIUM KRAFT 175 GR,,1431.32,2.86,500.4615,,20260512015735,https://gamaenlinea.com/es/mayonesa-premium-kraft-175-gr/p/10000435
-2026-05-12,mayonesa,gama,live,10003331,MAYONESA KRAFT NATURAL 445 GR,,2477.28,4.95,500.4606,,20260512015735,https://gamaenlinea.com/es/mayonesa-kraft-natural-445-gr/p/10003331
-2026-05-12,mayonesa,gama,live,10034917,MAYONESA SIN GLUTEN DELICIAS DE BELEN 175 GR,,955.88,1.91,500.4607,,20260512015735,https://gamaenlinea.com/es/mayonesa-sin-gluten-delicias-belen-175-gr/p/10034917
-2026-05-12,mayonesa,gama,live,10034918,MAYONESA SIN GLUTEN DELICIAS DE BELEN 445 GR,,1861.71,3.72,500.4597,,20260512015735,https://gamaenlinea.com/es/mayonesa-sin-gluten-delicias-belen-445-gr/p/10034918
-2026-05-12,pan,gama,live,10035380,PAN ÁRABE BLANCO GAMA 6 UN,,825.76,1.65,500.4606,,20260512015735,https://gamaenlinea.com/es/pan-arabe-blanco-gama-6-un/p/10035380
-2026-05-12,pan,gama,live,10032718,PAN DE HAMBURGUESAS PAN DE TATA 15 UN 140 GR,,2021.86,4.04,500.4604,,20260512015735,https://gamaenlinea.com/es/pan-hamburguesas-pan-tata-15-un-140-gr/p/10032718
-2026-05-12,pasta,gama,live,10016444,PASTICHO DIRECTO AL HORNO GAMA 250 GR,,765.7,1.53,500.4575,,20260512015735,https://gamaenlinea.com/es/pasticho-directo-al-horno-gama-250-gr/p/10016444
-2026-05-12,pasta,gama,live,10027797,PASTA SPAGUETTI SEMOLA TRIGO DURO COLAVITA 500 GR,,1781.64,3.56,500.4607,,20260512015735,https://gamaenlinea.com/es/pasta-spaguetti-semola-trigo-duro-colavita-500-gr/p/10027797
-2026-05-12,pasta,gama,live,10009491,PASTA SPAGHETTINI 11 DE CECCO 500 GR,,2377.19,4.75,500.4611,,20260512015735,https://gamaenlinea.com/es/pasta-spaghettini-11-cecco-500-gr/p/10009491
-2026-05-12,pasta,gama,live,10020059,TORNILLOS ALLEGRI 1 KG,,1156.06,2.31,500.4589,,20260512015735,https://gamaenlinea.com/es/tornillos-allegri-1-kg/p/10020059
-2026-05-12,pasta,gama,live,10020063,RIGATONES ALLEGRI 1 KG,,1156.06,2.31,500.4589,,20260512015735,https://gamaenlinea.com/es/rigatones-allegri-1-kg/p/10020063
-2026-05-12,pasta,gama,live,10020060,CODOS ALLEGRI 1 KG,,1156.06,2.31,500.4589,,20260512015735,https://gamaenlinea.com/es/codos-allegri-1-kg/p/10020060
-2026-05-12,pasta,gama,live,10020058,PASTA ESPIRALES ALLEGRI 1 KG,,1156.06,2.31,500.4589,,20260512015735,https://gamaenlinea.com/es/pasta-espirales-allegri-1-kg/p/10020058
-2026-05-12,pasta,gama,live,10020068,PASTA TIPO PLUMA ALLEGRI 1 KG,,1156.06,2.31,500.4589,,20260512015735,https://gamaenlinea.com/es/pasta-tipo-pluma-allegri-1-kg/p/10020068
-2026-05-12,pollo,gama,live,26010503,"MUSLO DE POLLO ENTERO 1,100 KG",,2252.07,4.5,500.46,,20260512015735,https://gamaenlinea.com/es/muslo-pollo-entero-1100-kg/p/26010503
-2026-05-12,pollo,gama,live,26011343,"POLLO ENTERO CONGELADO SUPER POLLO 2,5 KG",,4944.55,9.88,500.4605,,20260512015735,https://gamaenlinea.com/es/pollo-entero-congelado-super-pollo-25-kg/p/26011343
-2026-05-12,pollo,gama,live,26011233,"POLLO ENTERO CONGELADO SAN JOSE 1,700 KG",,2797.57,5.59,500.4597,,20260512015735,https://gamaenlinea.com/es/pollo-entero-congelado-san-jose-1700-kg/p/26011233
-2026-05-12,pollo,gama,live,29008750,PASTEL POLLO GAMA 1 UN,,1428.11,2.85,501.0912,,20260512015735,https://gamaenlinea.com/es/pastel-pollo-gama-1-un/p/29008750
-2026-05-12,pollo,gama,live,10035962,PALMITOS ENTEROS EN CONSERVA GAMA 400 GR,,1648.72,3.29,501.1307,,20260512015735,https://gamaenlinea.com/es/palmitos-enteros-conserva-gama-400-gr/p/10035962
-2026-05-12,pollo,gama,live,30008172,POLLO MECHADO GAMA 500 GR,,6838.7,13.66,500.6369,,20260512015735,https://gamaenlinea.com/es/pollo-mechado-gama-500-gr/p/30008172
-2026-05-12,pollo,gama,live,25001084,CURCUMA ENTERA 300 GR,,450.41,0.9,500.4556,,20260512015735,https://gamaenlinea.com/es/curcuma-entera-300-gr/p/25001084
-2026-05-12,pollo,gama,live,26010964,NUGGETS DE POLLO SKY CHEFS 350 GR,,2206.03,4.41,500.2336,,20260512015735,https://gamaenlinea.com/es/nuggets-pollo-sky-chefs-350-gr/p/26010964
-2026-05-12,queso,gama,live,27005139,QUESO BLANCO DE BUFALA 400 GR,,2402.21,4.8,500.4604,,20260512015735,https://gamaenlinea.com/es/queso-blanco-bufala-400-gr/p/27005139
-2026-05-12,queso,gama,live,27001958,QUESO BLANCO PASTEUR MONTESANO 300 GR,,2572.37,5.14,500.4611,,20260512015735,https://gamaenlinea.com/es/queso-blanco-pasteur-montesano-300-gr/p/27001958
-2026-05-12,queso,gama,live,27005097,QUESO BLANCO ESPECIAL PAISA 300 GR,,3453.18,6.9,500.4609,,20260512015735,https://gamaenlinea.com/es/queso-blanco-especial-paisa-300-gr/p/27005097
-2026-05-12,queso,gama,live,27005605,QUESO BLANCO DURO FINCA 400 GR,,2722.51,5.44,500.4614,,20260512015735,https://gamaenlinea.com/es/queso-blanco-duro-finca-400-gr/p/27005605
-2026-05-12,queso,gama,live,27005094,QUESO BLANCO DURO LLANERO 400 GR,,2001.84,4,500.46,,20260512015735,https://gamaenlinea.com/es/queso-blanco-duro-llanero-400-gr/p/27005094
-2026-05-12,queso,gama,live,27005140,QUESO BLANCO SEMI DURO ANDINO 400 GR,,2081.92,4.16,500.4615,,20260512015735,https://gamaenlinea.com/es/queso-blanco-semi-duro-andino-400-gr/p/27005140
-2026-05-12,queso,gama,live,27005403,QUESO MADURADO BLANCO PARAISO 400 GR,,2697.48,5.39,500.4601,,20260512015735,https://gamaenlinea.com/es/queso-madurado-blanco-paraiso-400-gr/p/27005403
-2026-05-12,queso,gama,live,27001673,QUESO PALMI BUFALA 300 GR,,2787.57,5.57,500.4614,,20260512015735,https://gamaenlinea.com/es/queso-palmi-bufala-300-gr/p/27001673
-2026-05-12,sal,gama,live,27005151,MANI TOSTADO SALADO 150 GR,,876.61,1.75,500.92,,20260512015735,https://gamaenlinea.com/es/mani-tostado-salado-150-gr/p/27005151
-2026-05-12,sal,gama,live,10002105,SAL DE MESA BAHIA 1 KG,,635.58,1.27,500.4567,,20260512015735,https://gamaenlinea.com/es/sal-mesa-bahia-1-kg/p/10002105
-2026-05-12,sal,gama,live,10032020,SAL ROSA HIMALAYA CARMENCITA 105 GR,,2339.56,4.67,500.9764,,20260512015735,https://gamaenlinea.com/es/sal-rosa-himalaya-carmencita-105-gr/p/10032020
-2026-05-12,salsa_tomate,gama,live,10009023,PASTA DE TOMATE EUREKA 500 GR,,2763.34,5.52,500.6051,,20260512015735,https://gamaenlinea.com/es/pasta-tomate-eureka-500-gr/p/10009023
-2026-05-12,salsa_tomate,gama,live,10009666,PASTA DE TOMATE EUREKA 200 GR,,1195.9,2.39,500.3766,,20260512015735,https://gamaenlinea.com/es/pasta-tomate-eureka-200-gr/p/10009666
-2026-05-12,salsa_tomate,gama,live,10003304,PASTA DE TOMATE HEINZ 511 GR,,3245.18,6.48,500.7994,,20260512015735,https://gamaenlinea.com/es/pasta-tomate-heinz-511-gr/p/10003304
-2026-05-12,salsa_tomate,gama,live,10032947,PASTA DE TOMATE IBERIA 500 GR,,4261.12,8.51,500.7192,,20260512015735,https://gamaenlinea.com/es/pasta-tomate-iberia-500-gr/p/10032947
-2026-05-12,salsa_tomate,gama,live,10002551,PASTA DE TOMATE TIQUIRE FLORES 210 GR,,1544.23,3.09,499.7508,,20260512015735,https://gamaenlinea.com/es/pasta-tomate-tiquire-flores-210-gr/p/10002551
-2026-05-12,salsa_tomate,gama,live,10022539,PASTA DE TOMATE DOBLE CONCENTRADA KIERO 500 GR,,3332.26,6.66,500.3393,,20260512015735,https://gamaenlinea.com/es/pasta-tomate-doble-concentrada-kiero-500-gr/p/10022539
-2026-05-12,salsa_tomate,gama,live,10028763,SALSA PARA PASTAS CON TOMATE Y ALBAHACA FRESCARINI 490 GR,,2217.64,4.43,500.5959,,20260512015735,https://gamaenlinea.com/es/salsa-pastas-tomate-albahaca-frescarini-490-gr/p/10028763
-2026-05-12,salsa_tomate,gama,live,10028849,SALSA PARA PASTAS TOMATE Y ALBAHACA FRESCARINI 190 GR,,1027.55,2.05,501.2439,,20260512015735,https://gamaenlinea.com/es/salsa-pastas-tomate-albahaca-frescarini-190-gr/p/10028849
-2026-05-12,sardinas,gama,live,10002702,SARDINAS AL LAUREL EVEBA 125 GR,,1050.76,2.1,500.3619,,20260512015735,https://gamaenlinea.com/es/sardinas-al-laurel-eveba-125-gr/p/10002702
-2026-05-12,sardinas,gama,live,10035425,SACHET DE SARDINA GATOS WHISKAS 85 GR,,1114.62,2.23,499.8296,,20260512015735,https://gamaenlinea.com/es/sachet-sardina-gatos-whiskas-85-gr/p/10035425
+2026-05-12,aceite,gama,live,10033765,ACEITE VEGETAL COMESTIBLE COPOSA 850 ML,,1906.75,3.81,500.4593,,20260512040837,https://gamaenlinea.com/es/aceite-vegetal-comestible-coposa-850-ml/p/10033765
+2026-05-12,aceite,gama,live,10001791,ACEITE VEGETAL VATEL 1 LT,,2091.93,4.18,500.4617,,20260512040837,https://gamaenlinea.com/es/aceite-vegetal-vatel-1-lt/p/10001791
+2026-05-12,aceite,gama,live,10033824,SARDINAS ACEITE VEGETAL POSEIDON 170 GR,,695.64,1.39,500.4604,,20260512040837,https://gamaenlinea.com/es/sardinas-aceite-vegetal-poseidon-170-gr/p/10033824
+2026-05-12,aceite,gama,live,10000794,ATUN EN ACEITE VEGETAL EVEBA 140 GR,,1358.45,2.71,501.2731,,20260512040837,https://gamaenlinea.com/es/atun-aceite-vegetal-eveba-140-gr/p/10000794
+2026-05-12,aceite,gama,live,10004863,ATÚN EN ACEITE VEGETAL EVEBA 170 GR,,1596.47,3.19,500.4608,,20260512040837,https://gamaenlinea.com/es/atun-aceite-vegetal-eveba-170-gr/p/10004863
+2026-05-12,aceite,gama,live,10002695,SARDINAS EN ACEITE VEGETAL EVEBA 270 GR,,1265.56,2.53,500.2213,,20260512040837,https://gamaenlinea.com/es/sardinas-aceite-vegetal-eveba-270-gr/p/10002695
+2026-05-12,aceite,gama,live,10005068,SARDINAS EN ACEITE VEGETAL MARGARITA 170 GR,,795.73,1.59,500.4591,,20260512040837,https://gamaenlinea.com/es/sardinas-aceite-vegetal-margarita-170-gr/p/10005068
+2026-05-12,aceite,gama,live,10021175,SARDINAS EN ACEITE VEGETAL ORIENTE 170 GR,,590.54,1.18,500.4576,,20260512040837,https://gamaenlinea.com/es/sardinas-aceite-vegetal-oriente-170-gr/p/10021175
+2026-05-12,arroz,gama,live,10029650,ARROZ DORADO MARY 800 GR,,1101.01,2.2,500.4591,,20260512040837,https://gamaenlinea.com/es/arroz-dorado-mary-800-gr/p/10029650
+2026-05-12,arroz,gama,live,10032298,ARROZ MARY ESMERALDA 900 GR,,1141.05,2.28,500.4605,,20260512040837,https://gamaenlinea.com/es/arroz-mary-esmeralda-900-gr/p/10032298
+2026-05-12,arroz,gama,live,10029913,ARROZ PRIMOR PERLADO 900 GR,,710.65,1.42,500.4577,,20260512040837,https://gamaenlinea.com/es/arroz-primor-perlado-900-gr/p/10029913
+2026-05-12,arroz,gama,live,10007713,ARROZ CANILLA TIPO 1 LA LUCHA 1 KG,,1111.02,2.22,500.4595,,20260512040837,https://gamaenlinea.com/es/arroz-canilla-tipo-1-la-lucha-1-kg/p/10007713
+2026-05-12,arroz,gama,live,10036150,ARROZ BLANCO PREMIUM TIPO 1 MARY 2 KG,,2081.92,4.16,500.4615,,20260512040837,https://gamaenlinea.com/es/arroz-blanco-premium-tipo-1-mary-2-kg/p/10036150
+2026-05-12,arroz,gama,live,10034754,ARROZ SUPERIOR TIPO 1 MARY 900 GR,,710.65,1.42,500.4577,,20260512040837,https://gamaenlinea.com/es/arroz-superior-tipo-1-mary-900-gr/p/10034754
+2026-05-12,arroz,gama,live,10032071,ARROZ PREMIUM 99% GRANOS ENTEROS MARY 900 GR,,980.9,1.96,500.4592,,20260512040837,https://gamaenlinea.com/es/arroz-premium-99-granos-enteros-mary-900-gr/p/10032071
+2026-05-12,arroz,gama,live,10021967,HOJA DE ARROZ PARA LUMPIAS 340 GR,,7314.73,14.62,500.3235,,20260512040837,https://gamaenlinea.com/es/hoja-arroz-lumpias-340-gr/p/10021967
+2026-05-12,atun,gama,live,10035764,ATÚN SÓLIDO EN ACEITE GAMA 160 GR,,1248.15,2.49,501.2651,,20260512040837,https://gamaenlinea.com/es/atun-solido-aceite-gama-160-gr/p/10035764
+2026-05-12,atun,gama,live,10035761,ATÚN SÓLIDO EN AGUA GAMA 160 GR,,1176.08,2.35,500.4596,,20260512040837,https://gamaenlinea.com/es/atun-solido-agua-gama-160-gr/p/10035761
+2026-05-12,atun,gama,live,40000994,REFRESCO 7UP LATA 355 ML,,586.34,1.17,501.1453,,20260512040837,https://gamaenlinea.com/es/refresco-7up-lata-355-ml/p/40000994
+2026-05-12,atun,gama,live,10004313,REFRESCO CHINOTTO LATA 355 ML,,534.09,1.07,499.1495,,20260512040837,https://gamaenlinea.com/es/refresco-chinotto-lata-355-ml/p/10004313
+2026-05-12,atun,gama,live,10027197,REFRESCO FRESCOLITA LATA 355 ML,,534.09,1.07,499.1495,,20260512040837,https://gamaenlinea.com/es/refresco-frescolita-lata-355-ml/p/10027197
+2026-05-12,atun,gama,live,40009584,CERVEZA REGIONAL LATA 355 ML,,766.31,1.53,500.8562,,20260512040837,https://gamaenlinea.com/es/cerveza-regional-lata-355-ml/p/40009584
+2026-05-12,atun,gama,live,10001564,AGUAKINA SCHWEPPES LATA 355 ML,,714.06,1.43,499.3427,,20260512040837,https://gamaenlinea.com/es/aguakina-schweppes-lata-355-ml/p/10001564
+2026-05-12,atun,gama,live,10003114,SODA SCHWEPPES LATA 355 ML,,714.06,1.43,499.3427,,20260512040837,https://gamaenlinea.com/es/soda-schweppes-lata-355-ml/p/10003114
+2026-05-12,azucar,gama,live,10033127,AZUCAR MORENA MONTALBAN 1 KG,,1791.65,3.58,500.4609,,20260512040837,https://gamaenlinea.com/es/azucar-morena-montalban-1-kg/p/10033127
+2026-05-12,azucar,gama,live,10034832,AZÚCAR BLANCA REFINADA AMANECER 1 KG,,1010.93,2.02,500.4604,,20260512040837,https://gamaenlinea.com/es/azucar-blanca-refinada-amanecer-1-kg/p/10034832
+2026-05-12,azucar,gama,live,10031359,AZÚCAR GLASS MONTALBAN 500 GR,,1555.83,3.11,500.2669,,20260512040837,https://gamaenlinea.com/es/azucar-glass-montalban-500-gr/p/10031359
+2026-05-12,azucar,gama,live,10032394,REFRESCO COCA-COLA SIN AZÚCAR 355 ML,,394.76,0.79,499.6962,,20260512040837,https://gamaenlinea.com/es/refresco-coca-cola-sin-azucar-355-ml/p/10032394
+2026-05-12,azucar,gama,live,10014293,AZUCAR REFINADA BOLSA DE PAPEL MONTALBAN 1 KG,,950.88,1.9,500.4632,,20260512040837,https://gamaenlinea.com/es/azucar-refinada-bolsa-papel-montalban-1-kg/p/10014293
+2026-05-12,azucar,gama,live,10018519,AZUCAR REFINADA MONTALBAN BOLSA DE PLASTICO 1 KG,,945.87,1.89,500.4603,,20260512040837,https://gamaenlinea.com/es/azucar-refinada-montalban-bolsa-plastico-1-kg/p/10018519
+2026-05-12,azucar,gama,live,10034923,AZUCAR BLANCA REFINADA PUBLIO 900 GR,,1025.94,2.05,500.4585,,20260512040837,https://gamaenlinea.com/es/azucar-blanca-refinada-publio-900-gr/p/10034923
+2026-05-12,azucar,gama,live,10035831,AZÚCAR BLANCA REFINADA SABANA DULCE 1 KG,,775.71,1.55,500.4581,,20260512040837,https://gamaenlinea.com/es/azucar-blanca-refinada-sabana-dulce-1-kg/p/10035831
+2026-05-12,cafe,gama,live,10034279,CAFÉ GOURMET MOLIDO GAMA 500 GR,,3733.44,7.46,500.4611,,20260512040837,https://gamaenlinea.com/es/cafe-gourmet-molido-gama-500-gr/p/10034279
+2026-05-12,cafe,gama,live,10034278,CAFÉ GOURMET MOLIDO GAMA 250 GR,,1866.72,3.73,500.4611,,20260512040837,https://gamaenlinea.com/es/cafe-gourmet-molido-gama-250-gr/p/10034278
+2026-05-12,cafe,gama,live,10034170,CAFÉ GOURMET TOSTADO Y MOLIDO O'SOLE 200,,1571.45,3.14,500.4618,,20260512040837,https://gamaenlinea.com/es/cafe-gourmet-tostado-molido-osole-200/p/10034170
+2026-05-12,cafe,gama,live,10027990,CAFE GOURMET AMANECER 200 GR,,1476.36,2.95,500.461,,20260512040837,https://gamaenlinea.com/es/cafe-gourmet-amanecer-200-gr/p/10027990
+2026-05-12,cafe,gama,live,10027989,CAFE GOURMET TOSTADO AMANECER 500 GR,,3768.47,7.53,500.4608,,20260512040837,https://gamaenlinea.com/es/cafe-gourmet-tostado-amanecer-500-gr/p/10027989
+2026-05-12,cafe,gama,live,10031792,CAFE GOURMET FLOR DE ARAUCA 200 GR,,1551.43,3.1,500.4613,,20260512040837,https://gamaenlinea.com/es/cafe-gourmet-flor-arauca-200-gr/p/10031792
+2026-05-12,cafe,gama,live,10029060,CAFE GOURMET FLOR DE ARAUCA 500 GR,,3858.55,7.71,500.4604,,20260512040837,https://gamaenlinea.com/es/cafe-gourmet-flor-arauca-500-gr/p/10029060
+2026-05-12,cafe,gama,live,10034781,CAFÉ GOURMET JP 250 GR,,1951.8,3.9,500.4615,,20260512040837,https://gamaenlinea.com/es/cafe-gourmet-jp-250-gr/p/10034781
+2026-05-12,caraotas,gama,live,10032397,CARAOTAS NEGRAS MARY 400 GR,,595.55,1.19,500.4622,,20260512040837,https://gamaenlinea.com/es/caraotas-negras-mary-400-gr/p/10032397
+2026-05-12,caraotas,gama,live,10019440,CARAOTAS NEGRAS PANTERA  900 GR,,1401.29,2.8,500.4607,,20260512040837,https://gamaenlinea.com/es/caraotas-negras-pantera-900-gr/p/10019440
+2026-05-12,caraotas,gama,live,10035940,CARAOTAS NEGRAS PANTERA 400 GR,,640.59,1.28,500.4609,,20260512040837,https://gamaenlinea.com/es/caraotas-negras-pantera-400-gr/p/10035940
+2026-05-12,caraotas,gama,live,27005125,UVAS PASAS NEGRAS 400 GR,,2912.68,5.82,500.4605,,20260512040837,https://gamaenlinea.com/es/uvas-pasas-negras-400-gr/p/27005125
+2026-05-12,caraotas,gama,live,10026531,CARAOTAS ROJAS MARY 500 GR,,1726.59,3.45,500.4609,,20260512040837,https://gamaenlinea.com/es/caraotas-rojas-mary-500-gr/p/10026531
+2026-05-12,caraotas,gama,live,10026532,CARAOTAS BLANCAS MARY 500 GR,,1611.48,3.22,500.4596,,20260512040837,https://gamaenlinea.com/es/caraotas-blancas-mary-500-gr/p/10026532
+2026-05-12,caraotas,gama,live,10033565,CARAOTAS ROSADAS PANTERA 454 GR,,1426.31,2.85,500.4596,,20260512040837,https://gamaenlinea.com/es/caraotas-rosadas-pantera-454-gr/p/10033565
+2026-05-12,caraotas,gama,live,10033852,CARAOTAS BLANCAS PANTERA 454 GR,,1426.31,2.85,500.4596,,20260512040837,https://gamaenlinea.com/es/caraotas-blancas-pantera-454-gr/p/10033852
+2026-05-12,carne_res,gama,live,26010030,CARNE MOLIDA DE RES 1 KG,,4499.14,8.99,500.4605,,20260512040837,https://gamaenlinea.com/es/carne-molida-res-1-kg/p/26010030
+2026-05-12,carne_res,gama,live,26011148,CARNE MOLIDA MAGRA DE PRIMERA 1 KG,,5750.29,11.49,500.4604,,20260512040837,https://gamaenlinea.com/es/carne-molida-magra-primera-1-kg/p/26011148
+2026-05-12,carne_res,gama,live,10036215,CANELA MOLIDA GAMA 45 GR,,1619.7,3.24,499.9074,,20260512040837,https://gamaenlinea.com/es/canela-molida-gama-45-gr/p/10036215
+2026-05-12,carne_res,gama,live,10036213,CURCUMA MOLIDA GAMA 60 GR,,1491.97,2.98,500.6611,,20260512040837,https://gamaenlinea.com/es/curcuma-molida-gama-60-gr/p/10036213
+2026-05-12,carne_res,gama,live,10036212,ONOTO MOLIDO GAMA 70 GR,,1451.33,2.9,500.4586,,20260512040837,https://gamaenlinea.com/es/onoto-molido-gama-70-gr/p/10036212
+2026-05-12,carne_res,gama,live,10036214,COMINO MOLIDO GAMA 50 GR,,1184.29,2.37,499.7004,,20260512040837,https://gamaenlinea.com/es/comino-molido-gama-50-gr/p/10036214
+2026-05-12,harina_maiz,gama,live,10033792,MEZCLA PARA PAN SIN GLUTEN VEGAN LIFE 400 GR,,5317.7,10.63,500.254,,20260512040837,https://gamaenlinea.com/es/mezcla-pan-sin-gluten-vegan-life-400-gr/p/10033792
+2026-05-12,harina_maiz,gama,live,10029737,HARINA DE PLATANO HARINANA 500 GR,,2121.95,4.24,500.4599,,20260512040837,https://gamaenlinea.com/es/harina-platano-harinana-500-gr/p/10029737
+2026-05-12,harina_maiz,gama,live,10033133,HARINA DE YUCA HARINANA 500 GR,,2317.13,4.63,500.46,,20260512040837,https://gamaenlinea.com/es/harina-yuca-harinana-500-gr/p/10033133
+2026-05-12,harina_maiz,gama,live,10034623,PAN DE HAMBURGUESAS GAMA 600 GR,,1826.68,3.65,500.4603,,20260512040837,https://gamaenlinea.com/es/pan-hamburguesas-gama-600-gr/p/10034623
+2026-05-12,harina_maiz,gama,live,10034621,PAN DE PERRO CALIENTE JUMBO GAMA 500 GR,,1326.22,2.65,500.4604,,20260512040837,https://gamaenlinea.com/es/pan-perro-caliente-jumbo-gama-500-gr/p/10034621
+2026-05-12,harina_maiz,gama,live,29006400,CACHITO DE PAVO GAMA 1 UN,,1323.62,2.64,501.3712,,20260512040837,https://gamaenlinea.com/es/cachito-pavo-gama-1-un/p/29006400
+2026-05-12,harina_maiz,gama,live,10014791,CROISSANT GAMA 600 GR,,2627.42,5.25,500.461,,20260512040837,https://gamaenlinea.com/es/croissant-gama-600-gr/p/10014791
+2026-05-12,harina_maiz,gama,live,10034622,PAN DE SANDWICH BLANCO GAMA 500 GR,,875.81,1.75,500.4629,,20260512040837,https://gamaenlinea.com/es/pan-sandwich-blanco-gama-500-gr/p/10034622
+2026-05-12,huevos,gama,live,10031997,HUEVOS 6 UN,,795.73,1.59,500.4591,,20260512040837,https://gamaenlinea.com/es/huevos-6-un/p/10031997
+2026-05-12,huevos,gama,live,25000453,HUEVOS 30 UN,,3678.39,7.35,500.4612,,20260512040837,https://gamaenlinea.com/es/huevos-30-un/p/25000453
+2026-05-12,huevos,gama,live,70001104,PLATOS DE CARTÓN NO. 6 PROVOCA 18 UN,,1729.99,3.46,499.9971,,20260512040837,https://gamaenlinea.com/es/platos-carton-no-6-provoca-18-un/p/70001104
+2026-05-12,huevos,gama,live,10036106,HUEVOS ESTUCHE KIRI 15 UN,,1946.79,3.89,500.4602,,20260512040837,https://gamaenlinea.com/es/huevos-estuche-kiri-15-un/p/10036106
+2026-05-12,huevos,gama,live,10025442,HUEVOS PUROVO ESTUCHE 12 UN,,1496.38,2.99,500.4615,,20260512040837,https://gamaenlinea.com/es/huevos-purovo-estuche-12-un/p/10025442
+2026-05-12,huevos,gama,live,10035434,HUEVOS SANTA MARIA 15 UN,,1946.79,3.89,500.4602,,20260512040837,https://gamaenlinea.com/es/huevos-santa-maria-15-un/p/10035434
+2026-05-12,huevos,gama,live,10036177,HUEVOS ORGANICOS AVILA RANCH 15 UN,,4999.6,9.99,500.4605,,20260512040837,https://gamaenlinea.com/es/huevos-organicos-avila-ranch-15-un/p/10036177
+2026-05-12,huevos,gama,live,10036178,HUEVOS ORGANICOS AVILA RANCH 30 UN,,9003.29,17.99,500.4608,,20260512040837,https://gamaenlinea.com/es/huevos-organicos-avila-ranch-30-un/p/10036178
+2026-05-12,leche,gama,live,10001298,LECHE EN POLVO COMPLETA SAN SIMON 900 GR,,7401.81,14.79,500.4604,,20260512040837,https://gamaenlinea.com/es/leche-polvo-completa-san-simon-900-gr/p/10001298
+2026-05-12,leche,gama,live,10032713,LECHE EN POLVO CON HIERRO LA CAMPESINA 800 GR,,6510.99,13.01,500.4604,,20260512040837,https://gamaenlinea.com/es/leche-polvo-hierro-la-campesina-800-gr/p/10032713
+2026-05-12,leche,gama,live,10032166,LECHE COMPLETA EN POLVO SAN SIMÓN 400 GR,,3948.63,7.89,500.4601,,20260512040837,https://gamaenlinea.com/es/leche-completa-polvo-san-simon-400-gr/p/10032166
+2026-05-12,leche,gama,live,10022001,LECHE COMPLETA POLVO ZULI MILK 500 GR,,4183.85,8.36,500.4605,,20260512040837,https://gamaenlinea.com/es/leche-completa-polvo-zuli-milk-500-gr/p/10022001
+2026-05-12,leche,gama,live,10034975,LECHE COMPLETA POLVO AZUCARADA ZULI MILK 380 GR,,2572.37,5.14,500.4611,,20260512040837,https://gamaenlinea.com/es/leche-completa-polvo-azucarada-zuli-milk-380-gr/p/10034975
+2026-05-12,leche,gama,live,60007284,DETERGENTE EN POLVO GAMA 900 GR,,1346.84,2.69,500.684,,20260512040837,https://gamaenlinea.com/es/detergente-polvo-gama-900-gr/p/60007284
+2026-05-12,leche,gama,live,60007353,DETERGENTE POLVO ARIEL 4 KG,,10826.96,21.63,500.5529,,20260512040837,https://gamaenlinea.com/es/detergente-polvo-ariel-4-kg/p/60007353
+2026-05-12,leche,gama,live,60007335,DETERGENTE POLVO COL ACE 4 KG,,7901.07,15.79,500.3844,,20260512040837,https://gamaenlinea.com/es/detergente-polvo-col-ace-4-kg/p/60007335
+2026-05-12,lentejas,gama,live,10031557,LENTEJAS VICONE 1 KG,,2842.62,5.68,500.4613,,20260512040837,https://gamaenlinea.com/es/lentejas-vicone-1-kg/p/10031557
+2026-05-12,lentejas,gama,live,10032396,LENTEJAS MARY 400 GR,,810.75,1.62,500.463,,20260512040837,https://gamaenlinea.com/es/lentejas-mary-400-gr/p/10032396
+2026-05-12,lentejas,gama,live,10023360,LENTEJAS PANTERA 900 GR,,1771.63,3.54,500.4605,,20260512040837,https://gamaenlinea.com/es/lentejas-pantera-900-gr/p/10023360
+2026-05-12,lentejas,gama,live,10032723,LENTEJAS VICONE 400 GR,,1211.11,2.42,500.4587,,20260512040837,https://gamaenlinea.com/es/lentejas-vicone-400-gr/p/10032723
+2026-05-12,lentejas,gama,live,10025852,LENTEJA ROJA PARTIDA PANTERA 500 GR,,1236.14,2.47,500.4615,,20260512040837,https://gamaenlinea.com/es/lenteja-roja-partida-pantera-500-gr/p/10025852
+2026-05-12,margarina,gama,live,10002874,MARGARINA MAVESA 250 GR,,925.85,1.85,500.4595,,20260512040837,https://gamaenlinea.com/es/margarina-mavesa-250-gr/p/10002874
+2026-05-12,margarina,gama,live,10002878,MARGARINA NORMAL MAVESA 1 KG,,3047.81,6.09,500.4614,,20260512040837,https://gamaenlinea.com/es/margarina-normal-mavesa-1-kg/p/10002878
+2026-05-12,margarina,gama,live,10002881,MARGARINA LIGERA MAVESA 500 GR,,1611.48,3.22,500.4596,,20260512040837,https://gamaenlinea.com/es/margarina-ligera-mavesa-500-gr/p/10002881
+2026-05-12,margarina,gama,live,10002877,MARGARINA NORMAL MAVESA 500 GR,,1586.46,3.17,500.4606,,20260512040837,https://gamaenlinea.com/es/margarina-normal-mavesa-500-gr/p/10002877
+2026-05-12,margarina,gama,live,10002863,MARGARINA CON SAL CHIFFON 454 GR,,1796.65,3.59,500.4596,,20260512040837,https://gamaenlinea.com/es/margarina-sal-chiffon-454-gr/p/10002863
+2026-05-12,margarina,gama,live,10003343,MARGARINA CON SAL NELLY 500 GR,,1496.38,2.99,500.4615,,20260512040837,https://gamaenlinea.com/es/margarina-sal-nelly-500-gr/p/10003343
+2026-05-12,margarina,gama,live,10032159,MARGARINA CON SAL NELLY 250 GR,,800.74,1.6,500.4625,,20260512040837,https://gamaenlinea.com/es/margarina-sal-nelly-250-gr/p/10032159
+2026-05-12,margarina,gama,live,30010236,MANTEQUILLA CON SAL BUFIKRIM 240 GR,,3544.76,7.08,500.6723,,20260512040837,https://gamaenlinea.com/es/mantequilla-sal-bufikrim-240-gr/p/30010236
+2026-05-12,mayonesa,gama,live,10002871,MAYONESA MAVESA 910 GR,,4519.16,9.03,500.4607,,20260512040837,https://gamaenlinea.com/es/mayonesa-mavesa-910-gr/p/10002871
+2026-05-12,mayonesa,gama,live,10002869,MAYONESA MAVESA 175 GR,,1201.11,2.4,500.4625,,20260512040837,https://gamaenlinea.com/es/mayonesa-mavesa-175-gr/p/10002869
+2026-05-12,mayonesa,gama,live,10002870,MAYONESA MAVESA 445 GR,,2066.9,4.13,500.46,,20260512040837,https://gamaenlinea.com/es/mayonesa-mavesa-445-gr/p/10002870
+2026-05-12,mayonesa,gama,live,10000435,MAYONESA PREMIUM KRAFT 175 GR,,1431.32,2.86,500.4615,,20260512040837,https://gamaenlinea.com/es/mayonesa-premium-kraft-175-gr/p/10000435
+2026-05-12,mayonesa,gama,live,10003331,MAYONESA KRAFT NATURAL 445 GR,,2477.28,4.95,500.4606,,20260512040837,https://gamaenlinea.com/es/mayonesa-kraft-natural-445-gr/p/10003331
+2026-05-12,mayonesa,gama,live,10034918,MAYONESA SIN GLUTEN DELICIAS DE BELEN 445 GR,,1861.71,3.72,500.4597,,20260512040837,https://gamaenlinea.com/es/mayonesa-sin-gluten-delicias-belen-445-gr/p/10034918
+2026-05-12,mayonesa,gama,live,10034917,MAYONESA SIN GLUTEN DELICIAS DE BELEN 175 GR,,955.88,1.91,500.4607,,20260512040837,https://gamaenlinea.com/es/mayonesa-sin-gluten-delicias-belen-175-gr/p/10034917
+2026-05-12,pan,gama,live,10035380,PAN ÁRABE BLANCO GAMA 6 UN,,825.76,1.65,500.4606,,20260512040837,https://gamaenlinea.com/es/pan-arabe-blanco-gama-6-un/p/10035380
+2026-05-12,pan,gama,live,10032718,PAN DE HAMBURGUESAS PAN DE TATA 15 UN 140 GR,,2021.86,4.04,500.4604,,20260512040837,https://gamaenlinea.com/es/pan-hamburguesas-pan-tata-15-un-140-gr/p/10032718
+2026-05-12,pasta,gama,live,10016444,PASTICHO DIRECTO AL HORNO GAMA 250 GR,,765.7,1.53,500.4575,,20260512040837,https://gamaenlinea.com/es/pasticho-directo-al-horno-gama-250-gr/p/10016444
+2026-05-12,pasta,gama,live,10027797,PASTA SPAGUETTI SEMOLA TRIGO DURO COLAVITA 500 GR,,1781.64,3.56,500.4607,,20260512040837,https://gamaenlinea.com/es/pasta-spaguetti-semola-trigo-duro-colavita-500-gr/p/10027797
+2026-05-12,pasta,gama,live,10009491,PASTA SPAGHETTINI 11 DE CECCO 500 GR,,2377.19,4.75,500.4611,,20260512040837,https://gamaenlinea.com/es/pasta-spaghettini-11-cecco-500-gr/p/10009491
+2026-05-12,pasta,gama,live,10020063,RIGATONES ALLEGRI 1 KG,,1156.06,2.31,500.4589,,20260512040837,https://gamaenlinea.com/es/rigatones-allegri-1-kg/p/10020063
+2026-05-12,pasta,gama,live,10020068,PASTA TIPO PLUMA ALLEGRI 1 KG,,1156.06,2.31,500.4589,,20260512040837,https://gamaenlinea.com/es/pasta-tipo-pluma-allegri-1-kg/p/10020068
+2026-05-12,pasta,gama,live,10020062,PASTA CORTA TUBO LISO ALLEGRI 1 KG,,1156.06,2.31,500.4589,,20260512040837,https://gamaenlinea.com/es/pasta-corta-tubo-liso-allegri-1-kg/p/10020062
+2026-05-12,pasta,gama,live,10020059,TORNILLOS ALLEGRI 1 KG,,1156.06,2.31,500.4589,,20260512040837,https://gamaenlinea.com/es/tornillos-allegri-1-kg/p/10020059
+2026-05-12,pasta,gama,live,10020060,CODOS ALLEGRI 1 KG,,1156.06,2.31,500.4589,,20260512040837,https://gamaenlinea.com/es/codos-allegri-1-kg/p/10020060
+2026-05-12,pollo,gama,live,26010503,"MUSLO DE POLLO ENTERO 1,100 KG",,2252.07,4.5,500.46,,20260512040837,https://gamaenlinea.com/es/muslo-pollo-entero-1100-kg/p/26010503
+2026-05-12,pollo,gama,live,26011343,"POLLO ENTERO CONGELADO SUPER POLLO 2,5 KG",,4944.55,9.88,500.4605,,20260512040837,https://gamaenlinea.com/es/pollo-entero-congelado-super-pollo-25-kg/p/26011343
+2026-05-12,pollo,gama,live,26011233,"POLLO ENTERO CONGELADO SAN JOSE 1,700 KG",,2797.57,5.59,500.4597,,20260512040837,https://gamaenlinea.com/es/pollo-entero-congelado-san-jose-1700-kg/p/26011233
+2026-05-12,pollo,gama,live,29008750,PASTEL POLLO GAMA 1 UN,,1428.11,2.85,501.0912,,20260512040837,https://gamaenlinea.com/es/pastel-pollo-gama-1-un/p/29008750
+2026-05-12,pollo,gama,live,10035962,PALMITOS ENTEROS EN CONSERVA GAMA 400 GR,,1648.72,3.29,501.1307,,20260512040837,https://gamaenlinea.com/es/palmitos-enteros-conserva-gama-400-gr/p/10035962
+2026-05-12,pollo,gama,live,30008172,POLLO MECHADO GAMA 500 GR,,6838.7,13.66,500.6369,,20260512040837,https://gamaenlinea.com/es/pollo-mechado-gama-500-gr/p/30008172
+2026-05-12,pollo,gama,live,25001084,CURCUMA ENTERA 300 GR,,450.41,0.9,500.4556,,20260512040837,https://gamaenlinea.com/es/curcuma-entera-300-gr/p/25001084
+2026-05-12,pollo,gama,live,10005185,LECHE ENTERA UHT PARMALAT 1 LT,,1726.59,3.45,500.4609,,20260512040837,https://gamaenlinea.com/es/leche-entera-uht-parmalat-1-lt/p/10005185
+2026-05-12,queso,gama,live,27005139,QUESO BLANCO DE BUFALA 400 GR,,2402.21,4.8,500.4604,,20260512040837,https://gamaenlinea.com/es/queso-blanco-bufala-400-gr/p/27005139
+2026-05-12,queso,gama,live,27001958,QUESO BLANCO PASTEUR MONTESANO 300 GR,,2572.37,5.14,500.4611,,20260512040837,https://gamaenlinea.com/es/queso-blanco-pasteur-montesano-300-gr/p/27001958
+2026-05-12,queso,gama,live,27005097,QUESO BLANCO ESPECIAL PAISA 300 GR,,3453.18,6.9,500.4609,,20260512040837,https://gamaenlinea.com/es/queso-blanco-especial-paisa-300-gr/p/27005097
+2026-05-12,queso,gama,live,27005605,QUESO BLANCO DURO FINCA 400 GR,,2722.51,5.44,500.4614,,20260512040837,https://gamaenlinea.com/es/queso-blanco-duro-finca-400-gr/p/27005605
+2026-05-12,queso,gama,live,27005094,QUESO BLANCO DURO LLANERO 400 GR,,2001.84,4,500.46,,20260512040837,https://gamaenlinea.com/es/queso-blanco-duro-llanero-400-gr/p/27005094
+2026-05-12,queso,gama,live,27005140,QUESO BLANCO SEMI DURO ANDINO 400 GR,,2081.92,4.16,500.4615,,20260512040837,https://gamaenlinea.com/es/queso-blanco-semi-duro-andino-400-gr/p/27005140
+2026-05-12,queso,gama,live,27005403,QUESO MADURADO BLANCO PARAISO 400 GR,,2697.48,5.39,500.4601,,20260512040837,https://gamaenlinea.com/es/queso-madurado-blanco-paraiso-400-gr/p/27005403
+2026-05-12,queso,gama,live,27001673,QUESO PALMI BUFALA 300 GR,,2787.57,5.57,500.4614,,20260512040837,https://gamaenlinea.com/es/queso-palmi-bufala-300-gr/p/27001673
+2026-05-12,sal,gama,live,27005151,MANI TOSTADO SALADO 150 GR,,876.61,1.75,500.92,,20260512040837,https://gamaenlinea.com/es/mani-tostado-salado-150-gr/p/27005151
+2026-05-12,sal,gama,live,10002105,SAL DE MESA BAHIA 1 KG,,635.58,1.27,500.4567,,20260512040837,https://gamaenlinea.com/es/sal-mesa-bahia-1-kg/p/10002105
+2026-05-12,sal,gama,live,10032020,SAL ROSA HIMALAYA CARMENCITA 105 GR,,2339.56,4.67,500.9764,,20260512040837,https://gamaenlinea.com/es/sal-rosa-himalaya-carmencita-105-gr/p/10032020
+2026-05-12,salsa_tomate,gama,live,10009023,PASTA DE TOMATE EUREKA 500 GR,,2763.34,5.52,500.6051,,20260512040837,https://gamaenlinea.com/es/pasta-tomate-eureka-500-gr/p/10009023
+2026-05-12,salsa_tomate,gama,live,10009666,PASTA DE TOMATE EUREKA 200 GR,,1195.9,2.39,500.3766,,20260512040837,https://gamaenlinea.com/es/pasta-tomate-eureka-200-gr/p/10009666
+2026-05-12,salsa_tomate,gama,live,10003304,PASTA DE TOMATE HEINZ 511 GR,,3245.18,6.48,500.7994,,20260512040837,https://gamaenlinea.com/es/pasta-tomate-heinz-511-gr/p/10003304
+2026-05-12,salsa_tomate,gama,live,10032947,PASTA DE TOMATE IBERIA 500 GR,,4261.12,8.51,500.7192,,20260512040837,https://gamaenlinea.com/es/pasta-tomate-iberia-500-gr/p/10032947
+2026-05-12,salsa_tomate,gama,live,10002551,PASTA DE TOMATE TIQUIRE FLORES 210 GR,,1544.23,3.09,499.7508,,20260512040837,https://gamaenlinea.com/es/pasta-tomate-tiquire-flores-210-gr/p/10002551
+2026-05-12,salsa_tomate,gama,live,10022539,PASTA DE TOMATE DOBLE CONCENTRADA KIERO 500 GR,,3332.26,6.66,500.3393,,20260512040837,https://gamaenlinea.com/es/pasta-tomate-doble-concentrada-kiero-500-gr/p/10022539
+2026-05-12,salsa_tomate,gama,live,10028763,SALSA PARA PASTAS CON TOMATE Y ALBAHACA FRESCARINI 490 GR,,2217.64,4.43,500.5959,,20260512040837,https://gamaenlinea.com/es/salsa-pastas-tomate-albahaca-frescarini-490-gr/p/10028763
+2026-05-12,salsa_tomate,gama,live,10028849,SALSA PARA PASTAS TOMATE Y ALBAHACA FRESCARINI 190 GR,,1027.55,2.05,501.2439,,20260512040837,https://gamaenlinea.com/es/salsa-pastas-tomate-albahaca-frescarini-190-gr/p/10028849
+2026-05-12,sardinas,gama,live,10002702,SARDINAS AL LAUREL EVEBA 125 GR,,1050.76,2.1,500.3619,,20260512040837,https://gamaenlinea.com/es/sardinas-al-laurel-eveba-125-gr/p/10002702
+2026-05-12,sardinas,gama,live,10035425,SACHET DE SARDINA GATOS WHISKAS 85 GR,,1114.62,2.23,499.8296,,20260512040837,https://gamaenlinea.com/es/sachet-sardina-gatos-whiskas-85-gr/p/10035425

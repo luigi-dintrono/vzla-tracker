@@ -22,7 +22,7 @@ import {
   type FigureSeries,
 } from "@/components/pillars/pillar-1-charts"
 
-const pillar = getPillar("pillar-1")
+const pillar = getPillar("freedom-of-the-press-index")
 
 export const metadata: Metadata = {
   title: `${pillar.title} — Venezuelan Transition Tracker`,

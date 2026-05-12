@@ -1,6 +1,9 @@
 import { Newspaper, Users, TrendingUp, type LucideIcon } from "lucide-react"
 
-export type PillarSlug = "pillar-1" | "pillar-2" | "pillar-3"
+export type PillarSlug =
+  | "freedom-of-the-press-index"
+  | "protests-and-liberty-to-organize"
+  | "economic-activity-and-inflation"
 
 export interface Pillar {
   slug: PillarSlug
@@ -15,7 +18,7 @@ export interface Pillar {
 
 export const PILLARS: Pillar[] = [
   {
-    slug: "pillar-1",
+    slug: "freedom-of-the-press-index",
     number: 1,
     shortTitle: "Press Freedom",
     title: "Freedom of the Press Index",
@@ -26,7 +29,7 @@ export const PILLARS: Pillar[] = [
     icon: Newspaper,
   },
   {
-    slug: "pillar-2",
+    slug: "protests-and-liberty-to-organize",
     number: 2,
     shortTitle: "Protests & Liberty",
     title: "Protests & Liberty to Organize",
@@ -37,7 +40,7 @@ export const PILLARS: Pillar[] = [
     icon: Users,
   },
   {
-    slug: "pillar-3",
+    slug: "economic-activity-and-inflation",
     number: 3,
     shortTitle: "Economy & Inflation",
     title: "Economic Activity & Inflation",

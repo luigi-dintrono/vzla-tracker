@@ -1,7 +1,11 @@
+"use client"
+
+import * as React from "react"
 import { Card, CardContent } from "@/components/ui/card"
+import { SvgTooltip, useSvgHover } from "@/components/pillars/chart-hover"
 
 // =============================================================================
-// Pillar 3 charts — server-rendered SVG, no client deps.
+// Pillar 3 charts — SVG-based, client-side hover crosshairs/tooltips.
 // Mirrors the pillar-1 pattern: each chart is a pure render of a typed slice
 // of data, with an EmptyChart fallback.
 // =============================================================================
@@ -100,13 +104,28 @@ export function InflationTrendChart({
     return { ...s, d: segments.join(" "), pts }
   })
 
+  const { hover, onMove, onLeave } = useSvgHover(data.length)
+  const [hoverKey, setHoverKey] = React.useState<"ovf" | "basket" | null>(null)
+  const active = hover.idx !== null ? data[hover.idx] : null
+  const activeX = hover.idx !== null ? xScale(hover.idx) : null
+
   return (
     <Card className="py-0 overflow-hidden rounded-2xl">
-      <div className="px-5 pt-5 pb-2 flex flex-wrap items-baseline gap-x-5 gap-y-1">
+      <div
+        className="px-5 pt-5 pb-2 flex flex-wrap items-baseline gap-x-5 gap-y-1"
+        onMouseLeave={() => setHoverKey(null)}
+      >
         {INFLATION_SERIES.map((s) => {
           const present = data.some((d) => d[s.key] != null)
+          const dim = hoverKey !== null && hoverKey !== s.key
           return (
-            <div key={s.key} className={`flex items-baseline gap-2 ${present ? "" : "opacity-40"}`}>
+            <div
+              key={s.key}
+              className={`flex items-baseline gap-2 cursor-default transition-opacity duration-150 ${
+                present ? "" : "opacity-40"
+              } ${dim ? "opacity-30" : ""}`}
+              onMouseEnter={() => present && setHoverKey(s.key)}
+            >
               <span className={`inline-block w-3 h-3 rounded-full ${s.swatch}`} aria-hidden />
               <span className="text-xs text-muted-foreground">{s.label}</span>
               {!present && (
@@ -161,14 +180,86 @@ export function InflationTrendChart({
             </text>
           ))}
           {/* Lines + dots */}
-          {seriesPaths.map((sp) => (
-            <g key={sp.key}>
-              <path d={sp.d} fill="none" stroke={sp.color} strokeWidth={2} strokeOpacity={0.85} />
-              {sp.pts.map(([cx, cy], i) => (
-                <circle key={`${sp.key}-${i}`} cx={cx} cy={cy} r={2.5} fill={sp.color} />
-              ))}
+          {seriesPaths.map((sp) => {
+            const dim = hoverKey !== null && hoverKey !== sp.key
+            return (
+              <g key={sp.key} className="transition-opacity duration-150" opacity={dim ? 0.2 : 1}>
+                <path
+                  d={sp.d}
+                  fill="none"
+                  stroke={sp.color}
+                  strokeWidth={hoverKey === sp.key ? 3 : 2}
+                  strokeOpacity={0.85}
+                />
+                {data.map((d, i) => {
+                  const v = d[sp.key]
+                  if (v == null) return null
+                  return (
+                    <circle
+                      key={`${sp.key}-${i}`}
+                      cx={xScale(i)}
+                      cy={yScale(v)}
+                      r={hover.idx === i ? 4.5 : 2.5}
+                      fill={sp.color}
+                      className="transition-[r] duration-150"
+                    />
+                  )
+                })}
+              </g>
+            )
+          })}
+
+          {active && activeX != null && (
+            <g pointerEvents="none">
+              <line
+                x1={activeX}
+                x2={activeX}
+                y1={padding.top}
+                y2={padding.top + innerH}
+                stroke="currentColor"
+                strokeOpacity={0.3}
+                strokeDasharray="3 3"
+              />
+              <SvgTooltip
+                x={activeX}
+                y={padding.top + innerH * 0.4}
+                chartWidth={width}
+                width={228}
+                height={78}
+              >
+                <div className="font-display tracking-[0.18em] uppercase text-[9px] text-muted-foreground mb-1">
+                  {formatMonth(active.date)} · {mode === "mom" ? "MoM" : "YoY"}
+                </div>
+                {INFLATION_SERIES.map((s) => {
+                  const v = active[s.key]
+                  return (
+                    <div
+                      key={s.key}
+                      className="flex items-center justify-between gap-3"
+                    >
+                      <span className="flex items-center gap-1.5">
+                        <span className={`inline-block w-2 h-2 rounded-full ${s.swatch}`} />
+                        {s.label.split(" ")[0]}
+                      </span>
+                      <span className="tabular-nums text-muted-foreground">
+                        {v == null ? "—" : fmtPct(v)}
+                      </span>
+                    </div>
+                  )
+                })}
+              </SvgTooltip>
             </g>
-          ))}
+          )}
+
+          <rect
+            x={padding.left}
+            y={padding.top}
+            width={innerW}
+            height={innerH}
+            fill="transparent"
+            onMouseMove={(e) => onMove(e, padding, innerW)}
+            onMouseLeave={onLeave}
+          />
         </svg>
       </div>
       <CardContent className="py-4 text-xs text-muted-foreground/70">
@@ -219,6 +310,12 @@ export function FxDivergenceChart({ data }: { data: FxPoint[] }) {
 
   const bcvSeries = lineWithGaps(usable.map((d, i) => (d.bcv != null ? [xScale(i), yScale(d.bcv)] : null)))
   const parSeries = lineWithGaps(usable.map((d, i) => (d.paralelo != null ? [xScale(i), yScale(d.paralelo)] : null)))
+
+  const { hover, onMove, onLeave } = useSvgHover(usable.length)
+  const active = hover.idx !== null ? usable[hover.idx] : null
+  const activeX = hover.idx !== null ? xScale(hover.idx) : null
+  const activePremium =
+    active && active.bcv && active.paralelo ? ((active.paralelo - active.bcv) / active.bcv) * 100 : null
 
   // Build a fill polygon between BCV and Paralelo to highlight the gap.
   const gapBand: string[] = []
@@ -292,6 +389,89 @@ export function FxDivergenceChart({ data }: { data: FxPoint[] }) {
           <path d={bcvSeries} fill="none" stroke="rgb(59 130 246 / 0.9)" strokeWidth={2} />
           {/* Paralelo line */}
           <path d={parSeries} fill="none" stroke="rgb(244 63 94 / 0.9)" strokeWidth={2} />
+
+          {/* Dots highlight */}
+          {usable.map((d, i) => (
+            <g key={`dots-${i}`}>
+              {d.bcv != null && (
+                <circle
+                  cx={xScale(i)}
+                  cy={yScale(d.bcv)}
+                  r={hover.idx === i ? 4.5 : 0}
+                  fill="rgb(59 130 246)"
+                  className="transition-[r] duration-150"
+                />
+              )}
+              {d.paralelo != null && (
+                <circle
+                  cx={xScale(i)}
+                  cy={yScale(d.paralelo)}
+                  r={hover.idx === i ? 4.5 : 0}
+                  fill="rgb(244 63 94)"
+                  className="transition-[r] duration-150"
+                />
+              )}
+            </g>
+          ))}
+
+          {active && activeX != null && (
+            <g pointerEvents="none">
+              <line
+                x1={activeX}
+                x2={activeX}
+                y1={padding.top}
+                y2={padding.top + innerH}
+                stroke="currentColor"
+                strokeOpacity={0.3}
+                strokeDasharray="3 3"
+              />
+              <SvgTooltip
+                x={activeX}
+                y={padding.top + innerH * 0.35}
+                chartWidth={width}
+                width={220}
+                height={92}
+              >
+                <div className="font-display tracking-[0.18em] uppercase text-[9px] text-muted-foreground mb-1">
+                  {formatShortDate(active.date)}
+                </div>
+                <div className="flex items-center justify-between gap-3">
+                  <span className="flex items-center gap-1.5">
+                    <span className="inline-block w-2 h-2 rounded-full bg-blue-500/90" />
+                    BCV official
+                  </span>
+                  <span className="tabular-nums">{active.bcv != null ? active.bcv.toFixed(2) : "—"}</span>
+                </div>
+                <div className="flex items-center justify-between gap-3">
+                  <span className="flex items-center gap-1.5">
+                    <span className="inline-block w-2 h-2 rounded-full bg-rose-500/90" />
+                    Paralelo
+                  </span>
+                  <span className="tabular-nums">
+                    {active.paralelo != null ? active.paralelo.toFixed(2) : "—"}
+                  </span>
+                </div>
+                {activePremium != null && (
+                  <div className="flex items-center justify-between gap-3 mt-1 pt-1 border-t border-border/60">
+                    <span className="text-muted-foreground">Premium</span>
+                    <span className="tabular-nums font-medium text-rose-600 dark:text-rose-400">
+                      {activePremium.toFixed(1)}%
+                    </span>
+                  </div>
+                )}
+              </SvgTooltip>
+            </g>
+          )}
+
+          <rect
+            x={padding.left}
+            y={padding.top}
+            width={innerW}
+            height={innerH}
+            fill="transparent"
+            onMouseMove={(e) => onMove(e, padding, innerW)}
+            onMouseLeave={onLeave}
+          />
         </svg>
       </div>
       <CardContent className="py-4 text-xs text-muted-foreground/70">
@@ -342,6 +522,12 @@ export function OilProductionChart({ data }: { data: OilPoint[] }) {
     data[oneYearAgoIdx].kbd > 0
       ? ((latest.kbd - data[oneYearAgoIdx].kbd) / data[oneYearAgoIdx].kbd) * 100
       : null
+
+  const { hover, onMove, onLeave } = useSvgHover(data.length)
+  const active = hover.idx !== null ? data[hover.idx] : null
+  const activeX = hover.idx !== null ? xScale(hover.idx) : null
+  const prev = hover.idx !== null && hover.idx > 0 ? data[hover.idx - 1] : null
+  const activeMoM = active && prev && prev.kbd > 0 ? ((active.kbd - prev.kbd) / prev.kbd) * 100 : null
 
   return (
     <Card className="py-0 overflow-hidden rounded-2xl">
@@ -396,13 +582,76 @@ export function OilProductionChart({ data }: { data: OilPoint[] }) {
 
           <path d={areaPath} fill="rgb(217 119 6 / 0.15)" />
           <path d={linePath} fill="none" stroke="rgb(217 119 6 / 0.95)" strokeWidth={2} />
+
+          {/* Hover dots */}
+          {data.map((d, i) => (
+            <circle
+              key={`oil-${i}`}
+              cx={xScale(i)}
+              cy={yScale(d.kbd)}
+              r={hover.idx === i ? 4.5 : 0}
+              fill="rgb(217 119 6)"
+              className="transition-[r] duration-150"
+            />
+          ))}
+
+          {active && activeX != null && (
+            <g pointerEvents="none">
+              <line
+                x1={activeX}
+                x2={activeX}
+                y1={padding.top}
+                y2={padding.top + innerH}
+                stroke="currentColor"
+                strokeOpacity={0.3}
+                strokeDasharray="3 3"
+              />
+              <SvgTooltip
+                x={activeX}
+                y={yScale(active.kbd)}
+                chartWidth={width}
+                width={196}
+                height={activeMoM != null ? 80 : 60}
+              >
+                <div className="font-display tracking-[0.18em] uppercase text-[9px] text-muted-foreground mb-1">
+                  {formatMonth(active.date)}
+                </div>
+                <div className="flex items-center justify-between gap-3">
+                  <span className="flex items-center gap-1.5">
+                    <span className="inline-block w-2 h-2 rounded-full bg-amber-600/90" />
+                    Production
+                  </span>
+                  <span className="tabular-nums">{active.kbd.toFixed(0)} kbd</span>
+                </div>
+                {activeMoM != null && (
+                  <div className="flex items-center justify-between gap-3 mt-0.5 text-muted-foreground">
+                    <span>MoM change</span>
+                    <span className={`tabular-nums ${activeMoM >= 0 ? "text-emerald-600 dark:text-emerald-400" : "text-rose-600 dark:text-rose-400"}`}>
+                      {activeMoM >= 0 ? "+" : ""}
+                      {activeMoM.toFixed(1)}%
+                    </span>
+                  </div>
+                )}
+              </SvgTooltip>
+            </g>
+          )}
+
+          <rect
+            x={padding.left}
+            y={padding.top}
+            width={innerW}
+            height={innerH}
+            fill="transparent"
+            onMouseMove={(e) => onMove(e, padding, innerW)}
+            onMouseLeave={onLeave}
+          />
         </svg>
       </div>
       <CardContent className="py-4 text-xs text-muted-foreground/70">
         Venezuela monthly crude oil indigenous production from the{" "}
         <a href="https://www.jodidata.org/oil/" className="underline">JODI</a> primary database
         — the same secondary-source tracking that feeds OPEC&apos;s MOMR. Values in thousand
-        barrels per day (kbd).
+        barrels per day (kbd). Hover the chart for monthly values and MoM change.
       </CardContent>
     </Card>
   )
@@ -449,7 +698,10 @@ export function CanastaVsWageHero({
   return (
     <Card className="py-0 overflow-hidden rounded-2xl">
       <div className="grid md:grid-cols-3 gap-0 border-b border-border">
-        <div className="p-5 md:border-r border-border">
+        <div
+          className="p-5 md:border-r border-border transition-colors duration-200 hover:bg-muted/30 cursor-default"
+          title={`Sum of ${latest.length} canasta items at median BCV USD prices`}
+        >
           <p className="text-[10px] font-display tracking-[0.2em] uppercase text-muted-foreground/70 mb-3">
             One canasta básica
           </p>
@@ -461,7 +713,10 @@ export function CanastaVsWageHero({
             Sum of median USD prices for {latest.length} canasta items · {formatShortDate(latestDate)}
           </p>
         </div>
-        <div className="p-5 md:border-r border-border">
+        <div
+          className="p-5 md:border-r border-border transition-colors duration-200 hover:bg-muted/30 cursor-default"
+          title={`Base Bs ${wage.base_wage_bs.toFixed(0)} + cestaticket + bono = $${integralUsd.toFixed(2)} per month`}
+        >
           <p className="text-[10px] font-display tracking-[0.2em] uppercase text-muted-foreground/70 mb-3">
             Minimum wage (integral)
           </p>
@@ -473,7 +728,10 @@ export function CanastaVsWageHero({
             Base Bs {wage.base_wage_bs.toFixed(0)} + cestaticket + bono · {formatShortDate(wage.date)}
           </p>
         </div>
-        <div className="p-5">
+        <div
+          className="p-5 transition-colors duration-200 hover:bg-muted/30 cursor-default"
+          title={`Ratio of basket cost to monthly integral minimum wage`}
+        >
           <p className="text-[10px] font-display tracking-[0.2em] uppercase text-muted-foreground/70 mb-3">
             How many wages to buy one basket
           </p>
@@ -552,31 +810,46 @@ export function BasketLatestChart({ rows }: { rows: BasketRow[] }) {
 
   const maxUsd = Math.max(...latest.map((r) => r.median_price_ref_usd ?? 0))
 
+  const [hoverIngredient, setHoverIngredient] = React.useState<string | null>(null)
+
   return (
     <Card className="py-0 overflow-hidden rounded-2xl">
       <div className="px-5 pt-5 pb-2 flex flex-wrap items-baseline gap-x-5 gap-y-1">
         <Legend swatch="bg-emerald-500/80" label={`USD (BCV) — ${formatShortDate(latestDate)}`} />
         <Legend swatch="bg-rose-500/80" label="USD (paralelo)" />
       </div>
-      <div className="p-5 space-y-2.5">
+      <div className="p-5 space-y-2.5" onMouseLeave={() => setHoverIngredient(null)}>
         {latest.map((r) => {
           const bcv = r.median_price_ref_usd ?? 0
           const par = r.implied_price_usd_paralelo ?? null
+          const premium = par != null && bcv > 0 ? ((par - bcv) / bcv) * 100 : null
+          const isHover = hoverIngredient === r.ingredient
+          const dim = hoverIngredient !== null && !isHover
           return (
-            <div key={r.ingredient} className="grid grid-cols-[140px_1fr_120px] items-center gap-3">
-              <div className="text-sm text-foreground/90 truncate" title={r.ingredient}>
-                {prettyIngredient(r.ingredient)}
-              </div>
+            <div
+              key={r.ingredient}
+              className={`grid grid-cols-[140px_1fr_120px] items-center gap-3 rounded-sm px-1 -mx-1 py-1 -my-1 cursor-default transition-all duration-150 ${
+                isHover ? "bg-muted/40" : ""
+              } ${dim ? "opacity-50" : ""}`}
+              onMouseEnter={() => setHoverIngredient(r.ingredient)}
+              title={
+                premium != null
+                  ? `${prettyIngredient(r.ingredient)}: $${bcv.toFixed(2)} BCV · $${par!.toFixed(2)} paralelo (+${premium.toFixed(0)}% premium) · ${r.n_skus} SKUs`
+                  : `${prettyIngredient(r.ingredient)}: $${bcv.toFixed(2)} BCV · ${r.n_skus} SKUs`
+              }
+            >
+              <div className="text-sm text-foreground/90 truncate">{prettyIngredient(r.ingredient)}</div>
               <div className="relative h-5 rounded-sm bg-muted/40 overflow-hidden">
                 <div
-                  className="absolute inset-y-0 left-0 bg-emerald-500/70"
+                  className={`absolute inset-y-0 left-0 bg-emerald-500/70 transition-[filter] duration-150 ${
+                    isHover ? "brightness-110" : ""
+                  }`}
                   style={{ width: `${(bcv / maxUsd) * 100}%` }}
                 />
                 {par != null && (
                   <div
                     className="absolute inset-y-0 left-0 border-r-2 border-rose-500"
                     style={{ width: `${(par / maxUsd) * 100}%` }}
-                    title={`Paralelo: $${par.toFixed(2)}`}
                   />
                 )}
               </div>
@@ -597,7 +870,7 @@ export function BasketLatestChart({ rows }: { rows: BasketRow[] }) {
       <CardContent className="border-t border-border py-4 text-xs text-muted-foreground/70">
         Median USD price per canasta ingredient on the latest crawl day. The rose marker on each
         bar shows where the same Bs price lands at the paralelo rate — i.e. how much extra real
-        purchasing-power cost households in the informal economy face.
+        purchasing-power cost households in the informal economy face. Hover a row for the premium and SKU count.
       </CardContent>
     </Card>
   )

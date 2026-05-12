@@ -17,14 +17,17 @@ export function TopNav() {
 
       <div className="px-6 pt-3 pointer-events-none">
         <div className="max-w-7xl mx-auto pointer-events-auto">
-          <div className="glass rounded-full px-2 py-1.5 flex items-center justify-between gap-2">
+          <div className="rounded-full px-2 py-1.5 flex items-center justify-between gap-2
+            backdrop-blur-xl border
+            bg-white/90 border-black/10
+            dark:bg-white/70 dark:border-white/20">
             {/* Brand */}
             <Link
               href="/"
               className="flex items-center gap-3 px-3 shrink-0 group"
             >
               <div className="w-5 h-[2px] tricolor-line rounded-full" />
-              <span className="text-[10px] font-display tracking-[0.25em] uppercase text-muted-foreground group-hover:text-foreground transition-colors">
+              <span className="text-[10px] font-display tracking-[0.25em] uppercase text-neutral-900 group-hover:text-black transition-colors">
                 Miranda Center
               </span>
             </Link>
@@ -42,14 +45,14 @@ export function TopNav() {
                     variant="ghost"
                     size="sm"
                     className={cn(
-                      "rounded-full h-8 px-3 text-[11px] font-medium tracking-wide",
+                      "rounded-full h-8 px-3 text-[11px] font-medium tracking-wide text-neutral-900 hover:text-black",
                       isActive
-                        ? "bg-foreground/10 text-foreground hover:bg-foreground/10"
-                        : "text-muted-foreground hover:text-foreground hover:bg-foreground/[0.06]",
+                        ? "bg-black/10 hover:bg-black/10"
+                        : "hover:bg-black/[0.06]",
                     )}
                   >
                     <Link href={href}>
-                      <span className="text-[9px] font-display tracking-[0.2em] uppercase text-muted-foreground/70 mr-1">
+                      <span className="text-[9px] font-display tracking-[0.2em] uppercase text-neutral-900/60 mr-1">
                         P{pillar.number}
                       </span>
                       {pillar.shortTitle}
