@@ -1,0 +1,91 @@
+date_observed,metric,value,as_of_date,context,source_handle
+2026-03-12,arrests_since_2014,19000,2026-03-12,desde 2014 se han registrado más de 19.000 arrestos por motivos políticos según cifras del @ForoPenal,ForoPenal
+2026-03-12,foreign_dual_nationals_detained_political,76,2026-03-12,La Misión de Determinación de los Hechos sobre Venezuela denuncia que al menos 76 personas extranjeras o de doble nacionalidad permanecen privadas de libertad por motivos políticos,_Provea
+2026-03-13,released_since_2026-01-08,690,2026-03-13,Hemos verificado 690 presos políticos excarcelados en Venezuela desde el 8 enero 2026,alfredoromero
+2026-03-13,closed_media_outlets,360,,más de 360 medios de comunicación cerrados en Venezuela,espaciopublico
+2026-03-13,blocked_internet_domains,200,,más de 200 dominios bloqueados desde distintos proveedores de internet,espaciopublico
+2026-03-13,blocked_media_outlets,60,,bloqueo de más de 60 medios de comunicación,espaciopublico
+2026-03-14,released_since_2026-01-08,690,2026-03-14,Hemos verificado 690 presos políticos excarcelados en Venezuela desde el 8 enero 2026,ForoPenal
+2026-03-24,total_political_prisoners,503,2026-03-23,Balance por Foro Penal,ForoPenal
+2026-03-24,detained_men,452,2026-03-23,Hombres,ForoPenal
+2026-03-24,detained_women,51,2026-03-23,Mujeres,ForoPenal
+2026-03-24,detained_civilians,315,2026-03-23,Civiles,ForoPenal
+2026-03-24,detained_military,188,2026-03-23,Militares,ForoPenal
+2026-03-24,detained_adults,502,2026-03-23,Adultos,ForoPenal
+2026-03-24,detained_minors,1,2026-03-23,Adolescentes,ForoPenal
+2026-03-24,newly_detained_weekly,9,2026-03-23,Encarcelaciones desde la semana pasada,ForoPenal
+2026-03-24,newly_released_weekly,55,2026-03-23,Excarcelaciones desde la semana pasada,ForoPenal
+2026-03-27,released_under_amnesty_portuguesa,28,2026-03-26,28 expresos políticos en Portuguesa fueron beneficiados con la Ley de Amnistía,ForoPenal
+2026-03-27,political_prisoners_detained,700,,"Andreina Baduel, vocera del CLIP, states 'Aunque muchas familias se han reencontrado, el dolor no ha terminado para la mayoría. Hoy somos más de 700 familias que debemos denunciar que tenemos presos políticos'",_Provea
+2026-03-29,total_political_prisoners,500,2026-03-29,más de 500 presos políticos mantenidos encarcelados al día de hoy,alfredoromero
+2026-04-02,total_political_prisoners,490,2026-03-30,"Foro Penal balance: 445 men, 45 women; 303 civilians, 187 military; 489 adults, 1 adolescent",ForoPenal
+2026-04-02,foreign_nationals_detained_political,44,2026-03-30,44 foreign nationals detained for political purposes in Venezuela,ForoPenal
+2026-04-02,released_week_of_2026-03-30,34,2026-03-30,Excarcelaciones (releases) in past week,ForoPenal
+2026-04-02,detained_week_of_2026-03-30,1,2026-03-30,Encarcelaciones (new detentions) in past week,ForoPenal
+2026-04-03,foreign_nationals_detained_political_2026-03-30,44,2026-03-30,44 personas con nacionalidad extranjera privadas de libertad con fines políticos en Venezuela,ForoPenal
+2026-04-03,freedom_of_expression_violations_2025,120,2025-12-31,120 casos que se tradujeron en 232 denuncias de violaciones a la Libertad de Expresión durante 2025,espaciopublico
+2026-04-08,total_political_prisoners,485,2026-04-08,Hoy son 485 presos políticos; Amnesty Law functioning as a funnel slowing rather than accelerating releases,alfredoromero
+2026-04-08,elderly_detained_70plus,11,2026-04-08,Al día de hoy en el @ForoPenal aún registramos 11 adultos mayores (de 70 o más años de edad) arbitrariamente privados de su libertad en Venezuela,HimiobSantome
+2026-04-08,detained_yaracuy_operacion_trueno_2022,23,2026-04-08,23 personas del estado Yaracuy detenidas tras ser aprehendidas por la Policía Nacional Bolivariana en el marco de la 'Operación Trueno 2022',_Provea
+2026-04-09,total_political_prisoners,485,2026-04-06,"Foro Penal balance: 440 men, 45 women; 298 civilians, 187 military; 484 adults, 1 adolescent",ForoPenal
+2026-04-09,released_since_previous_week,5,2026-04-06,Excarcelaciones desde la semana pasada,ForoPenal
+2026-04-09,political_prisoners_with_health_complications,50,,al menos 50 presos políticos que presentan cuadros muy delicados de salud,HimiobSantome
+2026-04-09,elderly_political_prisoners_detained,11,,11 adultos mayores que aún se mantienen arbitrariamente detenidos,HimiobSantome
+2026-04-14,freedom_of_expression_violations_Q1_2026,75,2026-04-14,"30 casos traducidos en 75 violaciones durante el primer trimestre de 2026, incluyendo 27 detenciones",espaciopublico
+2026-04-17,detentions_q1_2026,27,2026-03-31,En el primer trimestre de 2026 documentamos un total de 30 casos que se traducen en 75 violaciones a la #LibertadDeExpresión y 27 detenciones,espaciopublico
+2026-04-18,total_political_prisoners,477,2026-04-13,Total presos políticos en Venezuela registrados por Foro Penal,ForoPenal
+2026-04-18,political_prisoners_rodeo_i,111,2026-04-18,"Presos políticos en Rodeo I, Guatire, Estado Miranda",ForoPenal
+2026-04-18,detained_by_gender,432,2026-04-13,Hombres,ForoPenal
+2026-04-18,detained_by_gender_female,45,2026-04-13,Mujeres,ForoPenal
+2026-04-18,detained_by_category_civilian,290,2026-04-13,Civiles,ForoPenal
+2026-04-18,detained_by_category_military,187,2026-04-13,Militares,ForoPenal
+2026-04-18,detained_adults,476,2026-04-13,Adultos,ForoPenal
+2026-04-18,detained_minors,1,2026-04-13,Adolescentes,ForoPenal
+2026-04-18,released_since_period,14,2026-04-13,Excarcelaciones desde la semana pasada,ForoPenal
+2026-04-19,journalists_judicializados,,2026-04-19,Aún hay trabajadores de la prensa judicializados. No todas las excarcelaciones desde el 14 de enero han sido de libertad plena; algunos todavía están en régimen de presentación.,espaciopublico
+2026-04-21,released_since_2026-01-08,768,2026-04-21,"Desde el 8 de enero de 2026, se han producido 768 excarcelaciones de presos políticos, de las cuales solo 186 han ocurrido como consecuencia de la amnistía",ForoPenal
+2026-04-21,released_via_amnesty_since_2026-01-08,186,2026-04-21,186 han ocurrido como consecuencia de la amnistía,ForoPenal
+2026-04-21,total_political_prisoners,473,2026-04-20,Balance de #PresosPoliticos en Venezuela al 20/04/2026 por Foro Penal: Total presos políticos: 473*,ForoPenal
+2026-04-21,male_prisoners,427,2026-04-20,Hombres: 427,ForoPenal
+2026-04-21,female_prisoners,46,2026-04-20,Mujeres: 46,ForoPenal
+2026-04-21,civilian_prisoners,286,2026-04-20,Civiles: 286,ForoPenal
+2026-04-21,military_prisoners,187,2026-04-20,Militares: 187,ForoPenal
+2026-04-21,adult_prisoners,472,2026-04-20,Adultos: 472,ForoPenal
+2026-04-21,adolescent_prisoners,1,2026-04-20,Adolescentes: 1,ForoPenal
+2026-04-21,released_during_period,6,2026-04-20,Excarcelaciones: 6,ForoPenal
+2026-04-22,released_since_2026-01-08,,2026-04-22,24.21% of releases since 8 January 2026 attributed to amnesty; total releases not explicitly stated,HimiobSantome
+2026-04-25,journalists_detained_historical,30,,"casi 30 periodistas a la cárcel (approximately 30 journalists imprisoned, referenced as historical figure between 2015–2025)",espaciopublico
+2026-04-26,military_detained_cotiza_case,24,2026-04-26,"24 sargentos de la GNB permanecen presos desde hace más de 7 años, sin justicia ni respuestas claras",ForoPenal
+2026-04-29,arbitrary_detentions_2025,44,,"Registramos un total de 44 detenciones arbitrarias, 14 de éstas fueron por 'instigación al odio'",espaciopublico
+2026-04-29,detentions_for_incitement_2025,14,,14 detenciones arbitrarias fueron por 'instigación al odio',espaciopublico
+2026-04-29,deaths_in_custody_weekly,9,2026-04-29,OVP denuncia muerte de recluso en Tocuyito: es el noveno fallecido en una semana,DiarioTalCual
+2026-04-30,political_prisoners_liberation_demanded,,,Durante este periodo se exigió la liberación de los presos políticos (civil rights protests Q1 2026),OVCSocial
+2026-04-30,total_political_prisoners,454,2026-04-27,"Al 27 de abril de 2026, en el @ForoPenal registramos 454 presos políticos",ForoPenal
+2026-04-30,political_prisoners_male,410,2026-04-27,Hombres: 410,ForoPenal
+2026-04-30,political_prisoners_female,44,2026-04-27,Mujeres: 44,ForoPenal
+2026-04-30,political_prisoners_civilian,268,2026-04-27,Civiles: 268,ForoPenal
+2026-04-30,political_prisoners_military,186,2026-04-27,Militares: 186,ForoPenal
+2026-04-30,political_prisoners_adults,453,2026-04-27,Adultos: 453,ForoPenal
+2026-04-30,political_prisoners_minors,1,2026-04-27,Adolescentes: 1,ForoPenal
+2026-04-30,released_week_of_2026-04-27,20,2026-04-27,Excarcelaciones: 20,ForoPenal
+2026-04-30,arbitrary_detentions_2025,44,2025-12-31,Unas 44 detenciones arbitrarias ocurrieron ese año,espaciopublico
+2026-04-30,freedom_of_expression_violations_2026_jan_apr,91,2026-04-30,38 casos que se traducen en 91 denuncias de violaciones del derecho a la #LibertadDeExpresión durante los primeros cuatro meses de 2026,espaciopublico
+2026-05-01,arbitrary_detentions_2025,44,2025-12-31,"Documentamos unas 44 detenciones arbitrarias, 14 de éstas fueron por 'instigación al odio'",espaciopublico
+2026-05-01,detentions_first_four_months_2026,29,2026-04-30,Durante el primer cuatrimestre de 2026 registramos las detenciones de 29 personas,espaciopublico
+2026-05-03,total_political_prisoners,500,,más de 500 personas que siguen presas por motivos políticos en Venezuela,_Provea
+2026-05-04,prison_centers_engagement,,,"Defensoría del Pueblo committed to establish differentiated working tables by detention center (El Helicoide, Fuerte Guaicaipuro, Rodeo I, INOF, La Crisálida) and health conditions, with family meetings",runrunesweb
+2026-05-05,freedom_of_expression_violations,91,2026-04-30,Entre enero y abril de 2026 documentamos 91 violaciones a la libertad de expresión,espaciopublico
+2026-05-07,arbitrary_detentions_recorded_2025,44,2025,"De las 44 detenciones arbitrarias registradas, más de la mitad (54%) fueron contra personas particulares por usar internet",espaciopublico
+2026-05-08,political_prisoners_died_in_custody_since_2014,27,,27 de presos políticos han muerto bajo custodia del chavismo desde 2014,la_patilla
+2026-05-08,political_prisoners_dead_in_custody_since_2015,27,2026-05-09,"La ONG Justicia, Encuentro y Perdón informó que Quero es el preso político número 27 que muere bajo custodia del Estado desde 2015 al presente",runrunesweb
+2026-05-08,freedom_of_expression_violations_q1_2026,91,2026-05-08,"38 documented cases during first four months of 2026 (91 violations across cases; 29 detentions, averaging 8 per month)",espaciopublico
+2026-05-08,freedom_of_expression_violations_april_2026,14,2026-05-08,"7 documented cases in April with 14 violations, 7 intimidation incidents, 5 attacks",espaciopublico
+2026-05-09,total_political_prisoners,457,2026-05-04,"Foro Penal balance: 414 men, 43 women; 270 civilians, 187 military; 456 adults, 1 adolescent",ForoPenal
+2026-05-09,released_week_of_2026-04-27,1,,Excarcelaciones in past week,ForoPenal
+2026-05-09,detained_week_of_2026-04-27,0,,Encarcelaciones in past week,ForoPenal
+2026-05-09,freedom_of_expression_violations_Jan_Apr_2026,91,2026-04-30,"En los primeros cuatro meses de 2026 registramos 38 casos, 91 violaciones a la #LibertadDeExpresión",espaciopublico
+2026-05-09,detentions_Jan_Apr_2026,29,2026-04-30,En los primeros cuatro meses de 2026 registramos 38 casos...29 detenciones,espaciopublico
+2026-05-09,freedom_of_expression_violations_April_2026,14,2026-04-30,Solo en abril documentamos 7 casos y 14 violaciones a la libertad de expresión,espaciopublico
+2026-05-09,released_total,9000,,Delcy Rodríguez celebra a los 9000 excarcelados,maibortpetit
+2026-05-11,detentions_first_quadrimester_2026,29,2026-04-30,En el primer cuatrimestre de este 2026 registramos unos 38 casos que se traducen en 91 violaciones a la libertad de expresión y 29 detenciones,espaciopublico
+2026-05-11,freedom_of_expression_violations_first_quadrimester_2026,91,2026-04-30,En el primer cuatrimestre de 2026 registramos 38 casos y 91 violaciones al derecho a la libertad de expresión,espaciopublico

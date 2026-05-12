@@ -1,0 +1,33 @@
+{
+  "ran_at": "2026-05-12T01:08:57.525Z",
+  "window": {
+    "start": "2026-03-12",
+    "end": "2026-05-11"
+  },
+  "max_per_day": 5,
+  "accounts": [
+    {
+      "handle": "alfredoromero",
+      "user_id": "68469470",
+      "days_fetched": 61,
+      "days_skipped": 0,
+      "days_errored": 0,
+      "tweets_total": 19,
+      "errors": []
+    },
+    {
+      "handle": "HimiobSantome",
+      "user_id": "62558322",
+      "days_fetched": 61,
+      "days_skipped": 0,
+      "days_errored": 0,
+      "tweets_total": 22,
+      "errors": []
+    }
+  ],
+  "totals": {
+    "tweets": 41,
+    "day_requests": 122,
+    "estimated_x_api_cost_usd": "0.21"
+  }
+}

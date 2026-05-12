@@ -1,0 +1,10 @@
+metric,value,description
+broadcast_days_covered,34,Unique broadcast dates analyzed
+broadcasts_analyzed,50,Total transcripts processed
+segments_total,1027,Total news segments classified
+critical_coverage_pct,9.25,% of segments plainly critical of the regime
+regime_minutes_per_broadcast_avg,9.56,Avg minutes per broadcast classified as regime coverage (@150 wpm)
+opposition_minutes_per_broadcast_avg,1.22,Avg minutes per broadcast classified as opposition coverage (@150 wpm)
+press_incidents_in_window,29,Reported press-freedom violations across all transcripts in window
+active_outlets,1,Distinct outlets with at least one analyzed broadcast
+active_independent_outlets,0,Active outlets NOT classified as state-media

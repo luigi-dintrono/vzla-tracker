@@ -2,7 +2,10 @@ export interface CrawlOptions {
   sourceIds?: string[]     // Subset of sources from channels.ts (default: all)
   fromDate?: string        // YYYYMMDD format (yt-dlp date format)
   toDate?: string          // YYYYMMDD format
-  lastN?: number           // Alternative: just get last N videos
+  lastN?: number           // Alternative: just get last N videos (yt-dlp --playlist-end, applied before date filter)
+  limit?: number           // Cap on videos to process after date + dedup filtering
+  onePerDay?: boolean      // Pick one video per uploadDate (prefers Edición Estelar)
+  listFile?: string        // Read pre-built video list from JSON (bypasses listVideos)
   skipDownload?: boolean   // Only transcribe existing audio
   skipTranscribe?: boolean // Only download audio
 }

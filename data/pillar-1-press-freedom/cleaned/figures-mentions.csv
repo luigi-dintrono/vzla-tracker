@@ -1,0 +1,111 @@
+date,outlet,figure,side,mentions,sentiment_avg
+2026-02-26,Venevisión,Tarek William Saab,regime,19,0.116
+2026-02-26,Venevisión,Donald Trump,international-us,9,0
+2026-02-26,Venevisión,Jorge Rodríguez,regime,8,0.013
+2026-02-26,Venevisión,Henrique Capriles,opposition,3,-0.333
+2026-02-26,Venevisión,Marco Rubio,international-us,3,-0.067
+2026-02-26,Venevisión,Delcy Rodríguez,regime,2,0.2
+2026-02-26,Venevisión,Hugo Chávez,regime,1,0
+2026-02-26,Venevisión,Diosdado Cabello,regime,1,0
+2026-02-27,Venevisión,Donald Trump,international-us,10,0.04
+2026-02-27,Venevisión,Delcy Rodríguez,regime,9,0.3
+2026-02-27,Venevisión,Jorge Rodríguez,regime,2,0.35
+2026-02-27,Venevisión,Marco Rubio,international-us,1,0.2
+2026-02-27,Venevisión,Vladimir Padrino López,regime,1,0.2
+2026-02-27,Venevisión,Nicolás Maduro,regime,1,0.3
+2026-02-28,Venevisión,Donald Trump,international-us,10,0.49
+2026-02-28,Venevisión,Delcy Rodríguez,regime,5,0.34
+2026-02-28,Venevisión,Tarek William Saab,regime,5,0.2
+2026-02-28,Venevisión,Marco Rubio,international-us,4,0.05
+2026-02-28,Venevisión,Hugo Chávez,regime,2,0.6
+2026-02-28,Venevisión,Jorge Rodríguez,regime,2,0
+2026-02-28,Venevisión,Diosdado Cabello,regime,1,0.3
+2026-02-28,Venevisión,Nicolás Maduro,regime,1,0.4
+2026-02-28,Venevisión,Henrique Capriles,opposition,1,-0.5
+2026-03-02,Venevisión,Donald Trump,international-us,7,0.086
+2026-03-02,Venevisión,Delcy Rodríguez,regime,2,0.2
+2026-03-02,Venevisión,Tarek William Saab,regime,1,0
+2026-03-03,Venevisión,Jorge Rodríguez,regime,7,0.4
+2026-03-03,Venevisión,Donald Trump,international-us,6,0.217
+2026-03-03,Venevisión,Delcy Rodríguez,regime,2,0.4
+2026-03-04,Venevisión,Jorge Rodríguez,regime,14,0.15
+2026-03-04,Venevisión,Donald Trump,international-us,13,0.031
+2026-03-04,Venevisión,Delcy Rodríguez,regime,5,0.42
+2026-03-04,Venevisión,Juan Pablo Guanipa,opposition,2,0.6
+2026-03-04,Venevisión,Marco Rubio,international-us,1,0
+2026-03-04,Venevisión,Tarek William Saab,regime,1,-0.3
+2026-03-04,Venevisión,Vladimir Padrino López,regime,1,0.4
+2026-03-05,Venevisión,Donald Trump,international-us,9,0.533
+2026-03-05,Venevisión,Delcy Rodríguez,regime,8,0.462
+2026-03-05,Venevisión,Juan Pablo Guanipa,opposition,3,0.5
+2026-03-05,Venevisión,Marco Rubio,international-us,1,0.5
+2026-03-05,Venevisión,Nicolás Maduro,regime,1,0.6
+2026-03-05,Venevisión,Hugo Chávez,regime,1,0.3
+2026-03-06,Venevisión,Delcy Rodríguez,regime,13,0.585
+2026-03-06,Venevisión,Hugo Chávez,regime,7,0.95
+2026-03-06,Venevisión,Donald Trump,international-us,5,0.2
+2026-03-06,Venevisión,Jorge Rodríguez,regime,4,0.425
+2026-03-07,Venevisión,Delcy Rodríguez,regime,12,0.383
+2026-03-07,Venevisión,Donald Trump,international-us,4,0.35
+2026-03-07,Venevisión,Jorge Rodríguez,regime,4,0.325
+2026-03-07,Venevisión,Nicolás Maduro,regime,2,0.35
+2026-03-09,Venevisión,Delcy Rodríguez,regime,4,0.3
+2026-03-09,Venevisión,Donald Trump,international-us,3,0.033
+2026-03-09,Venevisión,Juan Pablo Guanipa,opposition,1,0.5
+2026-03-10,Venevisión,Donald Trump,international-us,6,0.4
+2026-03-10,Venevisión,Delcy Rodríguez,regime,2,0.35
+2026-03-10,Venevisión,Jorge Rodríguez,regime,2,-0.1
+2026-03-10,Venevisión,Vladimir Padrino López,regime,1,0
+2026-03-11,Venevisión,Delcy Rodríguez,regime,2,0.15
+2026-03-11,Venevisión,Diosdado Cabello,regime,1,0.1
+2026-03-12,Venevisión,Jorge Rodríguez,regime,2,0
+2026-03-12,Venevisión,Delcy Rodríguez,regime,2,0.5
+2026-03-12,Venevisión,Edmundo González Urrutia,opposition,1,0
+2026-03-13,Venevisión,Delcy Rodríguez,regime,2,0.5
+2026-03-13,Venevisión,Vladimir Padrino López,regime,1,0.3
+2026-03-13,Venevisión,Donald Trump,international-us,1,0
+2026-03-15,Venevisión,Donald Trump,international-us,2,0
+2026-03-15,Venevisión,Delcy Rodríguez,regime,2,0.2
+2026-03-15,Venevisión,María Corina Machado,opposition,1,0.4
+2026-03-16,Venevisión,Donald Trump,international-us,2,0.2
+2026-03-16,Venevisión,Delcy Rodríguez,regime,1,0.3
+2026-03-17,Venevisión,Delcy Rodríguez,regime,2,0.35
+2026-03-17,Venevisión,Marco Rubio,international-us,1,0
+2026-03-18,Venevisión,Delcy Rodríguez,regime,6,0.367
+2026-03-18,Venevisión,Jorge Rodríguez,regime,5,-0.04
+2026-03-18,Venevisión,Vladimir Padrino López,regime,4,0
+2026-03-19,Venevisión,Delcy Rodríguez,regime,2,0.35
+2026-03-20,Venevisión,Delcy Rodríguez,regime,4,0.225
+2026-03-20,Venevisión,Donald Trump,international-us,1,-0.1
+2026-03-21,Venevisión,Jorge Rodríguez,regime,4,0.1
+2026-03-21,Venevisión,Delcy Rodríguez,regime,3,0.3
+2026-03-21,Venevisión,Vladimir Padrino López,regime,2,0
+2026-03-23,Venevisión,Delcy Rodríguez,regime,4,0.275
+2026-03-23,Venevisión,Diosdado Cabello,regime,2,0.3
+2026-03-23,Venevisión,Juan Pablo Guanipa,opposition,2,0.4
+2026-03-23,Venevisión,Hugo Chávez,regime,1,0.5
+2026-03-24,Venevisión,Delcy Rodríguez,regime,2,0.4
+2026-03-25,Venevisión,Delcy Rodríguez,regime,2,0.7
+2026-03-25,Venevisión,Donald Trump,international-us,1,0.1
+2026-03-26,Venevisión,Donald Trump,international-us,1,0.7
+2026-03-26,Venevisión,Delcy Rodríguez,regime,1,0.5
+2026-03-26,Venevisión,Marco Rubio,international-us,1,0.3
+2026-03-27,Venevisión,Delcy Rodríguez,regime,3,0.567
+2026-03-27,Venevisión,Diosdado Cabello,regime,2,0.3
+2026-03-27,Venevisión,Marco Rubio,international-us,1,0
+2026-03-27,Venevisión,Jorge Rodríguez,regime,1,0.4
+2026-03-28,Venevisión,Delcy Rodríguez,regime,3,0.667
+2026-03-28,Venevisión,Donald Trump,international-us,1,0.5
+2026-03-30,Venevisión,Marco Rubio,international-us,3,0.3
+2026-03-30,Venevisión,Donald Trump,international-us,2,0.4
+2026-03-30,Venevisión,Delcy Rodríguez,regime,1,0.4
+2026-03-31,Venevisión,Delcy Rodríguez,regime,2,0.25
+2026-03-31,Venevisión,Marco Rubio,international-us,1,0.4
+2026-04-01,Venevisión,Delcy Rodríguez,regime,4,0.5
+2026-04-02,Venevisión,Marco Rubio,international-us,2,0.05
+2026-04-02,Venevisión,Delcy Rodríguez,regime,1,0.2
+2026-04-02,Venevisión,Donald Trump,international-us,1,0.5
+2026-04-03,Venevisión,Marco Rubio,international-us,2,0.15
+2026-04-03,Venevisión,Delcy Rodríguez,regime,1,0.3
+2026-04-03,Venevisión,Donald Trump,international-us,1,0.6
+2026-05-09,Venevisión,Donald Trump,international-us,2,0.7

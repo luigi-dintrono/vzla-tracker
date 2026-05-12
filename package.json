@@ -7,7 +7,11 @@
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
-    "pillar1:crawl": "tsx press-freedom/crawl.ts"
+    "pillar1:crawl": "tsx press-freedom/crawl.ts",
+    "pillar1:analyze": "tsx scripts/pillar1-analyze-transcripts.ts",
+    "pillar2:crawl": "tsx scripts/pillar2-crawl-banned-press.ts",
+    "pillar2:analyze": "tsx scripts/pillar2-analyze-protests.ts",
+    "pillar3:crawl": "tsx economy/crawl.ts"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "1.1.2",
@@ -41,6 +45,7 @@
     "tailwind-merge": "2.6.0",
     "tailwindcss-animate": "1.0.7",
     "tw-animate-css": "1.2.4",
+    "xlsx": "^0.18.5",
     "zod": "latest"
   },
   "devDependencies": {

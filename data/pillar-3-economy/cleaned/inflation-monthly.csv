@@ -1,0 +1,31 @@
+date,source,mom_pct,ytd_pct,yoy_pct,article_date,source_url
+2020-10-01,ovf,30,1433,3246,2026-03-20,https://observatoriodefinanzas.com/ovf-inflacion-de-septiembre-se-ubico-en-30-y-la-acumulada-alcanzo-1433/
+2021-05-01,ovf,33.4,240.5,2840,2026-03-20,https://observatoriodefinanzas.com/inflacion-del-mes-de-abril-fue-de-334/
+2021-06-01,ovf,19.6,307.3,2950,2026-03-20,https://observatoriodefinanzas.com/inflacion-del-mes-de-mayo-fue-de-196-y-la-canasta-alimentaria-supero-los-29654-dolares-en-el-mes-de-mayo/
+2021-08-01,ovf,10.6,470.3,1743,2026-03-20,https://observatoriodefinanzas.com/la-inflacion-en-agosto-fue-de-106-y-la-canasta-alimentaria-se-elevo-a-us-3059/
+2021-09-01,ovf,9.7,525.7,1456,2026-03-20,https://observatoriodefinanzas.com/la-inflacion-en-septiembre-alcanzo-a-97-y-la-canasta-alimentaria-aumento-hasta-us-304-2/
+2021-11-01,ovf,,574,,2026-03-20,https://observatoriodefinanzas.com/jose-guerra-desde-el-ano-1985-no-se-ha-registrado-una-tasa-de-inflacion-de-un-digito-en-venezuela/
+2022-03-01,ovf,10.5,17.8,,2026-03-18,https://observatoriodefinanzas.com/fuerte-aceleracion-de-la-inflacion-en-el-mes-de-marzo-2022/
+2022-05-01,ovf,10.1,34.3,151,2026-03-19,https://observatoriodefinanzas.com/inflacion-de-mayo-se-ubico-en-101-mientras-que-la-interanual-fue-de-151/
+2022-06-01,ovf,14.5,53.8,170,2026-03-18,https://observatoriodefinanzas.com/la-inflacion-de-junio-es-la-mas-alta-en-lo-que-va-de-ano-ubicandose-en-145/
+2022-08-01,ovf,17.3,,153,2026-03-19,https://observatoriodefinanzas.com/la-inflacion-de-agosto-es-la-mas-alta-en-los-ultimos-12-meses/
+2022-10-01,ovf,,173,173,2026-03-19,https://observatoriodefinanzas.com/la-inflacion-de-octubre-se-ubica-en-145-mientras-que-la-interanual-alcanza-173/
+2022-11-01,ovf,,195.7,213,2026-03-19,https://observatoriodefinanzas.com/salto-la-inflacion-en-noviembre-219-mensual-y-213-anualizada/
+2023-01-01,ovf,,,440,2026-03-20,https://observatoriodefinanzas.com/inflacion-del-mes-de-enero-de-2023-se-situo-en-394/
+2023-02-01,ovf,20.2,67.7,537.7,2026-03-20,https://observatoriodefinanzas.com/inflacion-de-venezuela-en-febrero-de-2023-se-situo-en-202-mientras-que-la-anualizada-fue-de-5377/
+2023-03-01,ovf,4.2,67.7,501,2026-03-20,https://observatoriodefinanzas.com/inflacion-de-marzo-con-una-importante-desaceleracion-en-el-ritmo-de-aumento-de-los-precios/
+2023-04-01,ovf,2.5,71.8,471,2026-03-20,https://observatoriodefinanzas.com/inflacion-del-mes-de-abril-2023-fue-de-25/
+2023-06-01,ovf,8.5,429,429,2026-03-20,https://observatoriodefinanzas.com/la-inflacion-anualizada-se-situo-en-429-en-junio-2023/
+2023-07-01,ovf,7.2,110.8,439,2026-03-20,https://observatoriodefinanzas.com/se-acelero-la-inflacion-en-julio-2023/
+2023-12-01,ovf,3.7,,176,2026-03-20,https://observatoriodefinanzas.com/encuesta-de-expectativas-economicas-en-2024-se-espera-una-inflacion-de-tres-digitos-y-un-moderado-crecimiento-economico/
+2024-01-01,ovf,,,121,2026-03-19,https://observatoriodefinanzas.com/aumenta-la-inflacion-en-enero/
+2024-02-01,ovf,85,,85,2025-03-25,https://observatoriodefinanzas.com/se-reduce-la-inflacion-en-febrero-observatorio-venezolano-de-finanzas/
+2024-03-01,ovf,,7.8,7.8,2026-03-20,https://observatoriodefinanzas.com/se-acelera-la-inflacion-en-marzo-2024/
+2024-04-01,ovf,2.9,10.9,87,2026-03-20,https://observatoriodefinanzas.com/la-inflacion-en-venezuela-continua-su-escalada-abril-registra-un-29/
+2024-05-01,ovf,3.9,15.3,78,2026-03-20,https://observatoriodefinanzas.com/la-inflacion-en-venezuela-se-acelera-y-en-mayo-registra-un-39/
+2024-09-01,ovf,13.2,60,67,2026-03-20,https://observatoriodefinanzas.com/salto-la-inflacion-en-noviembre/
+2025-04-01,ovf,,,136,2026-03-20,https://observatoriodefinanzas.com/la-inflacion-interanual-se-incremento-19-puntos-porcentuales-en-marzo/
+2025-06-01,ovf,26,105.5,229,2026-03-20,https://observatoriodefinanzas.com/inflacion-anualizada-alcanza-229-en-mayo/
+2026-02-01,basket_canasta,,,,,"local:basket-prices.csv (level=3.2007, n=15)"
+2026-03-01,ovf,,1079.67,3078,2026-03-20,https://observatoriodefinanzas.com/venezuela-alcanza-una-inflacion-acumulada-de-107967-segun-comision-de-finanzas-de-la-asamblea-nacional-y-ovf/
+2026-05-01,basket_canasta,,,,,"local:basket-prices.csv (level=3.3187, n=20)"

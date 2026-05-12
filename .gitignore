@@ -27,3 +27,19 @@ yarn-error.log*
 
 # press-freedom audio (too large for git)
 press-freedom/data/audio/
+
+# pillar-3 wayback HTML caches (re-fetchable from archive.org; CDX indexes are committed)
+data/pillar-3-economy/raw/wayback/
+data/pillar-3-economy/raw/plazas-wayback/
+
+# pillar-3 JODI cache (~23MB zip + ~280MB extracted CSV; re-downloadable from jodidata.org)
+data/pillar-3-economy/raw/jodi/
+
+# local agent / editor state
+.claude/
+
+# alternate lockfile (project uses pnpm-lock.yaml)
+yarn.lock
+
+# typescript incremental build cache
+*.tsbuildinfo

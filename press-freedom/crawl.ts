@@ -1,5 +1,6 @@
 import "dotenv/config"
-import { YOUTUBE_SOURCES } from "./channels"
+import { readFileSync } from "fs"
+import { YOUTUBE_SOURCES, type YouTubeSource } from "./channels"
 import type { CrawlOptions, VideoMeta } from "./types"
 import { checkYtDlp, listVideos, downloadAudio } from "./lib/youtube-downloader"
 import { checkMlxWhisper, transcribeAudio } from "./lib/transcriber"
@@ -19,6 +20,15 @@ function parseArgs(): CrawlOptions {
         break
       case "--last":
         options.lastN = parseInt(args[++i], 10)
+        break
+      case "--limit":
+        options.limit = parseInt(args[++i], 10)
+        break
+      case "--one-per-day":
+        options.onePerDay = true
+        break
+      case "--list-file":
+        options.listFile = args[++i]
         break
       case "--source":
       case "--channel":
@@ -49,9 +59,12 @@ function printHelp() {
 Usage: npx tsx press-freedom/crawl.ts [options]
 
 Options:
-  --last N              Process last N videos per source
-  --from YYYYMMDD       Process videos uploaded after this date
-  --to YYYYMMDD         Process videos uploaded before this date
+  --last N              yt-dlp playlist-end cap (applied before date filtering)
+  --limit N             Cap videos to process per source AFTER date + dedup filter
+  --one-per-day         Pick one video per uploadDate (prefers titles containing "estelar")
+  --list-file PATH      Read pre-built video list (JSON from build-list.ts), bypass listVideos
+  --from YYYYMMDD       Process videos uploaded on or after this date
+  --to YYYYMMDD         Process videos uploaded on or before this date
   --source ID           Only process this source (can be repeated)
   --channel ID          Alias for --source
   --skip-download       Only transcribe existing audio files
@@ -82,10 +95,43 @@ async function main() {
     console.log("[press-freedom] Supabase tracking: disabled (no env vars, using local files only)")
   }
 
-  // Determine which sources to process
-  const sources = options.sourceIds
-    ? YOUTUBE_SOURCES.filter(s => options.sourceIds!.includes(s.id))
-    : YOUTUBE_SOURCES
+  // Build source → preloaded-videos map when --list-file is provided.
+  // The JSON's playlistId becomes the sourceId; we synthesize a YouTubeSource
+  // entry if the playlist isn't already declared in channels.ts.
+  const preloadedVideos = new Map<string, VideoMeta[]>()
+  let sources: YouTubeSource[]
+
+  if (options.listFile) {
+    const raw = readFileSync(options.listFile, "utf8")
+    const parsed = JSON.parse(raw) as {
+      playlistId: string
+      fromDate?: string
+      toDate?: string
+      videos: Array<{ videoId: string; title: string; contentDate: string }>
+    }
+    const sourceId = parsed.playlistId
+    const declared = YOUTUBE_SOURCES.find(s => s.id === sourceId)
+    sources = [declared ?? {
+      id: sourceId,
+      name: `Playlist ${sourceId}`,
+      description: `Loaded from ${options.listFile}`,
+      category: "state-media",
+      type: "playlist",
+    }]
+    const videos: VideoMeta[] = parsed.videos.map(v => ({
+      videoId: v.videoId,
+      sourceId,
+      title: v.title,
+      uploadDate: v.contentDate.replace(/-/g, ""),
+      duration: 0,
+    }))
+    preloadedVideos.set(sourceId, videos)
+    console.log(`[press-freedom] Loaded ${videos.length} videos from list-file: ${options.listFile}`)
+  } else {
+    sources = options.sourceIds
+      ? YOUTUBE_SOURCES.filter(s => options.sourceIds!.includes(s.id))
+      : YOUTUBE_SOURCES
+  }
 
   if (sources.length === 0) {
     console.error("[press-freedom] No matching sources found")
@@ -99,14 +145,20 @@ async function main() {
   for (const source of sources) {
     console.log(`\n[press-freedom] === Processing: ${source.name} (${source.id}) ===`)
 
-    // Step 1: Get video list
+    // Step 1: Get video list (from preloaded list-file or via yt-dlp)
     let videos: VideoMeta[]
-    try {
-      videos = await listVideos(source.id, source.type, options)
-    } catch (err) {
-      console.error(`[press-freedom] Failed to list videos for ${source.name}:`, err)
-      totalErrors++
-      continue
+    const preloaded = preloadedVideos.get(source.id)
+    if (preloaded) {
+      videos = preloaded
+      console.log(`[press-freedom] Using preloaded list: ${videos.length} videos`)
+    } else {
+      try {
+        videos = await listVideos(source.id, source.type, options)
+      } catch (err) {
+        console.error(`[press-freedom] Failed to list videos for ${source.name}:`, err)
+        totalErrors++
+        continue
+      }
     }
 
     if (videos.length === 0) {
@@ -116,13 +168,36 @@ async function main() {
 
     // Step 2: Filter out already-processed videos
     const processed = await getProcessedVideoIds(source.id)
-    const toProcess = videos.filter(v => {
+    let toProcess = videos.filter(v => {
       const status = processed.get(v.videoId)
       if (options.skipDownload) return status === "downloaded"
       return !status || status === "pending" || status === "error"
     })
 
-    console.log(`[press-freedom] ${toProcess.length} videos to process (${videos.length - toProcess.length} already done)`)
+    if (options.onePerDay) {
+      const byDate = new Map<string, VideoMeta[]>()
+      for (const v of toProcess) {
+        const key = v.uploadDate || "unknown"
+        const group = byDate.get(key)
+        if (group) group.push(v)
+        else byDate.set(key, [v])
+      }
+      const picked: VideoMeta[] = []
+      for (const group of byDate.values()) {
+        const estelar = group.find(v => /estelar/i.test(v.title))
+        picked.push(estelar ?? group[0])
+      }
+      picked.sort((a, b) => a.uploadDate.localeCompare(b.uploadDate))
+      console.log(`[press-freedom] --one-per-day: ${picked.length} days selected from ${toProcess.length} videos`)
+      toProcess = picked
+    }
+
+    if (options.limit && toProcess.length > options.limit) {
+      console.log(`[press-freedom] Applying --limit ${options.limit} (filtered down from ${toProcess.length})`)
+      toProcess = toProcess.slice(0, options.limit)
+    }
+
+    console.log(`[press-freedom] ${toProcess.length} videos to process (${videos.length - toProcess.length} already done or skipped)`)
 
     // Step 3: Process each video
     for (const video of toProcess) {

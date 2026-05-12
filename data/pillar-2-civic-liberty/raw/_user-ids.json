@@ -1,0 +1,107 @@
+{
+  "elnacionalweb": {
+    "name": "El Nacional",
+    "username": "ElNacionalWeb",
+    "id": "15007299",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1490788906945679370/AUICqWwv_normal.jpg",
+    "verified": false
+  },
+  "runrunesweb": {
+    "profile_image_url": "https://pbs.twimg.com/profile_images/2010078462032195584/qVaf8Teo_normal.jpg",
+    "username": "RunRunesWeb",
+    "name": "Runrunes",
+    "verified": false,
+    "id": "102601082"
+  },
+  "ForoPenal": {
+    "verified": false,
+    "username": "ForoPenal",
+    "id": "2361800418",
+    "name": "Foro Penal",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1377502791044845568/WBL8IELr_normal.jpg"
+  },
+  "la_patilla": {
+    "verified": false,
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1672057758063947776/2tgBmR5F_normal.jpg",
+    "username": "la_patilla",
+    "name": "La Patilla",
+    "id": "124172948"
+  },
+  "OVCSocial": {
+    "name": "Observatorio de Conflictos",
+    "id": "370471579",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1338820893066276866/VqMo4pxU_normal.jpg",
+    "username": "OVCSocial",
+    "verified": false
+  },
+  "espaciopublico": {
+    "name": "Espacio Público",
+    "username": "espaciopublico",
+    "id": "20848321",
+    "verified": false,
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1677379037872750593/SV4fEIjy_normal.jpg"
+  },
+  "_Provea": {
+    "id": "80197195",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1919392999705845760/rjns3bwq_normal.jpg",
+    "username": "_Provea",
+    "verified": false,
+    "name": "PROVEA"
+  },
+  "robertodeniz": {
+    "verified": false,
+    "profile_image_url": "https://pbs.twimg.com/profile_images/998114931500187648/jmmWxl_R_normal.jpg",
+    "id": "85723280",
+    "name": "Roberto Deniz",
+    "username": "robertodeniz"
+  },
+  "maibortpetit": {
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1373015152912695296/-WDDFJ66_normal.jpg",
+    "username": "maibortpetit",
+    "name": "Maibort Petit",
+    "verified": false,
+    "id": "81202321"
+  },
+  "nelsonbocaranda": {
+    "verified": false,
+    "profile_image_url": "https://pbs.twimg.com/profile_images/783671949876686848/rDFkYz3s_normal.jpg",
+    "username": "nelsonbocaranda",
+    "name": "Nelson Bocaranda Sardi.",
+    "id": "23719107"
+  },
+  "ArmandoInfo": {
+    "name": "Armando.Info",
+    "username": "ArmandoInfo",
+    "id": "155340256",
+    "verified": false,
+    "profile_image_url": "https://pbs.twimg.com/profile_images/768447968169066496/sbc-Krts_normal.jpg"
+  },
+  "NTN24ve": {
+    "name": "NTN24 Venezuela",
+    "verified": false,
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1884645928667406337/o8atu5ME_normal.jpg",
+    "username": "NTN24ve",
+    "id": "200267797"
+  },
+  "DiarioTalCual": {
+    "id": "147589125",
+    "username": "DiarioTalCual",
+    "verified": false,
+    "name": "TalCual",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/2039911781020078080/GeBxg-cm_normal.jpg"
+  },
+  "alfredoromero": {
+    "name": "Alfredo Romero",
+    "username": "alfredoromero",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1259477455485665287/aduhHPcv_normal.jpg",
+    "verified": false,
+    "id": "68469470"
+  },
+  "HimiobSantome": {
+    "id": "62558322",
+    "name": "Gonzalo Himiob S.",
+    "verified": false,
+    "username": "HimiobSantome",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1130504227036508165/Jpe_jSPu_normal.png"
+  }
+}

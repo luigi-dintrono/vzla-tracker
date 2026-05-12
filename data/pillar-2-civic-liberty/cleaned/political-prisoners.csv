@@ -1,0 +1,247 @@
+date_observed,name,status,category,location,charges,source_handle,source_tweet_id
+2026-03-12,Jonathan Carrillo,released,civilian,"Multiple (El Helicoide, Yare III, Yare II)",Not specified,espaciopublico,2032149818890490284
+2026-03-12,Yolimar Hidalgo,missing,journalist,"Cagua, Aragua",Not specified,espaciopublico,2032149818890490284
+2026-03-12,Unknown,detained,unknown,Venezuela,political,_Provea,2032203056717222127
+2026-03-13,Dr. Perkins Rocha,other,unknown,,Unknown (amnesty denial context suggests political detention),alfredoromero,2032617244220371235
+2026-03-13,Yolimar Hidalgo,missing,journalist,Mérida,,espaciopublico,2032562344048361517
+2026-03-13,Walter Jaimes,missing,journalist,Mérida,,espaciopublico,2032562344048361517
+2026-03-14,Omar Escalante,released,civilian,Venezuela,arbitrary detention,ForoPenal,2032942977140609236
+2026-03-14,Nelson Piñero,released,civilian,Venezuela,,ForoPenal,2032942977140609236
+2026-03-14,Jesús Marcano,other,civilian,Centro Penitenciario Yare,coordinator of Defensores Activos del Foro Penal,ForoPenal,2032942977140609236
+2026-03-14,Dr. Perkins Rocha,detained,civilian,Venezuela,denied amnesty,ForoPenal,2032942977140609236
+2026-03-15,Uaiparú Guerere,detained,unknown,,arbitrary detention beyond legal preventive detention limits,HimiobSantome,2033162913695867228
+2026-03-15,Yolimar Hidalgo,other,unknown,Aragua,,espaciopublico,2033320250125541776
+2026-03-16,Yendri Velásquez,other,civilian,Venezuela/Colombia,"Attempted assassination (victim, not detainee)",_Provea,2033649758049353895
+2026-03-18,Erasmo José Bolívar,detained,military,,Puente Llaguno events,ForoPenal,2034477083632562213
+2026-03-18,Luis Enrique Molina Cerrada,detained,military,,Puente Llaguno events,ForoPenal,2034477083632562213
+2026-03-18,José Jaime Sánchez Chacón,detained,military,"San Felipe, Yaracuy",Sent audio message to contact,ForoPenal,2034477083632562213
+2026-03-18,Josnars Baduel,detained,military,Rodeo I,,ForoPenal,2034477083632562213
+2026-03-18,Igbert Marín Chaparro,detained,unknown,Rodeo I,,ForoPenal,2034477083632562213
+2026-03-18,Orlando Alberto Laufer Hernández,transferred,unknown,Centro de Formación Hombre Nuevo 'Simón Bolívar' (transferred to unknown destination),,ForoPenal,2034477083632562213
+2026-03-18,María de los Ángeles Castillo,released,civilian,Táchira,,HimiobSantome,2034457176702378219
+2026-03-18,Jonathan Carrillo,released,civilian,"Caracas (held at El Helicoide, Yare III, Yare II)",not specified,espaciopublico,2034404480586850474
+2026-03-18,Nakary Mena Ramos,detained,journalist,Caracas,not specified,espaciopublico,2034404480586850474
+2026-03-18,Gianni González,detained,civilian,Caracas,not specified,espaciopublico,2034404480586850474
+2026-03-18,Carlos Julio Rojas,detained,journalist,Caracas,not specified,espaciopublico,2034404480586850474
+2026-03-18,Ramón Centeno,detained,journalist,,,espaciopublico,2034404480586850474
+2026-03-18,Víctor Ugas,detained,journalist,,,espaciopublico,2034404480586850474
+2026-03-18,Rafael García Márvez,detained,journalist,,,espaciopublico,2034404480586850474
+2026-03-18,Gabriel González,detained,journalist,,,espaciopublico,2034404480586850474
+2026-03-18,Roland Carreño,detained,journalist,,,espaciopublico,2034404480586850474
+2026-03-18,Julio Balza,detained,journalist,,,espaciopublico,2034404480586850474
+2026-03-18,Luis López,detained,journalist,,,espaciopublico,2034404480586850474
+2026-03-18,Nicmer Evans,detained,journalist,,,espaciopublico,2034404480586850474
+2026-03-18,Ángel Godoy,detained,journalist,,,espaciopublico,2034404480586850474
+2026-03-18,Yorbin García,detained,journalist,,,espaciopublico,2034404480586850474
+2026-03-18,Reynaldo Cortés,sentenced,civilian,,"labor-related (syndicalista, arrested 2022, sentenced to 16 years)",_Provea,2034309750494486717
+2026-03-18,Alcides Bracho,sentenced,civilian,,"labor-related (syndicalista, arrested 2022, sentenced to 16 years)",_Provea,2034309750494486717
+2026-03-18,Emilio Negrín,sentenced,civilian,,"labor-related (syndicalista, arrested 2022, sentenced to 16 years)",_Provea,2034309750494486717
+2026-03-18,Gabriel Blanco,sentenced,civilian,,"labor-related (syndicalista, arrested 2022, sentenced to 16 years)",_Provea,2034309750494486717
+2026-03-18,Alonso Meléndez,sentenced,civilian,,"labor-related (syndicalista, arrested 2022, sentenced to 16 years)",_Provea,2034309750494486717
+2026-03-18,Néstor Astudillo,sentenced,civilian,,"labor-related (syndicalista, arrested 2022, sentenced to 16 years)",_Provea,2034309750494486717
+2026-03-19,María de los Ángeles Castillo,released,civilian,Táchira,,ForoPenal,2034617878461173857
+2026-03-19,Ramón Centeno,detained,journalist,,,espaciopublico,2034633152564531312
+2026-03-19,Víctor Ugas,detained,journalist,,,espaciopublico,2034633152564531312
+2026-03-19,Rafael García Márvez,detained,journalist,,,espaciopublico,2034633152564531312
+2026-03-19,Gabriel González,detained,journalist,,,espaciopublico,2034633152564531312
+2026-03-19,Roland Carreño,detained,journalist,,,espaciopublico,2034633152564531312
+2026-03-19,Julio Balza,detained,journalist,,,espaciopublico,2034633152564531312
+2026-03-19,Luis López,detained,journalist,,,espaciopublico,2034633152564531312
+2026-03-19,Carlos Julio Rojas,detained,journalist,,,espaciopublico,2034633152564531312
+2026-03-19,Ángel Godoy,detained,journalist,,,espaciopublico,2034633152564531312
+2026-03-19,Yorbin García,detained,journalist,,,espaciopublico,2034633152564531312
+2026-03-20,Nakary Mena,released,journalist,Caracas,,ForoPenal,2035178177702572168
+2026-03-20,Nakary Mena Ramos,released,journalist,Caracas,,espaciopublico,2035130664761143565
+2026-03-20,Gianni González,released,journalist,Caracas,,espaciopublico,2035130664761143565
+2026-03-21,Jonathan Carrillo,detained,civilian,,,espaciopublico,2035420924950819314
+2026-03-21,Carlos Perdomo,other,civilian,Venezuela,Allegedly executed by PNB officials,_Provea,2035373916160422185
+2026-03-21,Elvis Urbina,other,civilian,,Allegedly died in custody/state action,_Provea,2035373916160422185
+2026-03-23,Juan Carlos Marrufo,detained,civilian,"Valencia, Carabobo",,ForoPenal,2036283163501089188
+2026-03-23,María Auxiliadora Delgado,detained,civilian,"Valencia, Carabobo",,ForoPenal,2036283163501089188
+2026-03-23,José Luis González,released,civilian,"Acarigua, Portuguesa",,ForoPenal,2036283163501089188
+2026-03-24,Daniel Echenagucia,detained,civilian,Venezuela,,ForoPenal,2036588471893238243
+2026-03-24,Jerry Ostos,released,civilian,Caracas,,ForoPenal,2036588471893238243
+2026-03-24,Javier Tarazona,detained,civilian,Caracas,terrorism,_Provea,2036466558583616000
+2026-03-24,Alex Saab,detained,unknown,,,robertodeniz,2036625482075058493
+2026-03-25,Luis,detained,unknown,Venezuela,,ForoPenal,2036946677123182840
+2026-03-25,Jesús Marcano (El Abuelo),other,civilian,,,ForoPenal,2036946677123182840
+2026-03-25,Yorman Acevedo,detained,civilian,Rodeo I,incitación al odio (hate speech incitement) for TikTok video comments about January 3 events,espaciopublico,2036846271042879596
+2026-03-25,"Yuleidis Machado (son, adolescent, unnamed)",missing,minor,"Petare, barrio 19 de abril",None stated; alleged extrajudicial killing by PNB,_Provea,2036829949819040172
+2026-03-26,Luis Oswaldo Landazuri León,detained,civilian,"El Tigre, Anzoátegui",unspecified,ForoPenal,2037207109255778759
+2026-03-26,Maduro,detained,politician,United States,,nelsonbocaranda,2037334503631270127
+2026-03-26,Flores,detained,unknown,United States,,nelsonbocaranda,2037334503631270127
+2026-03-27,UAIPARÚ GUERERE,released,unknown,,,ForoPenal,2037714631074976070
+2026-03-28,Blanca Isabel Suárez,released,journalist,"Las Crisálidas, Los Teques, Miranda","asociación para delinquir, retraso u omisión intencional de funciones o beneficio económico de funcionarios públicos",espaciopublico,2038037461352231216
+2026-03-28,Jesús González,other,journalist,"El Helicoide, Caracas",,espaciopublico,2038037461352231216
+2026-03-28,Carlos Malpica Flores,other,unknown,,,robertodeniz,2037924179316449466
+2026-03-29,Luis Molina,detained,civilian,Caracas,defending citizens during protest near Puente Llaguno,ForoPenal,2038338023021056158
+2026-03-29,Blanca Isabel Suárez,released,civilian,,arbitrary detention,ForoPenal,2038338023021056158
+2026-03-30,Emirlendris Benítez,detained,civilian,Venezuela,,ForoPenal,2038709460793770495
+2026-03-30,Carlos Perdomo,other,civilian,Venezuela,Execution (alleged extrajudicial killing by PNB officers),_Provea,2038616299085922490
+2026-03-30,Elvis Urbina,other,civilian,Venezuela,Death under disputed circumstances,_Provea,2038616299085922490
+2026-03-31,Erasmo Bolívar,detained,military,La Guaira,,OVCSocial,2039137144116293864
+2026-04-01,Jonathan Carrillo,released,journalist,,,espaciopublico,2039417512702644370
+2026-04-02,Jonathan,detained,civilian,,unknown,espaciopublico,2039840304472150300
+2026-04-03,Carlos Julio Rojas,released,journalist,,,espaciopublico,2040202686973481188
+2026-04-03,Luis Carlos Díaz,other,journalist,,,_Provea,2040200214410145970
+2026-04-04,Alcedo Mora,missing,civilian,Venezuela,Alleged denunciations of PDVSA corruption and gasoline smuggling,_Provea,2040446292590039229
+2026-04-04,Alex Saab,other,unknown,,,robertodeniz,2040495429717053478
+2026-04-05,Jonathan Carrillo,released,civilian,,,espaciopublico,2040821774363795963
+2026-04-05,Carlos J. Rojas,other,journalist,,,espaciopublico,2040821774363795963
+2026-04-06,Yorman Acevedo,detained,civilian,Centro Penitenciario Yare III,Commentary on TikTok video regarding detention of Nicolás Maduro and Cilia Flores,espaciopublico,2041326581042278856
+2026-04-06,Rory Branker,released,journalist,,"Terrorism, association, conspiracy with foreign government, treason",espaciopublico,2041326581042278856
+2026-04-06,Verónica Petit,detained,civilian,,denunciar irregularidades en la custodia de su hijo,_Provea,2041107398702608600
+2026-04-07,Nervins Sarcos,detained,civilian,,,ForoPenal,2041713714613600285
+2026-04-07,Julio Balza,released,journalist,"Caracas, Chacao",Terrorismo (dismissed by acquittal),espaciopublico,2041722797425054161
+2026-04-07,Jonathan Carrillo,detained,civilian,,"Inmigración ilícita de personas extranjeras, Uso de documento público falso, Forjamiento de documentos públicos, Usurpación de funciones, Asociación",espaciopublico,2041722797425054161
+2026-04-07,Yorman Acevedo,missing,unknown,El Rodeo I / Centro Penitenciario Yare III,,espaciopublico,2041722797425054161
+2026-04-08,Tte. Cnel Igbert Marín Chaparro,detained,military,,Unspecified (amnesty petition denied),ForoPenal,2042002525860020579
+2026-04-08,Jorge H. Alayeto Bigott,detained,civilian,,Alleged involvement in Fuerte Paramacay events,ForoPenal,2042002525860020579
+2026-04-08,Darvinson Rojas,detained,journalist,,penal case (no evidence found; seeking dismissal),espaciopublico,2041954927392571791
+2026-04-08,Yorman Acevedo,detained,civilian,"Maracay, Aragua",,espaciopublico,2041954927392571791
+2026-04-09,Ort Betancourt,detained,civilian,"Caracas, centro",,ForoPenal,2042381788975169577
+2026-04-09,Rafael Padrón,other,journalist,"Caracas, Distrito Capital",,espaciopublico,2042318929293664311
+2026-04-09,Sergio González,other,journalist,"Plaza El Venezolano, Distrito Capital",,espaciopublico,2042318929293664311
+2026-04-10,Ort Betancourt,detained,civilian,"PNB headquarters, Maripérez, Caracas",,espaciopublico,2042725560699515197
+2026-04-10,César Gómez,detained,civilian,"PNB headquarters, Maripérez, Caracas",,espaciopublico,2042725560699515197
+2026-04-10,Adrián Balza,detained,civilian,"PNB headquarters, Maripérez, Caracas",,espaciopublico,2042725560699515197
+2026-04-10,Tonny Zapata,detained,civilian,"PNB headquarters, Maripérez, Caracas",,espaciopublico,2042725560699515197
+2026-04-10,Sergio González,detained,journalist,Caracas,,espaciopublico,2042725560699515197
+2026-04-10,Walter Jaimes,missing,journalist,"La Variante, Mérida",,espaciopublico,2042725560699515197
+2026-04-10,Elsa González,detained,civilian,"Los Taques, Falcón",,espaciopublico,2042725560699515197
+2026-04-11,Ort Betancourt,released,civilian,Caracas,,alfredoromero,2043174223028334796
+2026-04-11,Yolimar Hidalgo,other,journalist,"Aragua, Aragua",,espaciopublico,2042994807270703141
+2026-04-11,Carlos J. Rojas,other,journalist,Caracas,,espaciopublico,2042994807270703141
+2026-04-11,Josnars Baduel,detained,civilian,El Rodeo,torture allegations,_Provea,2042988516263559328
+2026-04-12,Luis Molina,detained,civilian,Caracas,defending citizens during protest near Puente Llaguno,ForoPenal,2043279907233354216
+2026-04-12,Walter Jaimes,missing,journalist,Mérida,,espaciopublico,2043358487951118496
+2026-04-12,Yolimar Hidalgo,missing,journalist,Aragua,,espaciopublico,2043358487951118496
+2026-04-12,Jonathan Quiñones,detained,military,,Operación Gedeón,nelsonbocaranda,2043387408574517409
+2026-04-12,Andreína Baduel,other,civilian,,,nelsonbocaranda,2043387408574517409
+2026-04-13,María Auxiliadora Delgado,detained,civilian,,,ForoPenal,2043712079551463876
+2026-04-13,Juan Carlos Marrufo,detained,civilian,,,ForoPenal,2043712079551463876
+2026-04-13,Gabriel González,detained,journalist,,Terrorism-related (specific charges not detailed),espaciopublico,2043897604430266529
+2026-04-13,Ramón Centeno,released,journalist,Distrito Capital,"tráfico de influencia, usurpación de funciones, asociación para delinquir",espaciopublico,2043897604430266529
+2026-04-13,Edwin Sambrano,released,civilian,Táchira,instigación al odio,espaciopublico,2043897604430266529
+2026-04-13,Darvinsson Rojas,released,journalist,,Charges dismissed (prescription),espaciopublico,2043897604430266529
+2026-04-14,Deisy Peña,released,journalist,,Terrorism (per Tribunal 2 de Juicio con Competencia en Terrorismo),espaciopublico,2044188954446991806
+2026-04-14,Walter Jaimes,missing,journalist,Mérida,,espaciopublico,2044188954446991806
+2026-04-14,Verónica Petit,detained,civilian,,Irregularities in child custody (alleged; under house arrest for denunciation),_Provea,2044070356357378191
+2026-04-14,Alex Saab,detained,unknown,Caracas,,robertodeniz,2044213253920760173
+2026-04-14,Germán Dam,missing,journalist,Bolívar,,nelsonbocaranda,2044129536518840377
+2026-04-14,Andreína Baduel's brother,detained,unknown,,,nelsonbocaranda,2044129536518840377
+2026-04-15,Erasmo Bolívar,detained,military,Caracas,Puente Llaguno incidents,ForoPenal,2044510739168211117
+2026-04-15,Elides Rojas,released,journalist,Caracas,instigación al odio (incitement to hatred),espaciopublico,2044624088673464453
+2026-04-15,Juan Carlos Apitz,other,civilian,,implicitly threatened for legal action on wage claims,maibortpetit,2044608475464946089
+2026-04-16,Víctor Hugo Quero Navas,missing,civilian,unknown,,espaciopublico,2044865247756906860
+2026-04-17,Manuel Sánchez,sentenced,civilian,El Rodeo IV,instigación al odio (incitement to hatred),espaciopublico,2045291217064448432
+2026-04-18,José Castellanos,released,civilian,"Lara, Iribarren",alleged ties to graffiti activity,espaciopublico,2045653605986799796
+2026-04-18,Omairo Castellanos,released,civilian,"Lara, Iribarren",alleged ties to graffiti activity,espaciopublico,2045653605986799796
+2026-04-18,Blanca Guerrero,released,civilian,"Lara, Iribarren",alleged ties to graffiti activity,espaciopublico,2045653605986799796
+2026-04-18,unnamed young man (economist student),released,civilian,Caracas,unknown,espaciopublico,2045653605986799796
+2026-04-19,Juan Carlos Marrufo,detained,civilian,Venezuela,,ForoPenal,2045906204551938236
+2026-04-19,María Auxiliadora Delgado,detained,civilian,Venezuela,,ForoPenal,2045906204551938236
+2026-04-19,Carlos José Moreno,other,minor,"{""state"":""Distrito Capital"",""city"":""Caracas"",""neighborhood"":""San Bernardino""}",Killed by gunshot to head during 2017 protests,_Provea,2045885910596657282
+2026-04-20,Jorge Alayeto Bigott,detained,civilian,Venezuela,,ForoPenal,2046326392036397564
+2026-04-20,Carlos Julio Rojas,detained,journalist,,amnesty request denied,espaciopublico,2046327081210916957
+2026-04-20,Blanca Guerrero,released,civilian,,"incitación al odio, traición a la patria, conspiración",espaciopublico,2046327081210916957
+2026-04-20,José Castellanos,released,civilian,,"incitación al odio, traición a la patria, conspiración",espaciopublico,2046327081210916957
+2026-04-20,Omario Castellanos,released,civilian,,"incitación al odio, traición a la patria, conspiración",espaciopublico,2046327081210916957
+2026-04-22,Alex Saab,detained,unknown,,,robertodeniz,2046957114405322941
+2026-04-23,José de Jesús Gámez Bustamante,released,military,"Cárcel 26 de Julio, San Juan de los Morros, Guárico",Detained without trial for 11 years,ForoPenal,2047417145642901520
+2026-04-23,Carlos Julio Rojas,detained,journalist,,Alleged violation under Ley Contra el Odio; amnesty denied,espaciopublico,2047477135883780575
+2026-04-23,Luis López,released,journalist,,Alleged violation under Ley Contra el Odio; amnesty pending,espaciopublico,2047477135883780575
+2026-04-24,JOHANNA BERMÚDEZ,released,military,,"Conspiración, Asociación para delinquir, Traición a la patria, Retardo y omisión intencional",ForoPenal,2047767194466193685
+2026-04-24,DIEGO BAUTISTA ESPIN TRINI,released,military,,"Conspiración, Asociación para delinquir, Traición a la patria, Retardo y omisión intencional",ForoPenal,2047767194466193685
+2026-04-24,Deysi Peña,released,journalist,"Miranda, Carrizal","terrorismo, incitación al odio, obstrucción a la vía pública",espaciopublico,2047755253685141730
+2026-04-25,Luis Oswaldo Landazuri León,detained,civilian,"El Tigre, Anzoátegui",,ForoPenal,2048215196284420400
+2026-04-25,Carlos J. Rojas,released,journalist,"El Helicoide, Ramo Verde",defending rights / dissident activity,espaciopublico,2048065956518199300
+2026-04-26,Juan Luis Guédez,released,civilian,"Valle de la Pascua, Guárico",incitement to hatred (Ley contra el Odio),espaciopublico,2048493976747962830
+2026-04-26,Manuel Sánchez,detained,civilian,Caracas,instigation to hatred (Ley contra el Odio),espaciopublico,2048493976747962830
+2026-04-26,Juan Pablo Pernalete,other,civilian,Caracas,killed during protest (tear gas impact from GNB),_Provea,2048341293927977228
+2026-04-26,Elvira Pernalete Llovera,missing,unknown,,,nelsonbocaranda,2048385757128081858
+2026-04-26,José Gregorio Pernalete Llovera,missing,unknown,,,nelsonbocaranda,2048385757128081858
+2026-04-27,Ramón Antonio Lozada Saavedra,detained,military,Venezuela,,ForoPenal,2048786476096258247
+2026-04-27,Manuel Sánchez,sentenced,civilian,"Caracas, El Paraíso",Questioning PoliCaracas labor; detained on 2026-04-27 for 8 months; sentenced to 10 years imprisonment,espaciopublico,2048759139799609716
+2026-04-27,Pedro José Rojas Chirinos,released,politician,España,compra-venta de un banco,ArmandoInfo,2048960407860043932
+2026-04-27,hermanos De Grazia,detained,politician,,related to Bancamiga shares,ArmandoInfo,2048960407860043932
+2026-04-29,William José Cañas Delgado,detained,civilian,Caracas,Political prisoner; former executive at Banco Bicentenario (state financial sector),ForoPenal,2049684180926099884
+2026-04-29,Ramón Lozada Saavedra,detained,military,,Political prisoner; General rank,ForoPenal,2049684180926099884
+2026-04-29,Manuel Sánchez,sentenced,civilian,Distrito Capital,instigación al odio,espaciopublico,2049564374571118701
+2026-04-30,Víctor Hugo Quero,missing,civilian,Venezuela,,ForoPenal,2049966268204159400
+2026-04-30,Yorman Acevedo,detained,unknown,Yare II,,espaciopublico,2049921050666811900
+2026-05-01,Pantaleón de La Asunción Aragón,detained,civilian,DGCIM custody,terrorism and treason,runrunesweb,2050397864912719973
+2026-05-01,José Luis de La Asunción Aragón,detained,civilian,DGCIM custody,terrorism and treason,runrunesweb,2050397864912719973
+2026-05-01,Marcos Javier Agüero Bravo,detained,civilian,"Barquisimeto, Lara",arbitrary detention by GOES officials,ForoPenal,2050251058023162237
+2026-05-01,Yorman Acevedo,detained,civilian,,TikTok video commentary on Maduro and Flores detention,espaciopublico,2050228754430169289
+2026-05-02,Pantaleón Aragón,detained,civilian,La Asunción,,runrunesweb,2050756478059913633
+2026-05-02,José Luis de La Asunción Aragón,detained,civilian,La Asunción,,runrunesweb,2050756478059913633
+2026-05-02,Rory Branker,released,journalist,Caracas,,espaciopublico,2050584876546453677
+2026-05-03,Víctor Quero,missing,unknown,,unknown,runrunesweb,2051119623177699745
+2026-05-03,Germán Giuliani,detained,civilian,Caracas,unknown,runrunesweb,2051119623177699745
+2026-05-03,Natalia Améstica,sentenced,civilian,,Death of Canserbero (disputed),ArmandoInfo,2051142270875738325
+2026-05-03,Guillermo Améstica,sentenced,civilian,,Death of Canserbero (disputed),ArmandoInfo,2051142270875738325
+2026-05-03,Joel García,other,civilian,Caracas,Denied right to represent defendants in Canserbero case,ArmandoInfo,2051142270875738325
+2026-05-04,Nicolás Maduro,other,politician,NYSD (New York Southern District),Case pending before Judge Alvin Hellerstein,maibortpetit,2051355655114485880
+2026-05-04,Cilia Flores,other,politician,NYSD (New York Southern District),Case pending before Judge Alvin Hellerstein,maibortpetit,2051355655114485880
+2026-05-04,Améstica,sentenced,unknown,,Related to Canserbero case,ArmandoInfo,2051451810611630369
+2026-05-04,Víctor Quero Navas,missing,unknown,,,DiarioTalCual,2051487041851142389
+2026-05-04,Freddy Superlano,other,politician,,,DiarioTalCual,2051487041851142389
+2026-05-06,Víctor Hugo Quero Navas,missing,civilian,,,DiarioTalCual,2052227923801686043
+2026-05-07,Víctor Quero,other,unknown,El Rodeo I,,la_patilla,2052570280761999631
+2026-05-07,Víctor Hugo Quero,other,unknown,El Rodeo I,,la_patilla,2052570280761999631
+2026-05-07,Luis Eduardo Perozo,released,unknown,Carabobo,,elnacionalweb,2052588046730596613
+2026-05-07,Víctor Quero,missing,unknown,Rodeo I,,runrunesweb,2052579993453236554
+2026-05-07,Víctor Hugo Quero,missing,civilian,Rodeo I,,alfredoromero,2052490787007430758
+2026-05-07,Jonathan Carrillo,released,civilian,,Terrorismo (unspecified; charges disputed),espaciopublico,2052569070805893340
+2026-05-07,Carmen Navas,other,unknown,,,espaciopublico,2052569070805893340
+2026-05-07,Víctor Hugo Quero Navas,other,civilian,,detained arbitrarily; died under state custody,_Provea,2052382092319691131
+2026-05-07,Víctor Quero Navas,other,unknown,,,robertodeniz,2052523229764300880
+2026-05-07,Víctor Hugo Quero,missing,unknown,,,NTN24ve,2052571873418883295
+2026-05-07,Víctor Hugo Quero Navas,missing,civilian,,political prisoner,DiarioTalCual,2052581755165503910
+2026-05-08,Víctor Hugo Quero,other,unknown,"El Helicoide, Caracas",,la_patilla,2052925921485623480
+2026-05-08,Nahuel Gallo,released,unknown,Venezuela,,la_patilla,2052925921485623480
+2026-05-08,Germán Giuliani,detained,unknown,Venezuela,,elnacionalweb,2052930992373969320
+2026-05-08,Víctor Hugo Quero,missing,civilian,Rodeo I,,runrunesweb,2052954461153165490
+2026-05-08,Víctor Hugo Quero Navas,missing,civilian,,,ForoPenal,2052880366021554259
+2026-05-08,Carlos J. Rojas,detained,journalist,,"Amnesty denied by Judge José García, Tribunal Primero con Competencia en Terrorismo",espaciopublico,2052901368206373196
+2026-05-08,Víctor Quero,missing,unknown,,Death in state custody; concealed for months,espaciopublico,2052901368206373196
+2026-05-08,Tirone González,sentenced,civilian,,Death of Canserbero (contested judicial case),ArmandoInfo,2052957984213393647
+2026-05-08,Carlos Molnar,sentenced,civilian,,Related to Canserbero case (contested judicial case),ArmandoInfo,2052957984213393647
+2026-05-08,Víctor Quero,other,unknown,,,NTN24ve,2052946123292119300
+2026-05-09,Víctor Hugo Quero,other,unknown,,,la_patilla,2053322287978365070
+2026-05-09,Víctor Quero Navas,missing,unknown,,,elnacionalweb,2053309061228028294
+2026-05-09,Nahuel Gallo,released,unknown,,,elnacionalweb,2053309061228028294
+2026-05-09,Víctor Hugo Quero Navas,missing,unknown,El Rodeo I,,runrunesweb,2053319617259429894
+2026-05-09,Nahuel Gallo,detained,unknown,El Rodeo I,,runrunesweb,2053319617259429894
+2026-05-09,Tareck El Aissami,detained,politician,,,runrunesweb,2053319617259429894
+2026-05-09,Carmen Teresa Navas,other,unknown,,,runrunesweb,2053319617259429894
+2026-05-09,Víctor Quero,missing,civilian,Venezuela,,espaciopublico,2053218452945674549
+2026-05-09,Rafael Espejo,detained,journalist,"Caricuao, Caracas",exercising journalism,espaciopublico,2053218452945674549
+2026-05-09,Molnar,other,unknown,,Case involves judicial irregularities; mother Elba González testified regarding death,ArmandoInfo,2053320372293124272
+2026-05-09,Canserbero,other,unknown,,Death under disputed circumstances; forensis evidence contradicts 2023 prosecution narrative,ArmandoInfo,2053320372293124272
+2026-05-09,Tirone González,other,unknown,,Prosecution case changed from homicide-suicide to double murder with procedural irregularities,ArmandoInfo,2053320372293124272
+2026-05-09,Hermanos Améstica,other,unknown,,Presented in multiple videos with repeated self-incrimination; footage aired before tribunal consolidation,ArmandoInfo,2053320372293124272
+2026-05-09,Víctor Hugo Quero Navas,missing,civilian,,,DiarioTalCual,2053309059139567657
+2026-05-10,Víctor Hugo Quero,other,unknown,,,elnacionalweb,2053675210185011700
+2026-05-10,Samantha Hernández,other,minor,,,elnacionalweb,2053675210185011700
+2026-05-10,Víctor Hugo Quero Navas,missing,unknown,,,runrunesweb,2053684270716358931
+2026-05-10,Jonathan Franco Quiñones,detained,civilian,Fuerte Guaicaipuro,,runrunesweb,2053684270716358931
+2026-05-10,Tareck El Aissami,detained,unknown,,,runrunesweb,2053684270716358931
+2026-05-10,Nahuel Gallo,released,unknown,,,runrunesweb,2053684270716358931
+2026-05-10,José Manuel García Sabino,other,unknown,Anaco,,runrunesweb,2053684270716358931
+2026-05-10,Víctor Quero,missing,unknown,Venezuela,,espaciopublico,2053535544043352521
+2026-05-10,Rafael Espejo,detained,journalist,"Caricuao, Caracas",,espaciopublico,2053535544043352521
+2026-05-10,Victor Quero,other,unknown,,,nelsonbocaranda,2053623869563347057
+2026-05-10,Canserbero,other,unknown,,Death investigation (case reopened 2023),ArmandoInfo,2053682759944593680
+2026-05-10,Carlos Molnar,other,unknown,,Associated with Canserbero case,ArmandoInfo,2053682759944593680
+2026-05-10,Tirone González,other,unknown,,Judicial case involving justice system irregularities,ArmandoInfo,2053682759944593680
+2026-05-10,José Manuel García Sabino,missing,civilian,Anaco,,DiarioTalCual,2053670176890277912
+2026-05-10,Samantha Hernández,detained,civilian,,,DiarioTalCual,2053670176890277912
+2026-05-11,Víctor Quero Navas,detained,civilian,,Unclear; tweet suggests arbitrary detention based on physical characteristics,elnacionalweb,2053996075409957319
+2026-05-11,Víctor Hugo Quero Navas,missing,civilian,Venezuela (custody),unknown,runrunesweb,2053973429620240769
+2026-05-11,José Manuel García Sabino,missing,civilian,"Anaco, Anzoátegui",unknown,runrunesweb,2053973429620240769
+2026-05-11,Ernesto Solano,detained,civilian,"El Guamo, Petare, Caracas",,_Provea,2053965466033668326
+2026-05-11,Belkis Fuentes,detained,civilian,"El Guamo, Petare, Caracas",,_Provea,2053965466033668326
+2026-05-11,Hermanos Améstica,sentenced,unknown,,Canserbero case (implied homicide/criminal),ArmandoInfo,2053988528829473128
+2026-05-11,Víctor Quero,missing,unknown,,,DiarioTalCual,2053963358865383700
