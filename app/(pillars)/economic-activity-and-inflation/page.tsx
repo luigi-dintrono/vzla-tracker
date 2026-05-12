@@ -167,8 +167,13 @@ function aggregateInflation(rows: CsvRow[]): InflationPoint[] {
 }
 
 function mapFxRows(rows: CsvRow[]): FxPoint[] {
+  // The esjs-dolar-api aggregator only started tracking paralelo on
+  // 2026-02-14; anything before that is BCV-only and would make the
+  // divergence chart look misleading (a flat blue line with no rose
+  // counterpart). Clip to that start date so both series share the window.
+  const FX_WINDOW_START = "2026-02-14"
   return rows
-    .filter((r) => r.date)
+    .filter((r) => r.date && r.date >= FX_WINDOW_START)
     .map((r) => ({
       date: r.date,
       bcv: parseNumOrNull(r.bcv_bs_per_usd),

@@ -308,8 +308,24 @@ export function FxDivergenceChart({ data }: { data: FxPoint[] }) {
   const xTicks = pickTickIndices(usable.length, 7)
   const yTicks = 5
 
-  const bcvSeries = lineWithGaps(usable.map((d, i) => (d.bcv != null ? [xScale(i), yScale(d.bcv)] : null)))
-  const parSeries = lineWithGaps(usable.map((d, i) => (d.paralelo != null ? [xScale(i), yScale(d.paralelo)] : null)))
+  // Forward-fill each series so the lines are continuous even on days when
+  // one side didn't publish (weekends/holidays for BCV; quiet days for
+  // paralelo aggregator). The fill carries the last *real* value — the
+  // financial-charting convention — so the rate displayed for a Saturday is
+  // the prior Friday's close. We still draw dots only at the original
+  // (unfilled) observations so it's visually clear where new data arrived.
+  const bcvFilled = forwardFill(usable.map((d) => d.bcv))
+  const parFilled = forwardFill(usable.map((d) => d.paralelo))
+  const bcvSeries = buildLinePath(
+    bcvFilled
+      .map((v, i) => (v != null ? ([xScale(i), yScale(v)] as [number, number]) : null))
+      .filter((p): p is [number, number] => p != null)
+  )
+  const parSeries = buildLinePath(
+    parFilled
+      .map((v, i) => (v != null ? ([xScale(i), yScale(v)] as [number, number]) : null))
+      .filter((p): p is [number, number] => p != null)
+  )
 
   const { hover, onMove, onLeave } = useSvgHover(usable.length)
   const active = hover.idx !== null ? usable[hover.idx] : null
@@ -317,21 +333,27 @@ export function FxDivergenceChart({ data }: { data: FxPoint[] }) {
   const activePremium =
     active && active.bcv && active.paralelo ? ((active.paralelo - active.bcv) / active.bcv) * 100 : null
 
-  // Build a fill polygon between BCV and Paralelo to highlight the gap.
+  // Shaded gap between BCV and Paralelo lines. Uses forward-filled values
+  // so the band is continuous; the visual story is "how wide is the
+  // premium" not "which days had both publish".
   const gapBand: string[] = []
   for (let i = 0; i < usable.length; i++) {
-    const d = usable[i]
-    if (d.bcv != null && d.paralelo != null) {
+    const b = bcvFilled[i]
+    const p = parFilled[i]
+    if (b != null && p != null) {
       gapBand.push(
-        `M ${xScale(i).toFixed(2)} ${yScale(d.bcv).toFixed(2)} L ${xScale(i).toFixed(2)} ${yScale(d.paralelo).toFixed(2)}`
+        `M ${xScale(i).toFixed(2)} ${yScale(b).toFixed(2)} L ${xScale(i).toFixed(2)} ${yScale(p).toFixed(2)}`
       )
     }
   }
 
-  const latest = usable[usable.length - 1]
+  // Use the forward-filled trailing values so we don't show "—" on a day
+  // when only paralelo (or only BCV) published.
+  const latestBcv = bcvFilled[bcvFilled.length - 1]
+  const latestPar = parFilled[parFilled.length - 1]
   const premiumPct =
-    latest && latest.bcv && latest.paralelo
-      ? ((latest.paralelo - latest.bcv) / latest.bcv) * 100
+    latestBcv != null && latestPar != null
+      ? ((latestPar - latestBcv) / latestBcv) * 100
       : null
 
   return (
@@ -890,6 +912,19 @@ function Legend({ swatch, label }: { swatch: string; label: string }) {
 function buildLinePath(points: Array<[number, number]>): string {
   if (points.length === 0) return ""
   return points.map((p, i) => `${i === 0 ? "M" : "L"} ${p[0].toFixed(2)} ${p[1].toFixed(2)}`).join(" ")
+}
+
+/** Carry the last non-null value forward through a series. Leading nulls
+ *  (before any real reading) stay null so we don't fabricate history. */
+function forwardFill(values: Array<number | null | undefined>): Array<number | null> {
+  const out: Array<number | null> = new Array(values.length).fill(null)
+  let last: number | null = null
+  for (let i = 0; i < values.length; i++) {
+    const v = values[i]
+    if (v != null && Number.isFinite(v)) last = v as number
+    out[i] = last
+  }
+  return out
 }
 
 function lineWithGaps(points: Array<[number, number] | null>): string {
